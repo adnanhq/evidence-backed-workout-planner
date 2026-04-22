@@ -1,0 +1,1779 @@
+{
+  "metadata": {
+    "generated_at_utc": "2026-02-25T21:23:36+00:00",
+    "source_catalog_path": "/Users/adnan/cse-499/data/processed/exercise_catalog_enriched.json",
+    "exercise_count": 178
+  },
+  "exercises": [
+    {
+      "exercise_id": "90_90_Hamstring",
+      "name": "90/90 Hamstring",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Adductor",
+      "name": "Adductor",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Adductor_Groin",
+      "name": "Adductor/Groin",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "All_Fours_Quad_Stretch",
+      "name": "All Fours Quad Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Alternating_Cable_Shoulder_Press",
+      "name": "Alternating Cable Shoulder Press",
+      "confidence_level": "high",
+      "confidence_score": 0.8191,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "32705392",
+        "37039734",
+        "39077025"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Ankle_Circles",
+      "name": "Ankle Circles",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Ankle_On_The_Knee",
+      "name": "Ankle On The Knee",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Anterior_Tibialis-SMR",
+      "name": "Anterior Tibialis-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Arm_Circles",
+      "name": "Arm Circles",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Barbell_Hack_Squat",
+      "name": "Barbell Hack Squat",
+      "confidence_level": "low",
+      "confidence_score": 0.5428,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "35069251"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Barbell_Shoulder_Press",
+      "name": "Barbell Shoulder Press",
+      "confidence_level": "high",
+      "confidence_score": 0.8191,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "32705392",
+        "37039734",
+        "39077025"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Behind_Head_Chest_Stretch",
+      "name": "Behind Head Chest Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Bicycling",
+      "name": "Bicycling",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Bicycling_Stationary",
+      "name": "Bicycling, Stationary",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Brachialis-SMR",
+      "name": "Brachialis-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Cable_Chest_Press",
+      "name": "Cable Chest Press",
+      "confidence_level": "high",
+      "confidence_score": 0.801,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "31156757",
+        "35069251",
+        "39557768"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Cable_Preacher_Curl",
+      "name": "Cable Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.8068,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "31156757",
+        "37559762",
+        "40082069"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Cable_Shoulder_Press",
+      "name": "Cable Shoulder Press",
+      "confidence_level": "high",
+      "confidence_score": 0.8191,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "32705392",
+        "37039734",
+        "39077025"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Calf_Stretch_Elbows_Against_Wall",
+      "name": "Calf Stretch Elbows Against Wall",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Calf_Stretch_Hands_Against_Wall",
+      "name": "Calf Stretch Hands Against Wall",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Calves-SMR",
+      "name": "Calves-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Carioca_Quick_Step",
+      "name": "Carioca Quick Step",
+      "confidence_level": "low",
+      "confidence_score": 0.48,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Cat_Stretch",
+      "name": "Cat Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Chair_Leg_Extended_Stretch",
+      "name": "Chair Leg Extended Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Chair_Lower_Back_Stretch",
+      "name": "Chair Lower Back Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Chair_Upper_Body_Stretch",
+      "name": "Chair Upper Body Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Chest_And_Front_Of_Shoulder_Stretch",
+      "name": "Chest And Front Of Shoulder Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Chest_Stretch_on_Stability_Ball",
+      "name": "Chest Stretch on Stability Ball",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Childs_Pose",
+      "name": "Child's Pose",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Chin_To_Chest_Stretch",
+      "name": "Chin To Chest Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Crossover_Reverse_Lunge",
+      "name": "Crossover Reverse Lunge",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Dancers_Stretch",
+      "name": "Dancer's Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Dumbbell_Shoulder_Press",
+      "name": "Dumbbell Shoulder Press",
+      "confidence_level": "high",
+      "confidence_score": 0.8191,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "32705392",
+        "37039734",
+        "39077025"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Dynamic_Back_Stretch",
+      "name": "Dynamic Back Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Dynamic_Chest_Stretch",
+      "name": "Dynamic Chest Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Elbow_Circles",
+      "name": "Elbow Circles",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Elbows_Back",
+      "name": "Elbows Back",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Elliptical_Trainer",
+      "name": "Elliptical Trainer",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Foot-SMR",
+      "name": "Foot-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Frog_Hops",
+      "name": "Frog Hops",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Front_Barbell_Squat",
+      "name": "Front Barbell Squat",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7274,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30188363"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Front_Leg_Raises",
+      "name": "Front Leg Raises",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Front_Squat_Clean_Grip",
+      "name": "Front Squat (Clean Grip)",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7274,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30188363"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Front_Squats_With_Two_Kettlebells",
+      "name": "Front Squats With Two Kettlebells",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7274,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30188363"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Groin_and_Back_Stretch",
+      "name": "Groin and Back Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Groiners",
+      "name": "Groiners",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Hack_Squat",
+      "name": "Hack Squat",
+      "confidence_level": "low",
+      "confidence_score": 0.5428,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "35069251"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Hamstring-SMR",
+      "name": "Hamstring-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Hamstring_Stretch",
+      "name": "Hamstring Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Hip_Circles_prone",
+      "name": "Hip Circles (prone)",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Hug_A_Ball",
+      "name": "Hug A Ball",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Hug_Knees_To_Chest",
+      "name": "Hug Knees To Chest",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "IT_Band_and_Glute_Stretch",
+      "name": "IT Band and Glute Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Iliotibial_Tract-SMR",
+      "name": "Iliotibial Tract-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Inchworm",
+      "name": "Inchworm",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Incline_Cable_Chest_Press",
+      "name": "Incline Cable Chest Press",
+      "confidence_level": "high",
+      "confidence_score": 0.801,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "31156757",
+        "35069251",
+        "39557768"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Intermediate_Groin_Stretch",
+      "name": "Intermediate Groin Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Intermediate_Hip_Flexor_and_Quad_Stretch",
+      "name": "Intermediate Hip Flexor and Quad Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Iron_Crosses_stretch",
+      "name": "Iron Crosses (stretch)",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Jogging_Treadmill",
+      "name": "Jogging, Treadmill",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Knee_Across_The_Body",
+      "name": "Knee Across The Body",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Knee_Circles",
+      "name": "Knee Circles",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Kneeling_Arm_Drill",
+      "name": "Kneeling Arm Drill",
+      "confidence_level": "low",
+      "confidence_score": 0.48,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Kneeling_Forearm_Stretch",
+      "name": "Kneeling Forearm Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Kneeling_Hip_Flexor",
+      "name": "Kneeling Hip Flexor",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Latissimus_Dorsi-SMR",
+      "name": "Latissimus Dorsi-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Leg-Up_Hamstring_Stretch",
+      "name": "Leg-Up Hamstring Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Leg_Extensions",
+      "name": "Leg Extensions",
+      "confidence_level": "low",
+      "confidence_score": 0.5212,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "35333210"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Looking_At_Ceiling",
+      "name": "Looking At Ceiling",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Lower_Back-SMR",
+      "name": "Lower Back-SMR",
+      "confidence_level": "high",
+      "confidence_score": 0.7958,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "38943165",
+        "41209855"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Lower_Back_Curl",
+      "name": "Lower Back Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.7958,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "38943165",
+        "41209855"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Lying_Bent_Leg_Groin",
+      "name": "Lying Bent Leg Groin",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Lying_Crossover",
+      "name": "Lying Crossover",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Lying_Glute",
+      "name": "Lying Glute",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Lying_Hamstring",
+      "name": "Lying Hamstring",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Lying_Prone_Quadriceps",
+      "name": "Lying Prone Quadriceps",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Machine_Preacher_Curls",
+      "name": "Machine Preacher Curls",
+      "confidence_level": "high",
+      "confidence_score": 0.8028,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "37559762",
+        "41247250"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Middle_Back_Stretch",
+      "name": "Middle Back Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Neck-SMR",
+      "name": "Neck-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "On-Your-Back_Quad_Stretch",
+      "name": "On-Your-Back Quad Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "On_Your_Side_Quad_Stretch",
+      "name": "On Your Side Quad Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "One_Arm_Against_Wall",
+      "name": "One Arm Against Wall",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "One_Half_Locust",
+      "name": "One Half Locust",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "One_Handed_Hang",
+      "name": "One Handed Hang",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "One_Knee_To_Chest",
+      "name": "One Knee To Chest",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "One_Leg_Barbell_Squat",
+      "name": "One Leg Barbell Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.894,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "33916599",
+        "34125411",
+        "36048793",
+        "40325746"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Overhead_Lat",
+      "name": "Overhead Lat",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Overhead_Stretch",
+      "name": "Overhead Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Overhead_Triceps",
+      "name": "Overhead Triceps",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Pelvic_Tilt_Into_Bridge",
+      "name": "Pelvic Tilt Into Bridge",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Peroneals-SMR",
+      "name": "Peroneals-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Peroneals_Stretch",
+      "name": "Peroneals Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Piriformis-SMR",
+      "name": "Piriformis-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Posterior_Tibialis_Stretch",
+      "name": "Posterior Tibialis Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Preacher_Curl",
+      "name": "Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.8068,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "31156757",
+        "37559762",
+        "40082069"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Prowler_Sprint",
+      "name": "Prowler Sprint",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Push-Ups_-_Close_Triceps_Position",
+      "name": "Push-Ups - Close Triceps Position",
+      "confidence_level": "high",
+      "confidence_score": 0.7536,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "35574454"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Push-Ups_With_Feet_Elevated",
+      "name": "Push-Ups With Feet Elevated",
+      "confidence_level": "high",
+      "confidence_score": 0.7536,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "35574454"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Push-Ups_With_Feet_On_An_Exercise_Ball",
+      "name": "Push-Ups With Feet On An Exercise Ball",
+      "confidence_level": "high",
+      "confidence_score": 0.7536,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "35574454"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Pyramid",
+      "name": "Pyramid",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Quad_Stretch",
+      "name": "Quad Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Quadriceps-SMR",
+      "name": "Quadriceps-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Rear_Leg_Raises",
+      "name": "Rear Leg Raises",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Recumbent_Bike",
+      "name": "Recumbent Bike",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Rhomboids-SMR",
+      "name": "Rhomboids-SMR",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Rope_Jumping",
+      "name": "Rope Jumping",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Round_The_World_Shoulder_Stretch",
+      "name": "Round The World Shoulder Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Rowing_Stationary",
+      "name": "Rowing, Stationary",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Runners_Stretch",
+      "name": "Runner's Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Running_Treadmill",
+      "name": "Running, Treadmill",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Scissor_Kick",
+      "name": "Scissor Kick",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Seated_Biceps",
+      "name": "Seated Biceps",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Seated_Cable_Shoulder_Press",
+      "name": "Seated Cable Shoulder Press",
+      "confidence_level": "high",
+      "confidence_score": 0.8191,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "32705392",
+        "37039734",
+        "39077025"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Seated_Floor_Hamstring_Stretch",
+      "name": "Seated Floor Hamstring Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Seated_Front_Deltoid",
+      "name": "Seated Front Deltoid",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Seated_Glute",
+      "name": "Seated Glute",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Seated_Hamstring",
+      "name": "Seated Hamstring",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Seated_Hamstring_and_Calf_Stretch",
+      "name": "Seated Hamstring and Calf Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Seated_Leg_Curl",
+      "name": "Seated Leg Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9171,
+      "direct_evidence_count": 5,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "38515303",
+        "39077025",
+        "39401188"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Seated_Overhead_Stretch",
+      "name": "Seated Overhead Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Shoulder_Circles",
+      "name": "Shoulder Circles",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Shoulder_Press_-_With_Bands",
+      "name": "Shoulder Press - With Bands",
+      "confidence_level": "high",
+      "confidence_score": 0.8191,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "32705392",
+        "37039734",
+        "39077025"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Shoulder_Raise",
+      "name": "Shoulder Raise",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Shoulder_Stretch",
+      "name": "Shoulder Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Side-Lying_Floor_Stretch",
+      "name": "Side-Lying Floor Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Side_Leg_Raises",
+      "name": "Side Leg Raises",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Side_Lying_Groin_Stretch",
+      "name": "Side Lying Groin Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Side_Neck_Stretch",
+      "name": "Side Neck Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Side_Wrist_Pull",
+      "name": "Side Wrist Pull",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Single-Cone_Sprint_Drill",
+      "name": "Single-Cone Sprint Drill",
+      "confidence_level": "low",
+      "confidence_score": 0.48,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Sit_Squats",
+      "name": "Sit Squats",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Skating",
+      "name": "Skating",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Smith_Machine_Behind_the_Back_Shrug",
+      "name": "Smith Machine Behind the Back Shrug",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Bent_Over_Row",
+      "name": "Smith Machine Bent Over Row",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Calf_Raise",
+      "name": "Smith Machine Calf Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.9164,
+      "direct_evidence_count": 6,
+      "pmids": [
+        "34743671",
+        "36048793",
+        "36199287",
+        "37015016",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Close-Grip_Bench_Press",
+      "name": "Smith Machine Close-Grip Bench Press",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Decline_Press",
+      "name": "Smith Machine Decline Press",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Hang_Power_Clean",
+      "name": "Smith Machine Hang Power Clean",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Hip_Raise",
+      "name": "Smith Machine Hip Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_One-Arm_Upright_Row",
+      "name": "Smith Machine One-Arm Upright Row",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Overhead_Shoulder_Press",
+      "name": "Smith Machine Overhead Shoulder Press",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Pistol_Squat",
+      "name": "Smith Machine Pistol Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Reverse_Calf_Raises",
+      "name": "Smith Machine Reverse Calf Raises",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Squat",
+      "name": "Smith Machine Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Stiff-Legged_Deadlift",
+      "name": "Smith Machine Stiff-Legged Deadlift",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Smith_Machine_Upright_Row",
+      "name": "Smith Machine Upright Row",
+      "confidence_level": "high",
+      "confidence_score": 0.8652,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "34743671",
+        "36199287",
+        "40323412",
+        "41379528"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Spinal_Stretch",
+      "name": "Spinal Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Split_Squats",
+      "name": "Split Squats",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Stairmaster",
+      "name": "Stairmaster",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Standing_Biceps_Cable_Curl",
+      "name": "Standing Biceps Cable Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.8086,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "29533715",
+        "38441692",
+        "39077025"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Standing_Biceps_Stretch",
+      "name": "Standing Biceps Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Standing_Cable_Chest_Press",
+      "name": "Standing Cable Chest Press",
+      "confidence_level": "high",
+      "confidence_score": 0.801,
+      "direct_evidence_count": 3,
+      "pmids": [
+        "31156757",
+        "35069251",
+        "39557768"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Standing_Elevated_Quad_Stretch",
+      "name": "Standing Elevated Quad Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Standing_Gastrocnemius_Calf_Stretch",
+      "name": "Standing Gastrocnemius Calf Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Standing_Hamstring_and_Calf_Stretch",
+      "name": "Standing Hamstring and Calf Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Standing_Hip_Circles",
+      "name": "Standing Hip Circles",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Standing_Hip_Flexors",
+      "name": "Standing Hip Flexors",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Standing_Lateral_Stretch",
+      "name": "Standing Lateral Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Standing_Leg_Curl",
+      "name": "Standing Leg Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9171,
+      "direct_evidence_count": 5,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "38515303",
+        "39077025",
+        "39401188"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Standing_Pelvic_Tilt",
+      "name": "Standing Pelvic Tilt",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Standing_Soleus_And_Achilles_Stretch",
+      "name": "Standing Soleus And Achilles Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Standing_Toe_Touches",
+      "name": "Standing Toe Touches",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Step_Mill",
+      "name": "Step Mill",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Stomach_Vacuum",
+      "name": "Stomach Vacuum",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Superman",
+      "name": "Superman",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "The_Straddle",
+      "name": "The Straddle",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Toe_Touchers",
+      "name": "Toe Touchers",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Torso_Rotation",
+      "name": "Torso Rotation",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Trail_Running_Walking",
+      "name": "Trail Running/Walking",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Tricep_Side_Stretch",
+      "name": "Tricep Side Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Triceps_Stretch",
+      "name": "Triceps Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Upper_Back-Leg_Grab",
+      "name": "Upper Back-Leg Grab",
+      "confidence_level": "high",
+      "confidence_score": 0.7624,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "37104630"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Upper_Back_Stretch",
+      "name": "Upper Back Stretch",
+      "confidence_level": "high",
+      "confidence_score": 0.7624,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "37104630"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "Upward_Stretch",
+      "name": "Upward Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Walking_Treadmill",
+      "name": "Walking, Treadmill",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Windmills",
+      "name": "Windmills",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Worlds_Greatest_Stretch",
+      "name": "World's Greatest Stretch",
+      "confidence_level": "low",
+      "confidence_score": 0.28,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "Wrist_Circles",
+      "name": "Wrist Circles",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    }
+  ]
+}
