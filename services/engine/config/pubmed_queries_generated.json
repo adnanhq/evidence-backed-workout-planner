@@ -1,0 +1,761 @@
+{
+  "version": "generated-exercise-patterns",
+  "default_retmax": 8,
+  "clusters": [
+    {
+      "id": "exercise_row",
+      "topic": "Exercise-specific evidence: row",
+      "keywords": [
+        "row",
+        "upper",
+        "back"
+      ],
+      "retmax": 8,
+      "exercise_count": 25,
+      "queries": [
+        "(\"row\") AND (upper back) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_tricep_extension",
+      "topic": "Exercise-specific evidence: tricep extension",
+      "keywords": [
+        "tricep",
+        "extension",
+        "triceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 25,
+      "queries": [
+        "(\"tricep extension\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_press",
+      "topic": "Exercise-specific evidence: press",
+      "keywords": [
+        "press",
+        "chest",
+        "pectoralis"
+      ],
+      "retmax": 8,
+      "exercise_count": 24,
+      "queries": [
+        "(\"press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_bench_press",
+      "topic": "Exercise-specific evidence: bench press",
+      "keywords": [
+        "bench",
+        "press",
+        "chest",
+        "pectoralis"
+      ],
+      "retmax": 8,
+      "exercise_count": 20,
+      "queries": [
+        "(\"bench press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_curl",
+      "topic": "Exercise-specific evidence: curl",
+      "keywords": [
+        "curl",
+        "biceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 20,
+      "queries": [
+        "(\"curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_bicep_curl",
+      "topic": "Exercise-specific evidence: bicep curl",
+      "keywords": [
+        "bicep",
+        "curl",
+        "biceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 19,
+      "queries": [
+        "(\"bicep curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_fly",
+      "topic": "Exercise-specific evidence: fly",
+      "keywords": [
+        "fly",
+        "chest",
+        "pectoralis"
+      ],
+      "retmax": 8,
+      "exercise_count": 18,
+      "queries": [
+        "(\"fly\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_push_up",
+      "topic": "Exercise-specific evidence: push up",
+      "keywords": [
+        "push",
+        "up",
+        "chest",
+        "pectoralis"
+      ],
+      "retmax": 8,
+      "exercise_count": 16,
+      "queries": [
+        "(\"push up\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_leg_calf_raise",
+      "topic": "Exercise-specific evidence: leg calf raise",
+      "keywords": [
+        "leg",
+        "calf",
+        "raise",
+        "gastrocnemius"
+      ],
+      "retmax": 8,
+      "exercise_count": 12,
+      "queries": [
+        "(\"leg calf raise\") AND (calf gastrocnemius) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_hammer_curl",
+      "topic": "Exercise-specific evidence: hammer curl",
+      "keywords": [
+        "hammer",
+        "curl",
+        "biceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 12,
+      "queries": [
+        "(\"hammer curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_preacher_curl",
+      "topic": "Exercise-specific evidence: preacher curl",
+      "keywords": [
+        "preacher",
+        "curl",
+        "biceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 11,
+      "queries": [
+        "(\"preacher curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_shoulder_press",
+      "topic": "Exercise-specific evidence: shoulder press",
+      "keywords": [
+        "shoulder",
+        "press",
+        "deltoid"
+      ],
+      "retmax": 8,
+      "exercise_count": 10,
+      "queries": [
+        "(\"shoulder press\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_pullover",
+      "topic": "Exercise-specific evidence: pullover",
+      "keywords": [
+        "pullover",
+        "latissimus"
+      ],
+      "retmax": 8,
+      "exercise_count": 10,
+      "queries": [
+        "(\"pullover\") AND (latissimus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_calf_raise",
+      "topic": "Exercise-specific evidence: calf raise",
+      "keywords": [
+        "calf",
+        "raise",
+        "gastrocnemius"
+      ],
+      "retmax": 8,
+      "exercise_count": 10,
+      "queries": [
+        "(\"calf raise\") AND (calf gastrocnemius) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_concentration_curl",
+      "topic": "Exercise-specific evidence: concentration curl",
+      "keywords": [
+        "concentration",
+        "curl",
+        "biceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 9,
+      "queries": [
+        "(\"concentration curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_crunch",
+      "topic": "Exercise-specific evidence: crunch",
+      "keywords": [
+        "crunch",
+        "abdominal"
+      ],
+      "retmax": 8,
+      "exercise_count": 9,
+      "queries": [
+        "(\"crunch\") AND (abdominal) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_chest_press",
+      "topic": "Exercise-specific evidence: chest press",
+      "keywords": [
+        "chest",
+        "press",
+        "pectoralis"
+      ],
+      "retmax": 8,
+      "exercise_count": 9,
+      "queries": [
+        "(\"chest press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_shrug",
+      "topic": "Exercise-specific evidence: shrug",
+      "keywords": [
+        "shrug",
+        "trapezius"
+      ],
+      "retmax": 8,
+      "exercise_count": 8,
+      "queries": [
+        "(\"shrug\") AND (trapezius) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_kickback",
+      "topic": "Exercise-specific evidence: kickback",
+      "keywords": [
+        "kickback",
+        "triceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 8,
+      "queries": [
+        "(\"kickback\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_lateral_raise",
+      "topic": "Exercise-specific evidence: lateral raise",
+      "keywords": [
+        "lateral",
+        "raise",
+        "deltoid",
+        "shoulder"
+      ],
+      "retmax": 8,
+      "exercise_count": 8,
+      "queries": [
+        "(\"lateral raise\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_hammer_press",
+      "topic": "Exercise-specific evidence: hammer press",
+      "keywords": [
+        "hammer",
+        "press",
+        "triceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 8,
+      "queries": [
+        "(\"hammer press\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_pulldown",
+      "topic": "Exercise-specific evidence: pulldown",
+      "keywords": [
+        "pulldown",
+        "latissimus"
+      ],
+      "retmax": 8,
+      "exercise_count": 7,
+      "queries": [
+        "(\"pulldown\") AND (latissimus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_front_raise",
+      "topic": "Exercise-specific evidence: front raise",
+      "keywords": [
+        "front",
+        "raise",
+        "deltoid",
+        "shoulder"
+      ],
+      "retmax": 8,
+      "exercise_count": 7,
+      "queries": [
+        "(\"front raise\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_squat",
+      "topic": "Exercise-specific evidence: squat",
+      "keywords": [
+        "squat",
+        "gluteus"
+      ],
+      "retmax": 8,
+      "exercise_count": 7,
+      "queries": [
+        "(\"squat\") AND (gluteus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_rear_delt_row",
+      "topic": "Exercise-specific evidence: rear delt row",
+      "keywords": [
+        "rear",
+        "delt",
+        "row",
+        "deltoid",
+        "shoulder"
+      ],
+      "retmax": 8,
+      "exercise_count": 7,
+      "queries": [
+        "(\"rear delt row\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_reverse_curl",
+      "topic": "Exercise-specific evidence: reverse curl",
+      "keywords": [
+        "reverse",
+        "curl",
+        "biceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 7,
+      "queries": [
+        "(\"reverse curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_reverse_preacher_curl",
+      "topic": "Exercise-specific evidence: reverse preacher curl",
+      "keywords": [
+        "reverse",
+        "preacher",
+        "curl",
+        "biceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 7,
+      "queries": [
+        "(\"reverse preacher curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_pull_up",
+      "topic": "Exercise-specific evidence: pull up",
+      "keywords": [
+        "pull",
+        "up",
+        "latissimus"
+      ],
+      "retmax": 8,
+      "exercise_count": 6,
+      "queries": [
+        "(\"pull up\") AND (latissimus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_chin_up",
+      "topic": "Exercise-specific evidence: chin up",
+      "keywords": [
+        "chin",
+        "up",
+        "latissimus"
+      ],
+      "retmax": 8,
+      "exercise_count": 6,
+      "queries": [
+        "(\"chin up\") AND (latissimus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_reverse_wrist_curl",
+      "topic": "Exercise-specific evidence: reverse wrist curl",
+      "keywords": [
+        "reverse",
+        "wrist",
+        "curl",
+        "forearm"
+      ],
+      "retmax": 8,
+      "exercise_count": 6,
+      "queries": [
+        "(\"reverse wrist curl\") AND (forearm) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_reverse_bench_press",
+      "topic": "Exercise-specific evidence: reverse bench press",
+      "keywords": [
+        "reverse",
+        "bench",
+        "press",
+        "chest",
+        "pectoralis"
+      ],
+      "retmax": 8,
+      "exercise_count": 6,
+      "queries": [
+        "(\"reverse bench press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_overhead_tricep_extension",
+      "topic": "Exercise-specific evidence: overhead tricep extension",
+      "keywords": [
+        "overhead",
+        "tricep",
+        "extension",
+        "triceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 6,
+      "queries": [
+        "(\"overhead tricep extension\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_military_press",
+      "topic": "Exercise-specific evidence: military press",
+      "keywords": [
+        "military",
+        "press",
+        "deltoid",
+        "shoulder"
+      ],
+      "retmax": 8,
+      "exercise_count": 6,
+      "queries": [
+        "(\"military press\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_upright_row",
+      "topic": "Exercise-specific evidence: upright row",
+      "keywords": [
+        "upright",
+        "row",
+        "deltoid",
+        "shoulder"
+      ],
+      "retmax": 8,
+      "exercise_count": 6,
+      "queries": [
+        "(\"upright row\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_tricep_dip",
+      "topic": "Exercise-specific evidence: tricep dip",
+      "keywords": [
+        "tricep",
+        "dip",
+        "triceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 5,
+      "queries": [
+        "(\"tricep dip\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_leg_split_squat",
+      "topic": "Exercise-specific evidence: leg split squat",
+      "keywords": [
+        "leg",
+        "split",
+        "squat",
+        "quadriceps"
+      ],
+      "retmax": 8,
+      "exercise_count": 5,
+      "queries": [
+        "(\"leg split squat\") AND (quadriceps) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_wrist_curl",
+      "topic": "Exercise-specific evidence: wrist curl",
+      "keywords": [
+        "wrist",
+        "curl",
+        "forearm"
+      ],
+      "retmax": 8,
+      "exercise_count": 5,
+      "queries": [
+        "(\"wrist curl\") AND (forearm) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_deadlift",
+      "topic": "Exercise-specific evidence: deadlift",
+      "keywords": [
+        "deadlift",
+        "gluteus"
+      ],
+      "retmax": 8,
+      "exercise_count": 5,
+      "queries": [
+        "(\"deadlift\") AND (gluteus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_reverse_press",
+      "topic": "Exercise-specific evidence: reverse press",
+      "keywords": [
+        "reverse",
+        "press",
+        "chest",
+        "pectoralis"
+      ],
+      "retmax": 8,
+      "exercise_count": 5,
+      "queries": [
+        "(\"reverse press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_extension",
+      "topic": "Exercise-specific evidence: extension",
+      "keywords": [
+        "extension",
+        "triceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 5,
+      "queries": [
+        "(\"extension\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_hammer_preacher_curl",
+      "topic": "Exercise-specific evidence: hammer preacher curl",
+      "keywords": [
+        "hammer",
+        "preacher",
+        "curl",
+        "biceps",
+        "brachii"
+      ],
+      "retmax": 8,
+      "exercise_count": 5,
+      "queries": [
+        "(\"hammer preacher curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_rear_lateral_raise",
+      "topic": "Exercise-specific evidence: rear lateral raise",
+      "keywords": [
+        "rear",
+        "lateral",
+        "raise",
+        "deltoid",
+        "shoulder"
+      ],
+      "retmax": 8,
+      "exercise_count": 5,
+      "queries": [
+        "(\"rear lateral raise\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_leg_hip_raise",
+      "topic": "Exercise-specific evidence: leg hip raise",
+      "keywords": [
+        "leg",
+        "hip",
+        "raise",
+        "abdominal"
+      ],
+      "retmax": 8,
+      "exercise_count": 5,
+      "queries": [
+        "(\"leg hip raise\") AND (abdominal) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "exercise_leg_curl",
+      "topic": "Exercise-specific evidence: leg curl",
+      "keywords": [
+        "leg",
+        "curl",
+        "hamstring"
+      ],
+      "retmax": 8,
+      "exercise_count": 5,
+      "queries": [
+        "(\"leg curl\") AND (hamstring) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)"
+      ]
+    },
+    {
+      "id": "gap_calves",
+      "topic": "Calf (gastrocnemius/soleus) training",
+      "keywords": [
+        "calf",
+        "gastrocnemius",
+        "soleus",
+        "plantar flexion",
+        "calf raise"
+      ],
+      "retmax": 20,
+      "queries": [
+        "calf raise gastrocnemius soleus hypertrophy resistance training",
+        "plantar flexion training muscle hypertrophy randomized trial",
+        "seated standing calf raise soleus gastrocnemius muscle growth"
+      ]
+    },
+    {
+      "id": "gap_forearms_grip",
+      "topic": "Forearm and grip training",
+      "keywords": [
+        "forearm",
+        "grip strength",
+        "wrist flexion",
+        "wrist extension"
+      ],
+      "retmax": 20,
+      "queries": [
+        "forearm wrist flexor extensor resistance training hypertrophy",
+        "grip strength training intervention randomized controlled trial",
+        "wrist curl forearm muscle activation electromyography"
+      ]
+    },
+    {
+      "id": "gap_hip_abductors",
+      "topic": "Hip abductor / gluteus medius training",
+      "keywords": [
+        "hip abductor",
+        "gluteus medius",
+        "abduction",
+        "hip stability"
+      ],
+      "retmax": 20,
+      "queries": [
+        "hip abduction gluteus medius activation resistance exercise",
+        "gluteus medius strengthening exercise electromyography",
+        "hip abductor training strength hypertrophy randomized trial"
+      ]
+    },
+    {
+      "id": "gap_hip_adductors",
+      "topic": "Hip adductor / groin training",
+      "keywords": [
+        "hip adductor",
+        "adduction",
+        "groin",
+        "adductor magnus"
+      ],
+      "retmax": 20,
+      "queries": [
+        "hip adductor strengthening exercise muscle activation",
+        "adductor magnus hypertrophy resistance training squat",
+        "groin adductor training injury prevention randomized trial"
+      ]
+    },
+    {
+      "id": "gap_core_abs",
+      "topic": "Direct abdominal / core training",
+      "keywords": [
+        "abdominal",
+        "core",
+        "rectus abdominis",
+        "oblique",
+        "trunk"
+      ],
+      "retmax": 20,
+      "queries": [
+        "abdominal exercise rectus abdominis muscle activation electromyography",
+        "core training trunk muscle hypertrophy resistance exercise",
+        "oblique abdominal exercise electromyography comparison"
+      ]
+    },
+    {
+      "id": "gap_kettlebell",
+      "topic": "Kettlebell training",
+      "keywords": [
+        "kettlebell",
+        "swing",
+        "ballistic",
+        "power"
+      ],
+      "retmax": 20,
+      "queries": [
+        "kettlebell training strength power randomized controlled trial",
+        "kettlebell swing muscle activation electromyography",
+        "kettlebell exercise conditioning intervention strength"
+      ]
+    },
+    {
+      "id": "gap_machine_vs_free",
+      "topic": "Machine vs free-weight resistance training",
+      "keywords": [
+        "machine",
+        "free weight",
+        "resistance training",
+        "stability"
+      ],
+      "retmax": 20,
+      "queries": [
+        "machine versus free weight resistance training hypertrophy strength",
+        "guided machine free weight muscle activation comparison",
+        "resistance machine free weight strength transfer trial"
+      ]
+    }
+  ]
+}

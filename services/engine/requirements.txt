@@ -1,0 +1,14 @@
+# Protocol engine (data pipeline + RAG retrieval + LLM planning)
+biopython>=1.83
+chromadb>=0.6.0
+sentence-transformers>=3.0.0
+google-genai>=1.0.0
+
+# FastAPI service layer
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+pydantic-settings>=2.2
+
+# Tests
+pytest>=8.0

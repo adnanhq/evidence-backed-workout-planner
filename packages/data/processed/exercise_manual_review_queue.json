@@ -1,0 +1,2862 @@
+{
+  "metadata": {
+    "generated_at_utc": "2026-07-03T17:10:10+00:00",
+    "source_catalog_path": "/Users/adnan/cse-499/packages/data/processed/exercise_catalog_enriched.json",
+    "exercise_count": 194
+  },
+  "exercises": [
+    {
+      "exercise_id": "0012",
+      "name": "Assisted Lying Leg Raise with Lateral Throw Down",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0013",
+      "name": "Assisted Lying Leg Raise with Throw Down",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3220",
+      "name": "Astride Jumps (Male)",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "3672",
+      "name": "Back and Forth Step",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0968",
+      "name": "Band Alternating Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0976",
+      "name": "Band Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0977",
+      "name": "Band Front Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1002",
+      "name": "Band Lying Straight Leg Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0986",
+      "name": "Band One Arm Overhead Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0987",
+      "name": "Band One Arm Single Leg Split Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9313,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "29870422",
+        "31453938",
+        "31523343",
+        "32132843",
+        "36918403",
+        "38280014",
+        "38651426"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1001",
+      "name": "Band Single Leg Split Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9313,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "29870422",
+        "31453938",
+        "31523343",
+        "32132843",
+        "36918403",
+        "38280014",
+        "38651426"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0023",
+      "name": "Barbell Alternate Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0024",
+      "name": "Barbell Bench Front Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.7897,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "30188363",
+        "41743596"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0027",
+      "name": "Barbell Bent Over Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2407",
+      "name": "Barbell Biceps Curl (With Arm Blaster)",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0029",
+      "name": "Barbell Clean-Grip Front Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.7897,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "30188363",
+        "41743596"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0042",
+      "name": "Barbell Front Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.7897,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "30188363",
+        "41743596"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1409",
+      "name": "Barbell Glute Bridge",
+      "confidence_level": "low",
+      "confidence_score": 0.5182,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "37754456"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0059",
+      "name": "Barbell Lying Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0068",
+      "name": "Barbell One Leg Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9557,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29870422",
+        "31523343",
+        "32132843",
+        "33344003",
+        "36918403",
+        "39593440",
+        "39688914",
+        "40152281"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0070",
+      "name": "Barbell Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0081",
+      "name": "Barbell Reverse Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0085",
+      "name": "Barbell Romanian Deadlift",
+      "confidence_level": "high",
+      "confidence_score": 0.9585,
+      "direct_evidence_count": 6,
+      "pmids": [
+        "31356511",
+        "32107499",
+        "36896022",
+        "36918403",
+        "38006325",
+        "38093908"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0089",
+      "name": "Barbell Seated Close-Grip Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0098",
+      "name": "Barbell Side Split Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9313,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "29870422",
+        "31453938",
+        "31523343",
+        "32132843",
+        "36918403",
+        "38280014",
+        "38651426"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0097",
+      "name": "Barbell Side Split Squat V. 2",
+      "confidence_level": "high",
+      "confidence_score": 0.9313,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "29870422",
+        "31453938",
+        "31523343",
+        "32132843",
+        "36918403",
+        "38280014",
+        "38651426"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0099",
+      "name": "Barbell Single Leg Split Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9313,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "29870422",
+        "31453938",
+        "31523343",
+        "32132843",
+        "36918403",
+        "38280014",
+        "38651426"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2799",
+      "name": "Barbell Sitted Alternate Leg Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2800",
+      "name": "Barbell Sitted Alternate Leg Raise (Female)",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2810",
+      "name": "Barbell Split Squat V. 2",
+      "confidence_level": "high",
+      "confidence_score": 0.9313,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "29870422",
+        "31453938",
+        "31523343",
+        "32132843",
+        "36918403",
+        "38280014",
+        "38651426"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2414",
+      "name": "Barbell Standing Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1629",
+      "name": "Barbell Standing Wide Grip Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0120",
+      "name": "Barbell Upright Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7192,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "30694963",
+        "38421430",
+        "41743596",
+        "41998766"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0119",
+      "name": "Barbell Upright Row V. 2",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7192,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "30694963",
+        "38421430",
+        "41743596",
+        "41998766"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0121",
+      "name": "Barbell Upright Row V. 3",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7192,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "30694963",
+        "38421430",
+        "41743596",
+        "41998766"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0123",
+      "name": "Barbell Wide-Grip Upright Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7192,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "30694963",
+        "38421430",
+        "41743596",
+        "41998766"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3360",
+      "name": "Bear Crawl",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "1770",
+      "name": "Biceps Leg Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1769",
+      "name": "Bodyweight Side Lying Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1160",
+      "name": "Burpee",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "3235",
+      "name": "Cable Assisted Inverse Leg Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1631",
+      "name": "Cable Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0168",
+      "name": "Cable Hip Adduction",
+      "confidence_level": "high",
+      "confidence_score": 0.9139,
+      "direct_evidence_count": 6,
+      "pmids": [
+        "29607766",
+        "29891614",
+        "30615490",
+        "35780637",
+        "37212292",
+        "41469634"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0178",
+      "name": "Cable Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1262",
+      "name": "Cable One Arm Decline Chest Fly",
+      "confidence_level": "moderate",
+      "confidence_score": 0.6064,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "30988856",
+        "35413736"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0192",
+      "name": "Cable One Arm Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1633",
+      "name": "Cable One Arm Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1635",
+      "name": "Cable One Arm Reverse Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0195",
+      "name": "Cable Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0209",
+      "name": "Cable Reverse Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1639",
+      "name": "Cable Rope Hammer Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1640",
+      "name": "Cable Rope One Arm Hammer Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1642",
+      "name": "Cable Seated One Arm Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0215",
+      "name": "Cable Seated Rear Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0239",
+      "name": "Cable Straight Back Seated Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "34027921"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0246",
+      "name": "Cable Upright Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7192,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "30694963",
+        "38421430",
+        "41743596",
+        "41998766"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2963",
+      "name": "Captains Chair Straight Leg Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3016",
+      "name": "Curl-Up",
+      "confidence_level": "moderate",
+      "confidence_score": 0.6055,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "29319600",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2331",
+      "name": "Cycle Cross Trainer",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0279",
+      "name": "Decline Push-Up",
+      "confidence_level": "high",
+      "confidence_score": 0.8684,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "35500983",
+        "36081701",
+        "38261765",
+        "41901575"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0285",
+      "name": "Dumbbell Alternate Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2403",
+      "name": "Dumbbell Alternate Biceps Curl (With Arm Blaster)",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1646",
+      "name": "Dumbbell Alternate Hammer Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1647",
+      "name": "Dumbbell Alternate Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0293",
+      "name": "Dumbbell Bent Over Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0294",
+      "name": "Dumbbell Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2401",
+      "name": "Dumbbell Biceps Curl (With Arm Blaster)",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1654",
+      "name": "Dumbbell Biceps Curl Reverse",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1655",
+      "name": "Dumbbell Biceps Curl Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1656",
+      "name": "Dumbbell Biceps Curl V Sit on Bosu Ball",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1201",
+      "name": "Dumbbell Burpee",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0297",
+      "name": "Dumbbell Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3635",
+      "name": "Dumbbell Contralateral Forward Lunge",
+      "confidence_level": "low",
+      "confidence_score": 0.5357,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "39688914"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0308",
+      "name": "Dumbbell Fly",
+      "confidence_level": "moderate",
+      "confidence_score": 0.562,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "33312291"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1732",
+      "name": "Dumbbell Forward Lunge Triceps Extension",
+      "confidence_level": "low",
+      "confidence_score": 0.5357,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "39688914"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0311",
+      "name": "Dumbbell Full Can Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0315",
+      "name": "Dumbbell Incline Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0322",
+      "name": "Dumbbell Incline Inner Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0323",
+      "name": "Dumbbell Incline One Arm Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0326",
+      "name": "Dumbbell Incline Rear Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0334",
+      "name": "Dumbbell Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0345",
+      "name": "Dumbbell Lying One Arm Rear Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0348",
+      "name": "Dumbbell Lying Rear Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1661",
+      "name": "Dumbbell Lying Supine Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1286",
+      "name": "Dumbbell One Arm Chest Fly on Exercise Ball",
+      "confidence_level": "moderate",
+      "confidence_score": 0.6064,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "30988856",
+        "35413736"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0353",
+      "name": "Dumbbell One Arm Concentration Curl (On Stability Ball)",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1663",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0355",
+      "name": "Dumbbell One Arm Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0356",
+      "name": "Dumbbell One Arm Lateral Raise with Support",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1414",
+      "name": "Dumbbell One Arm Reverse Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0363",
+      "name": "Dumbbell One Arm Upright Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7192,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "30694963",
+        "38421430",
+        "41743596",
+        "41998766"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1672",
+      "name": "Dumbbell One Arm Zottman Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0372",
+      "name": "Dumbbell Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1673",
+      "name": "Dumbbell Preacher Curl Over Exercise Ball",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0380",
+      "name": "Dumbbell Rear Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0379",
+      "name": "Dumbbell Rear Lateral Raise (Support Head)",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0382",
+      "name": "Dumbbell Revers Grip Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0384",
+      "name": "Dumbbell Reverse Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1459",
+      "name": "Dumbbell Romanian Deadlift",
+      "confidence_level": "high",
+      "confidence_score": 0.9585,
+      "direct_evidence_count": 6,
+      "pmids": [
+        "31356511",
+        "32107499",
+        "36896022",
+        "36918403",
+        "38006325",
+        "38093908"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2317",
+      "name": "Dumbbell Seated Bent Arm Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0390",
+      "name": "Dumbbell Seated Biceps Curl (On Stability Ball)",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3547",
+      "name": "Dumbbell Seated Biceps Curl to Shoulder Press",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0393",
+      "name": "Dumbbell Seated Inner Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0396",
+      "name": "Dumbbell Seated Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0395",
+      "name": "Dumbbell Seated Lateral Raise V. 2",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0402",
+      "name": "Dumbbell Seated Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0403",
+      "name": "Dumbbell Seated Revers Grip Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0410",
+      "name": "Dumbbell Single Leg Split Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9313,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "29870422",
+        "31453938",
+        "31523343",
+        "32132843",
+        "36918403",
+        "38280014",
+        "38651426"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0411",
+      "name": "Dumbbell Single Leg Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9557,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29870422",
+        "31523343",
+        "32132843",
+        "33344003",
+        "36918403",
+        "39593440",
+        "39688914",
+        "40152281"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0416",
+      "name": "Dumbbell Standing Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0418",
+      "name": "Dumbbell Standing Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2321",
+      "name": "Dumbbell Standing Inner Biceps Curl V. 2",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0421",
+      "name": "Dumbbell Standing One Arm Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0428",
+      "name": "Dumbbell Standing Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2293",
+      "name": "Dumbbell Standing Zottman Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2812",
+      "name": "Dumbbell Step-Up Split Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9313,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "29870422",
+        "31453938",
+        "31523343",
+        "32132843",
+        "36918403",
+        "38280014",
+        "38651426"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0437",
+      "name": "Dumbbell Upright Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7192,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "30694963",
+        "38421430",
+        "41743596",
+        "41998766"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1765",
+      "name": "Dumbbell Upright Row (Back Pov)",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7192,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "30694963",
+        "38421430",
+        "41743596",
+        "41998766"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "5201",
+      "name": "Dumbbell Waiter Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2294",
+      "name": "Dumbbell Zottman Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1343",
+      "name": "Exercise Ball Prone Leg Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1682",
+      "name": "EZ Bar Seated Close Grip Concentration Curl",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1627",
+      "name": "EZ Barbell Close Grip Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0452",
+      "name": "EZ Barbell Reverse Grip Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2404",
+      "name": "EZ-Bar Biceps Curl (With Arm Blaster)",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2741",
+      "name": "EZ-Barbell Standing Wide Grip Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3470",
+      "name": "Forward Lunge (Male)",
+      "confidence_level": "low",
+      "confidence_score": 0.5357,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "39688914"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3221",
+      "name": "Half Knee Bends (Male)",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "2139",
+      "name": "Hands Bike",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0472",
+      "name": "Hanging Leg Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0475",
+      "name": "Hanging Straight Leg Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3636",
+      "name": "High Knee Against Wall",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0493",
+      "name": "Incline Push-Up",
+      "confidence_level": "high",
+      "confidence_score": 0.8684,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "35500983",
+        "36081701",
+        "38261765",
+        "41901575"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0496",
+      "name": "Inverse Leg Curl (Bench Support)",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2400",
+      "name": "Inverse Leg Curl (On Pull-Up Cable Machine)",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0501",
+      "name": "Jack Burpee",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "3224",
+      "name": "Jack Jump (Male)",
+      "confidence_level": "low",
+      "confidence_score": 0.36,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "2612",
+      "name": "Jump Rope",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0533",
+      "name": "Kettlebell Front Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.7897,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "30188363",
+        "41743596"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0549",
+      "name": "Kettlebell Swing",
+      "confidence_level": "high",
+      "confidence_score": 0.9083,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "28930870",
+        "31687405",
+        "37126368",
+        "39758692",
+        "41318473",
+        "41487958",
+        "41944385"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3237",
+      "name": "Landmine Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1615",
+      "name": "Lever Hammer Grip Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0582",
+      "name": "Lever Kneeling Leg Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0584",
+      "name": "Lever Lateral Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8981,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "32669052",
+        "32824894",
+        "33312291",
+        "40692697"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0586",
+      "name": "Lever Lying Leg Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3195",
+      "name": "Lever Lying Two-One Leg Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0592",
+      "name": "Lever Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1614",
+      "name": "Lever Preacher Curl V. 2",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1616",
+      "name": "Lever Reverse Grip Preacher Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9275,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "31156757",
+        "32315330",
+        "32823490",
+        "36501840",
+        "36828324",
+        "39358929",
+        "40082069",
+        "41979887"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0599",
+      "name": "Lever Seated Leg Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0600",
+      "name": "Lever Seated Leg Raise Crunch",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0620",
+      "name": "Lying Leg Raise Flat Bench",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0630",
+      "name": "Mountain Climber",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "1476",
+      "name": "One Leg Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9557,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29870422",
+        "31523343",
+        "32132843",
+        "33344003",
+        "36918403",
+        "39593440",
+        "39688914",
+        "40152281"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0648",
+      "name": "Power Clean",
+      "confidence_level": "high",
+      "confidence_score": 0.8054,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "31453932",
+        "41710440"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0652",
+      "name": "Pull-Up",
+      "confidence_level": "high",
+      "confidence_score": 0.9332,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "30694963",
+        "31171405",
+        "32715526",
+        "34125411",
+        "38288256",
+        "39716392",
+        "39860068",
+        "41441417"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3638",
+      "name": "Push to Run",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0662",
+      "name": "Push-Up",
+      "confidence_level": "high",
+      "confidence_score": 0.8684,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "35500983",
+        "36081701",
+        "38261765",
+        "41901575"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3123",
+      "name": "Resistance Band Seated Biceps Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.9367,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29533715",
+        "34873221",
+        "36856799",
+        "36976950",
+        "39364857",
+        "40757563",
+        "41307987",
+        "41730991"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3144",
+      "name": "Resistance Band Seated Straight Back Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "34027921"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0685",
+      "name": "Run",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0684",
+      "name": "Run (Equipment)",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "3219",
+      "name": "Scissor Jumps (Male)",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0689",
+      "name": "Seated Leg Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0697",
+      "name": "Self Assisted Inverse Leg Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1766",
+      "name": "Self Assisted Inverse Leg Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0696",
+      "name": "Self Assisted Inverse Leg Curl (On Floor)",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3222",
+      "name": "Semi Squat Jump (Male)",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "3656",
+      "name": "Short Stride Run",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "1759",
+      "name": "Single Leg Squat (Pistol) Male",
+      "confidence_level": "high",
+      "confidence_score": 0.9557,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29870422",
+        "31523343",
+        "32132843",
+        "33344003",
+        "36918403",
+        "39593440",
+        "39688914",
+        "40152281"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3361",
+      "name": "Skater Hops",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "2142",
+      "name": "Ski Ergometer",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "3671",
+      "name": "Ski Step",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "1359",
+      "name": "Smith Bent Over Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.5708,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "30694963"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1433",
+      "name": "Smith Front Squat (Clean Grip)",
+      "confidence_level": "high",
+      "confidence_score": 0.7897,
+      "direct_evidence_count": 2,
+      "pmids": [
+        "30188363",
+        "41743596"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0763",
+      "name": "Smith Reverse Calf Raises",
+      "confidence_level": "high",
+      "confidence_score": 0.9272,
+      "direct_evidence_count": 6,
+      "pmids": [
+        "32569127",
+        "33352879",
+        "34981201",
+        "39995432",
+        "40850937",
+        "41368977"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "1394",
+      "name": "Smith Reverse Calf Raises",
+      "confidence_level": "high",
+      "confidence_score": 0.9272,
+      "direct_evidence_count": 6,
+      "pmids": [
+        "32569127",
+        "33352879",
+        "34981201",
+        "39995432",
+        "40850937",
+        "41368977"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0768",
+      "name": "Smith Single Leg Split Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9313,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "29870422",
+        "31453938",
+        "31523343",
+        "32132843",
+        "36918403",
+        "38280014",
+        "38651426"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0770",
+      "name": "Smith Squat",
+      "confidence_level": "low",
+      "confidence_score": 0.5445,
+      "direct_evidence_count": 1,
+      "pmids": [
+        "35805313"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0775",
+      "name": "Smith Upright Row",
+      "confidence_level": "moderate",
+      "confidence_score": 0.7192,
+      "direct_evidence_count": 4,
+      "pmids": [
+        "30694963",
+        "38421430",
+        "41743596",
+        "41998766"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0795",
+      "name": "Standing Single Leg Curl",
+      "confidence_level": "high",
+      "confidence_score": 0.946,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "29394188",
+        "32252103",
+        "32461050",
+        "32569127",
+        "37917962",
+        "38515303",
+        "39162881",
+        "42264842"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3223",
+      "name": "Star Jump (Male)",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "2138",
+      "name": "Stationary Bike Run V. 3",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0798",
+      "name": "Stationary Bike Walk",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "0809",
+      "name": "Suspended Split Squat",
+      "confidence_level": "high",
+      "confidence_score": 0.9313,
+      "direct_evidence_count": 7,
+      "pmids": [
+        "29870422",
+        "31453938",
+        "31523343",
+        "32132843",
+        "36918403",
+        "38280014",
+        "38651426"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "3318",
+      "name": "Swing 360",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "2802",
+      "name": "Twisted Leg Raise",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2801",
+      "name": "Twisted Leg Raise (Female)",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "0826",
+      "name": "Vertical Leg Raise (On Parallel Bars)",
+      "confidence_level": "high",
+      "confidence_score": 0.8995,
+      "direct_evidence_count": 8,
+      "pmids": [
+        "28714788",
+        "30856100",
+        "31557703",
+        "32998273",
+        "34455371",
+        "36918403",
+        "37162423",
+        "37645001"
+      ],
+      "reason": "linked_study_requires_review"
+    },
+    {
+      "exercise_id": "2141",
+      "name": "Walk Elliptical Cross Trainer",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "3655",
+      "name": "Walking High Knees Lunge",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "3666",
+      "name": "Walking on Incline Treadmill",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "2311",
+      "name": "Walking on Stepmill",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    },
+    {
+      "exercise_id": "3637",
+      "name": "Wheel Run",
+      "confidence_level": "low",
+      "confidence_score": 0.38,
+      "direct_evidence_count": 0,
+      "pmids": [],
+      "reason": "low_confidence_without_direct_studies"
+    }
+  ]
+}

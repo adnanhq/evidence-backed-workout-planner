@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "description": "Small curated layer for exercise-versus-exercise findings where the direction is clear enough to influence catalog rankings. This is intentionally manual and bounded so comparative studies do not get misread by keyword matching.",
+    "version": 1
+  },
+  "findings": [
+    {
+      "pmid": "35819335",
+      "goal": "hypertrophy",
+      "target_muscles": ["triceps"],
+      "effect": "better",
+      "winner_aliases": [
+        "overhead triceps extension",
+        "overhead elbow extension",
+        "elbow extension training performed in the overhead",
+        "triceps overhead extension"
+      ],
+      "comparator_aliases": [
+        "neutral arm elbow extension",
+        "neutral arm triceps extension",
+        "neutral position elbow extension"
+      ],
+      "winner_adjustment": 0.035,
+      "comparator_adjustment": -0.01,
+      "finding": "Overhead-arm cable elbow extension produced substantially greater MRI-measured triceps hypertrophy than neutral-arm cable elbow extension, while strength increased similarly.",
+      "notes": "Exercise-selection signal is for triceps hypertrophy, not strength."
+    },
+    {
+      "pmid": "40082069",
+      "goal": "hypertrophy",
+      "target_muscles": ["biceps"],
+      "effect": "similar",
+      "studied_aliases": [
+        "preacher curl",
+        "bayesian curl",
+        "shoulder flexed elbow flexion",
+        "shoulder extended elbow flexion"
+      ],
+      "winner_adjustment": 0.0,
+      "comparator_adjustment": 0.0,
+      "finding": "Preacher and Bayesian cable curls both increased elbow-flexor thickness and strength, with no clear between-condition hypertrophy winner in the abstract.",
+      "notes": "Keep as direct evidence when matched, but do not rank one curl above the other from this paper alone."
+    },
+    {
+      "pmid": "40586278",
+      "goal": "hypertrophy",
+      "target_muscles": ["hamstrings"],
+      "effect": "mixed",
+      "studied_aliases": [
+        "nordic hamstring exercise",
+        "nordic hamstring curl",
+        "stiff leg deadlift",
+        "stiff legged deadlift"
+      ],
+      "winner_adjustment": 0.0,
+      "comparator_adjustment": 0.0,
+      "finding": "Nordic hamstring exercise and stiff-leg deadlift produced selective hamstring hypertrophy patterns rather than one broad exercise-selection winner.",
+      "notes": "This needs regional hamstring targeting before it should affect global hamstring rankings."
+    },
+    {
+      "pmid": "40644669",
+      "goal": "strength",
+      "target_muscles": ["hamstrings"],
+      "effect": "mixed",
+      "studied_aliases": [
+        "nordic hamstring exercise",
+        "nordic hamstring curl",
+        "stiff leg deadlift",
+        "stiff legged deadlift"
+      ],
+      "winner_adjustment": 0.0,
+      "comparator_adjustment": 0.0,
+      "finding": "Nordic hamstring exercise and stiff-leg deadlift showed strength transfer patterns that are not a simple global ranking win for either exercise.",
+      "notes": "Useful evidence for specificity and transfer, but not a simple winner-loser catalog adjustment."
+    }
+  ]
+}

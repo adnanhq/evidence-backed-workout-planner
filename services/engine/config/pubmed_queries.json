@@ -1,0 +1,202 @@
+{
+  "version": "2026-02-25",
+  "default_retmax": 30,
+  "clusters": [
+    {
+      "id": "frequency",
+      "topic": "Training frequency per muscle group",
+      "keywords": [
+        "frequency",
+        "muscle group",
+        "split routine",
+        "weekly sessions",
+        "resistance training"
+      ],
+      "queries": [
+        "resistance training frequency muscle group hypertrophy strength",
+        "weekly set distribution hypertrophy frequency randomized trial",
+        "split routine full body frequency hypertrophy meta-analysis"
+      ]
+    },
+    {
+      "id": "volume_landmarks",
+      "topic": "Volume landmarks (MEV/MAV/MRV)",
+      "keywords": [
+        "volume",
+        "dose response",
+        "weekly sets",
+        "mrv",
+        "mev",
+        "mav"
+      ],
+      "queries": [
+        "resistance training volume dose response hypertrophy meta-analysis",
+        "weekly sets per muscle hypertrophy randomized controlled trial",
+        "training volume recovery fatigue resistance training"
+      ]
+    },
+    {
+      "id": "progressive_overload",
+      "topic": "Progressive overload",
+      "keywords": [
+        "progressive overload",
+        "load progression",
+        "double progression",
+        "periodization",
+        "autoregulation"
+      ],
+      "queries": [
+        "progressive overload resistance training hypertrophy strength review",
+        "load progression resistance training randomized trial",
+        "periodization autoregulation strength training meta-analysis"
+      ]
+    },
+    {
+      "id": "rep_ranges",
+      "topic": "Rep ranges for hypertrophy vs strength",
+      "keywords": [
+        "repetition range",
+        "high load",
+        "low load",
+        "hypertrophy",
+        "strength"
+      ],
+      "queries": [
+        "low load high load resistance training hypertrophy strength meta-analysis",
+        "repetition range strength training randomized controlled trial",
+        "training to failure low load hypertrophy review"
+      ]
+    },
+    {
+      "id": "exercise_selection_lengthened",
+      "topic": "Exercise selection and lengthened position research",
+      "keywords": [
+        "exercise selection",
+        "lengthened",
+        "muscle length",
+        "long muscle length",
+        "regional hypertrophy",
+        "triceps",
+        "elbow extension",
+        "overhead"
+      ],
+      "seed_pmids": [
+        "35819335",
+        "39995432",
+        "40586278",
+        "40644669",
+        "40082069"
+      ],
+      "queries": [
+        "resistance training long muscle length hypertrophy randomized trial",
+        "regional hypertrophy exercise selection resistance training",
+        "overhead triceps extension neutral arm position hypertrophy",
+        "triceps brachii overhead neutral elbow extension hypertrophy",
+        "hip thrust squat gluteus hypertrophy randomized trial",
+        "leg extension squat quadriceps hypertrophy comparison"
+      ]
+    },
+    {
+      "id": "compound_vs_isolation",
+      "topic": "Compound vs isolation tradeoffs",
+      "keywords": [
+        "compound",
+        "isolation",
+        "single-joint",
+        "multi-joint",
+        "tradeoff"
+      ],
+      "seed_pmids": [
+        "39794667",
+        "39593465"
+      ],
+      "queries": [
+        "single-joint multi-joint resistance training hypertrophy trial",
+        "compound vs isolation exercise strength hypertrophy review",
+        "bench press triceps extension hypertrophy comparison"
+      ]
+    },
+    {
+      "id": "beginner_programming",
+      "topic": "Beginner programming principles",
+      "keywords": [
+        "novice",
+        "beginner",
+        "program design",
+        "learning effect",
+        "adherence"
+      ],
+      "queries": [
+        "novice resistance training program design guidelines",
+        "beginner strength training progression randomized trial",
+        "adherence supervised resistance training beginners"
+      ]
+    },
+    {
+      "id": "deload_protocols",
+      "topic": "Deload protocols",
+      "keywords": [
+        "deload",
+        "taper",
+        "recovery week",
+        "fatigue management",
+        "periodization"
+      ],
+      "queries": [
+        "resistance training tapering strength performance trial",
+        "planned reduction training load recovery resistance training",
+        "periodization fatigue management resistance training review"
+      ]
+    },
+    {
+      "id": "rest_periods",
+      "topic": "Rest periods",
+      "keywords": [
+        "rest interval",
+        "inter-set rest",
+        "recovery between sets",
+        "hypertrophy",
+        "strength"
+      ],
+      "queries": [
+        "rest interval resistance training hypertrophy strength meta-analysis",
+        "inter-set rest randomized resistance training trial",
+        "short rest long rest hypertrophy comparison"
+      ]
+    },
+    {
+      "id": "injury_modifications",
+      "topic": "Injury-specific training modifications",
+      "keywords": [
+        "injury",
+        "pain",
+        "modification",
+        "tendinopathy",
+        "rehabilitation",
+        "joint stress"
+      ],
+      "queries": [
+        "resistance training modification injury pain knee shoulder",
+        "tendinopathy load management resistance exercise trial",
+        "low back pain resistance exercise programming review"
+      ]
+    },
+    {
+      "id": "calisthenics_progressions",
+      "topic": "Calisthenics progressions",
+      "keywords": [
+        "calisthenics",
+        "bodyweight",
+        "progression",
+        "pull-up",
+        "push-up",
+        "skill progression"
+      ],
+      "queries": [
+        "bodyweight training progression strength hypertrophy review",
+        "pull-up push-up progression resistance training study",
+        "calisthenics program novice progression"
+      ]
+    }
+  ]
+}
