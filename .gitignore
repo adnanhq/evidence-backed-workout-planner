@@ -1,4 +1,20 @@
 .venv/
 __pycache__/
 *.pyc
-data/raw/free-exercise-db/.git/
+.env
+.env.*
+# Vendored dataset clones keep their upstream history in a renamed, untracked
+# dir so git vendors their files instead of creating broken submodule gitlinks.
+.git-vendored/
+data/demo_outputs/
+
+# Node / Next.js
+node_modules/
+apps/web/.next/
+apps/web/out/
+apps/web/next-env.d.ts
+.turbo/
+*.tsbuildinfo
+
+# OS
+.DS_Store

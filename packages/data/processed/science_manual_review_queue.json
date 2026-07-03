@@ -1,0 +1,1940 @@
+{
+  "metadata": {
+    "generated_at_utc": "2026-06-22T12:06:54+00:00",
+    "document_count": 147,
+    "source_corpus_path": "/Users/adnan/cse-499/packages/data/processed/science_corpus.json"
+  },
+  "documents": [
+    {
+      "doc_id": "pmid-28799491",
+      "pmid": "28799491",
+      "title": "Exercise Programmes for Osteoarthritis with Different Localization.",
+      "publication_year": 2018,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.325,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight",
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28799491/"
+    },
+    {
+      "doc_id": "pmid-28803796",
+      "pmid": "28803796",
+      "title": "Shoulder muscle activation patterns and levels differ between open and closed-chain abduction.",
+      "publication_year": 2018,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.47,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28803796/"
+    },
+    {
+      "doc_id": "pmid-28930870",
+      "pmid": "28930870",
+      "title": "Hamstring Myoelectrical Activity During Three Different Kettlebell Swing Exercises.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.42,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28930870/"
+    },
+    {
+      "doc_id": "pmid-29129608",
+      "pmid": "29129608",
+      "title": "No Exacerbation of Knee Joint Pain and Effusion Following Preoperative Progressive Resistance Training in Patients Scheduled for Total Knee Arthroplasty: Secondary Analyses From a Randomized Controlled Trial.",
+      "publication_year": 2018,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5175,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [
+        "participant_count_not_found"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29129608/"
+    },
+    {
+      "doc_id": "pmid-29319600",
+      "pmid": "29319600",
+      "title": "Abdominal Muscle Activation During Common Modifications of the Trunk Curl-up Exercise.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.465,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29319600/"
+    },
+    {
+      "doc_id": "pmid-29394188",
+      "pmid": "29394188",
+      "title": "Effects of Resistance Training on Fatigue-Related Domains of Quality of Life and Mood During Pregnancy: A Randomized Trial in Pregnant Women With Increased Risk of Back Pain.",
+      "publication_year": 2018,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5175,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29394188/"
+    },
+    {
+      "doc_id": "pmid-29503079",
+      "pmid": "29503079",
+      "title": "The different role of each head of the triceps brachii muscle in elbow extension.",
+      "publication_year": 2018,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.47,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29503079/"
+    },
+    {
+      "doc_id": "pmid-29504416",
+      "pmid": "29504416",
+      "title": "Effect of continuous progressive resistance training during hemodialysis on body composition, physical function and quality of life in end-stage renal disease patients: a randomized controlled trial.",
+      "publication_year": 2018,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5175,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29504416/"
+    },
+    {
+      "doc_id": "pmid-29511416",
+      "pmid": "29511416",
+      "title": "Functions of the Triceps Brachii in Humans: A Review.",
+      "publication_year": 2018,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.525,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29511416/"
+    },
+    {
+      "doc_id": "pmid-29533715",
+      "pmid": "29533715",
+      "title": "Differential effects of attentional focus strategies during long-term resistance training.",
+      "publication_year": 2018,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5175,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29533715/"
+    },
+    {
+      "doc_id": "pmid-29607736",
+      "pmid": "29607736",
+      "title": "Muscle activation and local muscular fatigue during a 12-minute rotational bridge.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.455,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29607736/"
+    },
+    {
+      "doc_id": "pmid-29769416",
+      "pmid": "29769416",
+      "title": "Endogenous systems involved in exercise-induced analgesia.",
+      "publication_year": 2018,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.3583,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29769416/"
+    },
+    {
+      "doc_id": "pmid-29870422",
+      "pmid": "29870422",
+      "title": "Muscle Activation in Unilateral Barbell Exercises: Implications for Strength Training and Rehabilitation.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29870422/"
+    },
+    {
+      "doc_id": "pmid-30011262",
+      "pmid": "30011262",
+      "title": "Mechanisms Behind Blood Flow-Restricted Training and its Effect Toward Muscle Growth.",
+      "publication_year": 2019,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.39,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30011262/"
+    },
+    {
+      "doc_id": "pmid-30013480",
+      "pmid": "30013480",
+      "title": "Higher Training Frequency Is Important for Gaining Muscular Strength Under Volume-Matched Training.",
+      "publication_year": 2018,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.31,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30013480/"
+    },
+    {
+      "doc_id": "pmid-30099751",
+      "pmid": "30099751",
+      "title": "A cellular mechanism of muscle memory facilitates mitochondrial remodelling following resistance training.",
+      "publication_year": 2018,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.31,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30099751/"
+    },
+    {
+      "doc_id": "pmid-30178303",
+      "pmid": "30178303",
+      "title": "Injury Prevention Strategies for Adolescent Cricket Pace Bowlers.",
+      "publication_year": 2018,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.375,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30178303/"
+    },
+    {
+      "doc_id": "pmid-30188363",
+      "pmid": "30188363",
+      "title": "Type 1 Muscle Fiber Hypertrophy after Blood Flow-restricted Training in Powerlifters.",
+      "publication_year": 2019,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5425,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30188363/"
+    },
+    {
+      "doc_id": "pmid-30230042",
+      "pmid": "30230042",
+      "title": "High-density electromyography activity in various hamstring exercises.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30230042/"
+    },
+    {
+      "doc_id": "pmid-30360984",
+      "pmid": "30360984",
+      "title": "A double-blind placebo controlled trial into the impacts of HMB supplementation and exercise on free-living muscle protein synthesis, muscle mass and function, in older adults.",
+      "publication_year": 2019,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5425,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30360984/"
+    },
+    {
+      "doc_id": "pmid-30405437",
+      "pmid": "30405437",
+      "title": "Leg Press vs. Smith Machine: Quadriceps Activation and Overall Perceived Effort Profiles.",
+      "publication_year": 2018,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.42,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30405437/"
+    },
+    {
+      "doc_id": "pmid-30414785",
+      "pmid": "30414785",
+      "title": "Effect of Aerobic and Resistance Exercise on Glycemic Control in Adults With Type 1 Diabetes.",
+      "publication_year": 2019,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5425,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30414785/"
+    },
+    {
+      "doc_id": "pmid-30589829",
+      "pmid": "30589829",
+      "title": "Progressive Resistance Training to Impact Physical Fitness and Body Weight in Pancreatic Cancer Patients: A Randomized Controlled Trial.",
+      "publication_year": 2019,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5425,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [
+        "participant_count_not_found"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30589829/"
+    },
+    {
+      "doc_id": "pmid-30615490",
+      "pmid": "30615490",
+      "title": "Hip-Muscle Activity in Men and Women During Resisted Side Stepping With Different Band Positions.",
+      "publication_year": 2018,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.42,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30615490/"
+    },
+    {
+      "doc_id": "pmid-30677494",
+      "pmid": "30677494",
+      "title": "The role of pallidum in the neural integrator model of cervical dystonia.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30677494/"
+    },
+    {
+      "doc_id": "pmid-30694963",
+      "pmid": "30694963",
+      "title": "Impact of Fat Grip Attachments on Muscular Strength and Neuromuscular Activation During Resistance Exercise.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30694963/"
+    },
+    {
+      "doc_id": "pmid-30747561",
+      "pmid": "30747561",
+      "title": "Rehabilitation Exercises for the Gluteus Medius Muscle Segments: An Electromyography Study.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.395,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30747561/"
+    },
+    {
+      "doc_id": "pmid-30856100",
+      "pmid": "30856100",
+      "title": "Which trunk exercise most effectively activates abdominal muscles? A comparative study of plank and isometric bilateral leg raise exercises.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30856100/"
+    },
+    {
+      "doc_id": "pmid-30961440",
+      "pmid": "30961440",
+      "title": "Perceptual changes to progressive resistance training with and without blood flow restriction.",
+      "publication_year": 2019,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5425,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [
+        "participant_count_not_found"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30961440/"
+    },
+    {
+      "doc_id": "pmid-30988856",
+      "pmid": "30988856",
+      "title": "Multi- To Single-Joint or the Reverse Exercise Order Does Not Affect Pectoralis Major Workout Performance.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30988856/"
+    },
+    {
+      "doc_id": "pmid-31136542",
+      "pmid": "31136542",
+      "title": "Comparison of Trunk Muscle Activity Between Traditional Plank Exercise and Plank Exercise With Isometric Contraction of Ankle Muscles in Subjects With Chronic Low Back Pain.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31136542/"
+    },
+    {
+      "doc_id": "pmid-31243692",
+      "pmid": "31243692",
+      "title": "Low-Intensity Resistance Training and Compression Garment in the Management of Breast Cancer-Related Lymphedema: Single-Blinded Randomized Controlled Trial.",
+      "publication_year": 2020,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5675,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31243692/"
+    },
+    {
+      "doc_id": "pmid-31355214",
+      "pmid": "31355214",
+      "title": "Surface Electromyography of the Vastus Lateralis, Biceps Femoris, and Gluteus Medius in Dogs During Stance, Walking, Trotting, and Selected Therapeutic Exercises.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.345,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31355214/"
+    },
+    {
+      "doc_id": "pmid-31356511",
+      "pmid": "31356511",
+      "title": "Comparison Between Back Squat, Romanian Deadlift, and Barbell Hip Thrust for Leg and Hip Muscle Activities During Hip Extension.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31356511/"
+    },
+    {
+      "doc_id": "pmid-31373978",
+      "pmid": "31373978",
+      "title": "Comparison of the Electromyographic Activity of the Trunk and Rectus Femoris Muscles During Traditional Crunch and Exercise Using the 5-Minute Shaper Device.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.48,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31373978/"
+    },
+    {
+      "doc_id": "pmid-31397215",
+      "pmid": "31397215",
+      "title": "Specific prime movers' excitation during free-weight bench press variations and chest press machine in competitive bodybuilders.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31397215/"
+    },
+    {
+      "doc_id": "pmid-31453932",
+      "pmid": "31453932",
+      "title": "Characteristics of the Shrug Motion and Trapezius Muscle Activity During the Power Clean.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31453932/"
+    },
+    {
+      "doc_id": "pmid-31453938",
+      "pmid": "31453938",
+      "title": "Comparison of Myoelectric Activity During a Suspension-Based and Traditional Split Squat.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.445,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31453938/"
+    },
+    {
+      "doc_id": "pmid-31498223",
+      "pmid": "31498223",
+      "title": "Muscle Activation Patterns During Variable Resistance Deadlift Training With and Without Elastic Bands.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31498223/"
+    },
+    {
+      "doc_id": "pmid-31523343",
+      "pmid": "31523343",
+      "title": "Comparisons of Single Leg Squat Variations on Lower Limb Muscle Activation and Center of Pressure Alterations.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31523343/"
+    },
+    {
+      "doc_id": "pmid-31553356",
+      "pmid": "31553356",
+      "title": "Muscular resistance, hypertrophy and strength training equally reduce adiposity, inflammation and insulin resistance in mice with diet-induced obesity.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.32,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight",
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31553356/"
+    },
+    {
+      "doc_id": "pmid-31557703",
+      "pmid": "31557703",
+      "title": "Trunk muscle activity during trunk stabilizing exercise with isometric hip rotation using electromyography and ultrasound.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31557703/"
+    },
+    {
+      "doc_id": "pmid-31594203",
+      "pmid": "31594203",
+      "title": "Effects of upper-extremity movements on electromyographic activities of selected trunk muscles during leaning forward.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.48,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31594203/"
+    },
+    {
+      "doc_id": "pmid-31733772",
+      "pmid": "31733772",
+      "title": "Electromyographic evaluation of trunk core muscles during Pilates exercise on different supporting bases.",
+      "publication_year": 2019,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.455,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31733772/"
+    },
+    {
+      "doc_id": "pmid-31800481",
+      "pmid": "31800481",
+      "title": "The Effect of Tactical Tasks and Gear on Muscle Activation of SWAT Officers.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.45,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31800481/"
+    },
+    {
+      "doc_id": "pmid-31816597",
+      "pmid": "31816597",
+      "title": "Comparison of Trunk Muscle Activity During Modified Side-Bridge Exercises and Traditional Side Bridge Exercise.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31816597/"
+    },
+    {
+      "doc_id": "pmid-31860546",
+      "pmid": "31860546",
+      "title": "Does Blood Flow Restriction Therapy in Patients Older Than Age 50 Result in Muscle Hypertrophy, Increased Strength, or Greater Physical Function? A Systematic Review.",
+      "publication_year": 2020,
+      "evidence_tier": "systematic_review",
+      "retrieval_weight": 0.606,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31860546/"
+    },
+    {
+      "doc_id": "pmid-31975359",
+      "pmid": "31975359",
+      "title": "Back Squat vs. Hip Thrust Resistance-training Programs in Well-trained Women.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31975359/"
+    },
+    {
+      "doc_id": "pmid-31983405",
+      "pmid": "31983405",
+      "title": "Sudden gait perturbations elicit sex-specific neuromuscular trunk responses in persons with low back pain.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.48,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31983405/"
+    },
+    {
+      "doc_id": "pmid-32090907",
+      "pmid": "32090907",
+      "title": "Numerical modelling of abdominal wall mechanics: The role of muscular contraction and intra-abdominal pressure.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32090907/"
+    },
+    {
+      "doc_id": "pmid-32315330",
+      "pmid": "32315330",
+      "title": "Effects of hyperoxia on dynamic muscular endurance are associated with individual whole-body endurance capacity.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32315330/"
+    },
+    {
+      "doc_id": "pmid-32401690",
+      "pmid": "32401690",
+      "title": "Lighter-Load Exercise Produces Greater Acute- and Prolonged-Fatigue in Exercised and Non-Exercised Limbs.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.3783,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32401690/"
+    },
+    {
+      "doc_id": "pmid-32423577",
+      "pmid": "32423577",
+      "title": "Upper-extremity blood flow restriction: the proximal, distal, and contralateral effects-a randomized controlled trial.",
+      "publication_year": 2020,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5675,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32423577/"
+    },
+    {
+      "doc_id": "pmid-32715526",
+      "pmid": "32715526",
+      "title": "Avoiding high-risk rotator cuff loading: Muscle force during three pull-up techniques.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32715526/"
+    },
+    {
+      "doc_id": "pmid-32823490",
+      "pmid": "32823490",
+      "title": "Placing Greater Torque at Shorter or Longer Muscle Lengths? Effects of Cable vs. Barbell Preacher Curl Training on Muscular Strength and Hypertrophy in Young Adults.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32823490/"
+    },
+    {
+      "doc_id": "pmid-32824894",
+      "pmid": "32824894",
+      "title": "An Electromyographic Analysis of Lateral Raise Variations and Frontal Raise in Competitive Bodybuilders.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32824894/"
+    },
+    {
+      "doc_id": "pmid-32853108",
+      "pmid": "32853108",
+      "title": "Physiological responses of human skeletal muscle to acute blood flow restricted exercise assessed by multimodal MRI.",
+      "publication_year": 2020,
+      "evidence_tier": "observational",
+      "retrieval_weight": 0.43,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32853108/"
+    },
+    {
+      "doc_id": "pmid-32856145",
+      "pmid": "32856145",
+      "title": "Muscle activity in asymmetric bench press among resistance-trained individuals.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32856145/"
+    },
+    {
+      "doc_id": "pmid-33005073",
+      "pmid": "33005073",
+      "title": "Abdominal muscle activation: An EMG study of the Sahrmann five-level core stability test.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.48,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33005073/"
+    },
+    {
+      "doc_id": "pmid-33009197",
+      "pmid": "33009197",
+      "title": "Greater Hamstrings Muscle Hypertrophy but Similar Damage Protection after Training at Long versus Short Muscle Lengths.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33009197/"
+    },
+    {
+      "doc_id": "pmid-33049982",
+      "pmid": "33049982",
+      "title": "Effect of Five Bench Inclinations on the Electromyographic Activity of the Pectoralis Major, Anterior Deltoid, and Triceps Brachii during the Bench Press Exercise.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.47,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33049982/"
+    },
+    {
+      "doc_id": "pmid-33059684",
+      "pmid": "33059684",
+      "title": "High-density surface electromyography maps after computer-aided training in individual with congenital transverse deficiency: a case study.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33059684/"
+    },
+    {
+      "doc_id": "pmid-33120362",
+      "pmid": "33120362",
+      "title": "Electromyographic Comparison of Flywheel Inertial Leg Curl and Nordic Hamstring Exercise Among Soccer Players.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33120362/"
+    },
+    {
+      "doc_id": "pmid-33212902",
+      "pmid": "33212902",
+      "title": "Effects of Muscle Strengthening around the Hip on Pain, Physical Function, and Gait in Elderly Patients with Total Knee Arthroplasty: A Randomized Controlled Trial.",
+      "publication_year": 2020,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5675,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33212902/"
+    },
+    {
+      "doc_id": "pmid-33239946",
+      "pmid": "33239946",
+      "title": "Muscle Size and Strength of the Lower Body in Supervised and in Combined Supervised and Unsupervised Low-Load Resistance Training.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33239946/"
+    },
+    {
+      "doc_id": "pmid-33312291",
+      "pmid": "33312291",
+      "title": "Different Shoulder Exercises Affect the Activation of Deltoid Portions in Resistance-Trained Individuals.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33312291/"
+    },
+    {
+      "doc_id": "pmid-33352879",
+      "pmid": "33352879",
+      "title": "Multi- and Single-Joint Resistance Exercises Promote Similar Plantar Flexor Activation in Resistance Trained Men.",
+      "publication_year": 2020,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33352879/"
+    },
+    {
+      "doc_id": "pmid-33378740",
+      "pmid": "33378740",
+      "title": "Electromyographic Analysis of Hip and Trunk Muscle Activity During Side Bridge Exercises in Subjects With Gluteus Medius Weakness.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.445,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33378740/"
+    },
+    {
+      "doc_id": "pmid-33392695",
+      "pmid": "33392695",
+      "title": "Does exposure to startle impact voluntary reaching movements in individuals with severe-to-moderate stroke?",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33392695/"
+    },
+    {
+      "doc_id": "pmid-33440333",
+      "pmid": "33440333",
+      "title": "Upper-Body Resistance Training Following Soccer Match Play: Compatible, Complementary, or Contraindicated?",
+      "publication_year": 2021,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.4333,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33440333/"
+    },
+    {
+      "doc_id": "pmid-33689989",
+      "pmid": "33689989",
+      "title": "Anteromedial versus posterolateral hip musculature strengthening with dose-controlled in women with patellofemoral pain: A randomized controlled trial.",
+      "publication_year": 2021,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5925,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [
+        "participant_count_not_found"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33689989/"
+    },
+    {
+      "doc_id": "pmid-33787615",
+      "pmid": "33787615",
+      "title": "Physical exercise and prevention of falls. Effects of a Pilates training method compared with a general physical activity program: A randomized controlled trial.",
+      "publication_year": 2021,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5925,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [
+        "participant_count_not_found"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33787615/"
+    },
+    {
+      "doc_id": "pmid-33826122",
+      "pmid": "33826122",
+      "title": "Equating Resistance-Training Volume Between Programs Focused on Muscle Hypertrophy.",
+      "publication_year": 2021,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.48,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33826122/"
+    },
+    {
+      "doc_id": "pmid-33887761",
+      "pmid": "33887761",
+      "title": "Muscle Activation During Single-Legged Squat Is Affected by Position of the Nonstance Limb.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.42,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33887761/"
+    },
+    {
+      "doc_id": "pmid-34027921",
+      "pmid": "34027921",
+      "title": "Effect of Rest Interval Between Sets in the Muscle Function During a Sequence of Strength Training Exercises for the Upper Body.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34027921/"
+    },
+    {
+      "doc_id": "pmid-34043987",
+      "pmid": "34043987",
+      "title": "Strength training improves insulin resistance and differently affects mitochondria in skeletal muscle and visceral adipose tissue in high-fat fed mice.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.385,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34043987/"
+    },
+    {
+      "doc_id": "pmid-34051700",
+      "pmid": "34051700",
+      "title": "Hip and Trunk Muscle Activity and Mechanics During Walking With and Without Unilateral Weight.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.395,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34051700/"
+    },
+    {
+      "doc_id": "pmid-34068059",
+      "pmid": "34068059",
+      "title": "Executive Function Improves Following Acute Exercise in Adults with Down Syndrome.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34068059/"
+    },
+    {
+      "doc_id": "pmid-34125411",
+      "pmid": "34125411",
+      "title": "No Time to Lift? Designing Time-Efficient Training Programs for Strength and Hypertrophy: A Narrative Review.",
+      "publication_year": 2021,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.48,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34125411/"
+    },
+    {
+      "doc_id": "pmid-34334373",
+      "pmid": "34334373",
+      "title": "Comparison among low intensity bridge exercises using suspension devices based on muscle activity and subjective difficulty.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.53,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34334373/"
+    },
+    {
+      "doc_id": "pmid-34348792",
+      "pmid": "34348792",
+      "title": "Efficacy of low-load resistance training combined with blood flow restriction vs. high-load resistance training on sarcopenia among community-dwelling older Chinese people: study protocol for a 3-arm randomized controlled trial.",
+      "publication_year": 2021,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.5925,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34348792/"
+    },
+    {
+      "doc_id": "pmid-34391262",
+      "pmid": "34391262",
+      "title": "Acute effect of inhibitory kinesio-tape of the upper trapezius on lower trapezius muscle excitation in healthy shoulders.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4783,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34391262/"
+    },
+    {
+      "doc_id": "pmid-34391276",
+      "pmid": "34391276",
+      "title": "Activation of the gluteus maximus, gluteus medius and tensor fascia lata muscles during hip internal and external rotation exercises at three hip flexion postures.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.395,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34391276/"
+    },
+    {
+      "doc_id": "pmid-34397401",
+      "pmid": "34397401",
+      "title": "Validation and comparison of trunk muscle activities in male participants during exercise using an innovative device and abdominal bracing maneuvers.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.53,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34397401/"
+    },
+    {
+      "doc_id": "pmid-34455371",
+      "pmid": "34455371",
+      "title": "Differential activation of psoas major and rectus femoris during active straight leg raise to end range.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34455371/"
+    },
+    {
+      "doc_id": "pmid-34822356",
+      "pmid": "34822356",
+      "title": "Impact of Training Protocols on Lifting Velocity Recovery in Resistance Trained Males and Females.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.3783,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34822356/"
+    },
+    {
+      "doc_id": "pmid-34873221",
+      "pmid": "34873221",
+      "title": "Resistance training induces similar adaptations of upper and lower-body muscles between sexes.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34873221/"
+    },
+    {
+      "doc_id": "pmid-34886530",
+      "pmid": "34886530",
+      "title": "The Relationship of Trunk Muscle Activation and Core Stability: A Biomechanical Analysis of Pilates-Based Stabilization Exercise.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34886530/"
+    },
+    {
+      "doc_id": "pmid-35202059",
+      "pmid": "35202059",
+      "title": "Chest Exercises: Movement and Loading of Shoulder, Elbow and Wrist Joints.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35202059/"
+    },
+    {
+      "doc_id": "pmid-35234025",
+      "pmid": "35234025",
+      "title": "Exercise-mediated reinnervation of skeletal muscle in elderly people: An update.",
+      "publication_year": 2022,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.425,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight",
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35234025/"
+    },
+    {
+      "doc_id": "pmid-35247203",
+      "pmid": "35247203",
+      "title": "Methods for Controlling and Reporting Resistance Training Proximity to Failure: Current Issues and Future Directions.",
+      "publication_year": 2022,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.505,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35247203/"
+    },
+    {
+      "doc_id": "pmid-35255478",
+      "pmid": "35255478",
+      "title": "The Validity of Perceived Recovery Status as a Marker of Daily Recovery Following a High-Volume Back-Squat Protocol.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4033,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35255478/"
+    },
+    {
+      "doc_id": "pmid-35258268",
+      "pmid": "35258268",
+      "title": "Effects of Local Vibration on Dynamic Strength Training.",
+      "publication_year": 2021,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.385,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35258268/"
+    },
+    {
+      "doc_id": "pmid-35271124",
+      "pmid": "35271124",
+      "title": "Electromyographic Comparison of an Abdominal Rise on a Ball with a Traditional Crunch.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.49,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35271124/"
+    },
+    {
+      "doc_id": "pmid-35291926",
+      "pmid": "35291926",
+      "title": "Response to: Letter to the editor concerning the article \"The role of exercise selection in regional muscle hypertrophy: A randomized controlled trial\" by Zabaleta-Korta et al. (2021).",
+      "publication_year": 2022,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.6425,
+      "manual_review_reasons": [
+        "missing_abstract"
+      ],
+      "data_quality_notes": [
+        "participant_count_not_found"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35291926/"
+    },
+    {
+      "doc_id": "pmid-35333210",
+      "pmid": "35333210",
+      "title": "Sex Differences May Exist for Performance Fatigue but Not Recovery After Single-Joint Upper-Body and Lower-Body Resistance Exercise.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4033,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35333210/"
+    },
+    {
+      "doc_id": "pmid-35442176",
+      "pmid": "35442176",
+      "title": "Influence of HIIRT With Fixed and Self-Selected Recovery Intervals on Physiological, Affective, and Enjoyment Responses.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4283,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35442176/"
+    },
+    {
+      "doc_id": "pmid-35500965",
+      "pmid": "35500965",
+      "title": "Hip abduction machine is better than free weights to target the gluteus medius while minimizing tensor fascia latae activation.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35500965/"
+    },
+    {
+      "doc_id": "pmid-35500983",
+      "pmid": "35500983",
+      "title": "Core musculature co-contraction during suspension training exercises.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.53,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35500983/"
+    },
+    {
+      "doc_id": "pmid-35658845",
+      "pmid": "35658845",
+      "title": "Towards an improved understanding of proximity-to-failure in resistance training and its influence on skeletal muscle hypertrophy, neuromuscular fatigue, muscle damage, and perceived discomfort: A scoping review.",
+      "publication_year": 2022,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.4583,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35658845/"
+    },
+    {
+      "doc_id": "pmid-35805313",
+      "pmid": "35805313",
+      "title": "Ischemic Preconditioning with High and Low Pressure Enhances Maximum Strength and Modulates Heart Rate Variability.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.47,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35805313/"
+    },
+    {
+      "doc_id": "pmid-36078788",
+      "pmid": "36078788",
+      "title": "Effect of Pelvic Floor Workout on Pelvic Floor Muscle Function Recovery of Postpartum Women: Protocol for a Randomized Controlled Trial.",
+      "publication_year": 2022,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.6175,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36078788/"
+    },
+    {
+      "doc_id": "pmid-36110262",
+      "pmid": "36110262",
+      "title": "Comparison of abdominal muscle activity with various verbal instructions and onset activity analysis during draw-in maneuver.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.49,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36110262/"
+    },
+    {
+      "doc_id": "pmid-36135425",
+      "pmid": "36135425",
+      "title": "Surface Electromyographic Activity of the Rectus Abdominis and External Oblique during Isometric and Dynamic Exercises.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.49,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36135425/"
+    },
+    {
+      "doc_id": "pmid-36191860",
+      "pmid": "36191860",
+      "title": "Home-based respiratory muscle training on quality of life and exercise tolerance in long-term post-COVID-19: Randomized controlled trial.",
+      "publication_year": 2023,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.6425,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36191860/"
+    },
+    {
+      "doc_id": "pmid-36343624",
+      "pmid": "36343624",
+      "title": "Physiological Demands and Muscle Activity of \"Track-Work\" Riding in Apprentice Jockeys.",
+      "publication_year": 2022,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.49,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36343624/"
+    },
+    {
+      "doc_id": "pmid-36539159",
+      "pmid": "36539159",
+      "title": "Effects of acute resistance exercise with different loads on appetite, appetite hormones and autonomic nervous system responses in healthy young men.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.435,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36539159/"
+    },
+    {
+      "doc_id": "pmid-36584157",
+      "pmid": "36584157",
+      "title": "Physiological adaptations and myocellular stress in short-term, high-frequency blood flow restriction training: A scoping review.",
+      "publication_year": 2022,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.425,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight",
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36584157/"
+    },
+    {
+      "doc_id": "pmid-36776038",
+      "pmid": "36776038",
+      "title": "Electromyographic analysis of the three subdivisions of the gluteus medius during Wall Press Exercise and Figure-of-Four Position.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.445,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36776038/"
+    },
+    {
+      "doc_id": "pmid-36791515",
+      "pmid": "36791515",
+      "title": "The effect of muscle atrophy in people with unilateral transtibial amputation for three activities: Gait alone does not tell the whole story.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.395,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight",
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36791515/"
+    },
+    {
+      "doc_id": "pmid-36976952",
+      "pmid": "36976952",
+      "title": "Motion Analysis of Core Stabilization Exercise in Women: Kinematics and Electromyographic Analysis.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36976952/"
+    },
+    {
+      "doc_id": "pmid-36998986",
+      "pmid": "36998986",
+      "title": "Differing hypertrophy patterns from open and closed kinetic chain training affect quadriceps femoris center of mass and moment of inertia.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.445,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36998986/"
+    },
+    {
+      "doc_id": "pmid-37002854",
+      "pmid": "37002854",
+      "title": "Importance of training volume during intensified training in elite cyclists: Maintained vs. reduced volume at moderate intensity.",
+      "publication_year": 2024,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4533,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37002854/"
+    },
+    {
+      "doc_id": "pmid-37004379",
+      "pmid": "37004379",
+      "title": "Walking slope and heavy backpack loads affect torso muscle activity and kinematics.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.515,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37004379/"
+    },
+    {
+      "doc_id": "pmid-37039734",
+      "pmid": "37039734",
+      "title": "Hypoxia Does Not Impair Resistance Exercise Performance or Amplify Post-Exercise Fatigue.",
+      "publication_year": 2024,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4533,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37039734/"
+    },
+    {
+      "doc_id": "pmid-37104630",
+      "pmid": "37104630",
+      "title": "Clinically Relevant Decreases in Neck/Shoulder Pain Among Office Workers Are Associated With Strength Training Adherence and Exercise Compliance: Explorative Analyses From a Randomized Controlled Trial.",
+      "publication_year": 2023,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.6425,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37104630/"
+    },
+    {
+      "doc_id": "pmid-37335582",
+      "pmid": "37335582",
+      "title": "Influence of different recovery intervals on time under tension, total training volume, and fatigue index in horizontal bench press exercise in young male wrestling athletes.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4283,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37335582/"
+    },
+    {
+      "doc_id": "pmid-37368569",
+      "pmid": "37368569",
+      "title": "Electromyographic and Stabilometric Analysis of the Static and Dynamic \"Standing Bird Dog\" Exercise.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.445,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37368569/"
+    },
+    {
+      "doc_id": "pmid-37417993",
+      "pmid": "37417993",
+      "title": "Is the function of the core muscles affected during pregnancy?",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.475,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37417993/"
+    },
+    {
+      "doc_id": "pmid-37458024",
+      "pmid": "37458024",
+      "title": "An electromyographical comparison of torso muscle activity and ratio during modified side bridge exercises.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.515,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37458024/"
+    },
+    {
+      "doc_id": "pmid-37559762",
+      "pmid": "37559762",
+      "title": "Regional Hypertrophy: The Effect of Exercises at Long and Short Muscle Lengths in Recreationally Trained Women.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.445,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37559762/"
+    },
+    {
+      "doc_id": "pmid-37719509",
+      "pmid": "37719509",
+      "title": "Electromyography (EMG) Analysis of Multi-Regional Lower Extremity and Trunk Musculature During Sidelying Hip Abduction With Frontal Plane Stabilization.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37719509/"
+    },
+    {
+      "doc_id": "pmid-37734743",
+      "pmid": "37734743",
+      "title": "Can the Copenhagen Adduction Exercise Prevent Groin Injuries in Soccer Players? A Critically Appraised Topic.",
+      "publication_year": 2024,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37734743/"
+    },
+    {
+      "doc_id": "pmid-37754456",
+      "pmid": "37754456",
+      "title": "Decoding Hip Muscle Activation: A Comparative Electromyographic Analysis of Turn-Out Bent Knee Pulse and Single-Leg Banded Glute Bridge Exercises in Healthy Female Subjects.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.395,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight",
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37754456/"
+    },
+    {
+      "doc_id": "pmid-38093908",
+      "pmid": "38093908",
+      "title": "Effects of loading positions on the activation of trunk and hip muscles during flywheel and dumbbell single-leg Romanian deadlift exercises.",
+      "publication_year": 2023,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.445,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38093908/"
+    },
+    {
+      "doc_id": "pmid-38114934",
+      "pmid": "38114934",
+      "title": "Comparing the efficacy of low-load resistance exercise combined with blood flow restriction versus conventional-load resistance exercise in Chinese community-dwelling older people with sarcopenic obesity: a study protocol for a randomised controlled trial.",
+      "publication_year": 2023,
+      "evidence_tier": "rct",
+      "retrieval_weight": 0.6425,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38114934/"
+    },
+    {
+      "doc_id": "pmid-38689585",
+      "pmid": "38689585",
+      "title": "High-Density Electromyography Excitation in Front vs. Back Lat Pull-Down Prime Movers.",
+      "publication_year": 2024,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38689585/"
+    },
+    {
+      "doc_id": "pmid-38875264",
+      "pmid": "38875264",
+      "title": "Changes in muscle activation with graded surfaces during canter in Thoroughbred horses on a treadmill.",
+      "publication_year": 2024,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.47,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38875264/"
+    },
+    {
+      "doc_id": "pmid-39401188",
+      "pmid": "39401188",
+      "title": "Acute cardiovascular responses of postmenopausal women to resistance training sessions differing in set configuration: A study protocol for a crossover trial.",
+      "publication_year": 2024,
+      "evidence_tier": "controlled_trial",
+      "retrieval_weight": 0.6125,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39401188/"
+    },
+    {
+      "doc_id": "pmid-39593440",
+      "pmid": "39593440",
+      "title": "The relationship of hip strength and dynamic knee valgus during single leg squat in physically active females.",
+      "publication_year": 2024,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39593440/"
+    },
+    {
+      "doc_id": "pmid-39593551",
+      "pmid": "39593551",
+      "title": "Characteristics of electromyographic activity during yoga-applied stabilization exercises.",
+      "publication_year": 2024,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.54,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39593551/"
+    },
+    {
+      "doc_id": "pmid-39593678",
+      "pmid": "39593678",
+      "title": "External focus instruction using a soft paper balloon on muscle activation patterns in isometric hip abduction exercises: A comparative analysis with external resistance tools.",
+      "publication_year": 2024,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39593678/"
+    },
+    {
+      "doc_id": "pmid-39652049",
+      "pmid": "39652049",
+      "title": "The impact of concurrent training in team sports and soccer.",
+      "publication_year": 2025,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.5333,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39652049/"
+    },
+    {
+      "doc_id": "pmid-39688914",
+      "pmid": "39688914",
+      "title": "Hip and knee muscles co-activation ratio during hip-focused exercises: a multichannel surface electromyography study.",
+      "publication_year": 2025,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.445,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight",
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39688914/"
+    },
+    {
+      "doc_id": "pmid-39728238",
+      "pmid": "39728238",
+      "title": "Acute Responses of Low-Load Resistance Exercise with Blood Flow Restriction.",
+      "publication_year": 2024,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4533,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39728238/"
+    },
+    {
+      "doc_id": "pmid-39882379",
+      "pmid": "39882379",
+      "title": "Effects of static stretching and walking during inter-set intervals of resistance training on muscle fatigue of the quadriceps.",
+      "publication_year": 2024,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4533,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39882379/"
+    },
+    {
+      "doc_id": "pmid-40064628",
+      "pmid": "40064628",
+      "title": "Comparison of Kettlebell and Cycling Exercise on Heart Rate Variability.",
+      "publication_year": 2025,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40064628/"
+    },
+    {
+      "doc_id": "pmid-40152281",
+      "pmid": "40152281",
+      "title": "Effects of modified hip airplane exercise on gluteal muscle activation in healthy individuals.",
+      "publication_year": 2025,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.495,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40152281/"
+    },
+    {
+      "doc_id": "pmid-40323412",
+      "pmid": "40323412",
+      "title": "Acute neuromuscular fatigue, hormonal responses, and recovery in males during high-volume resistance exercises: Smith machine back squat vs horizontal leg press.",
+      "publication_year": 2025,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.4783,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40323412/"
+    },
+    {
+      "doc_id": "pmid-40432907",
+      "pmid": "40432907",
+      "title": "Integration of resistance exercise into a multimodal approach to prehabilitation for patients with sarcopenia prior to surgery: a narrative review.",
+      "publication_year": 2025,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.54,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40432907/"
+    },
+    {
+      "doc_id": "pmid-41102590",
+      "pmid": "41102590",
+      "title": "Periodizing Exercise Medicine Prescription for Patients with Cancer: A Narrative Opinion.",
+      "publication_year": 2025,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.54,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41102590/"
+    },
+    {
+      "doc_id": "pmid-41133555",
+      "pmid": "41133555",
+      "title": "High Intensity Functional Training in Hybrid Competitions: A Scoping Review of Performance Models and Physiological Adaptations.",
+      "publication_year": 2025,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.5333,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41133555/"
+    },
+    {
+      "doc_id": "pmid-41209855",
+      "pmid": "41209855",
+      "title": "Most Common Injuries in Resistance Training: Mechanisms, Therapeutic Interventions, and Preventive Strategies.",
+      "publication_year": 2025,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.54,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41209855/"
+    },
+    {
+      "doc_id": "pmid-41361993",
+      "pmid": "41361993",
+      "title": "Resistance training-induced adaptations in the neuromuscular system: Physiological mechanisms and implications for human performance.",
+      "publication_year": 2026,
+      "evidence_tier": "narrative_review",
+      "retrieval_weight": 0.525,
+      "manual_review_reasons": [
+        "low_topic_relevance_low_weight",
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41361993/"
+    },
+    {
+      "doc_id": "pmid-41487958",
+      "pmid": "41487958",
+      "title": "Asymmetry of muscle co-activation during the two-armed kettlebell swing: insights into neuromuscular stability.",
+      "publication_year": 2025,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.545,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41487958/"
+    },
+    {
+      "doc_id": "pmid-41527566",
+      "pmid": "41527566",
+      "title": "The effects of biological sex on fatigue during and recovery from resistance exercise.",
+      "publication_year": 2026,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.5033,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41527566/"
+    },
+    {
+      "doc_id": "pmid-41967361",
+      "pmid": "41967361",
+      "title": "Is the plank exercise suitable for Everyone? An electromyographic comparison between trained and untrained individuals.",
+      "publication_year": 2026,
+      "evidence_tier": "other",
+      "retrieval_weight": 0.52,
+      "manual_review_reasons": [
+        "lower_evidence_tier_low_weight"
+      ],
+      "data_quality_notes": [],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41967361/"
+    }
+  ]
+}

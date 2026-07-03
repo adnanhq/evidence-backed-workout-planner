@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- Neutrals (warm-cool slate, airy) --- */
+  --color-bg: #fcfcfd;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f6f7f9;
+  --color-border: #e7e9ee;
+  --color-border-strong: #d5d9e0;
+  --color-ink: #15191e;
+  --color-muted: #5b6573;
+  --color-subtle: #8a94a3;
+
+  /* --- Accent: deep teal (single brand accent) --- */
+  --color-accent: #0f766e;
+  --color-accent-hover: #0b5e57;
+  --color-accent-press: #094f49;
+  --color-accent-subtle: #ecf6f4;
+  --color-accent-fg: #ffffff;
+
+  /* --- Semantic --- */
+  --color-warning: #b45309;
+  --color-warning-subtle: #fbf3e6;
+  --color-success: #15803d;
+  --color-danger: #b42318;
+
+  /* --- Dark sections ("dark moments") + on-dark text --- */
+  --color-ink-surface: #0b0f12;
+  --color-ink-surface-2: #0f161a;
+  --color-on-dark: #f3f5f7;
+  --color-on-dark-muted: #aab3bd;
+  --color-on-dark-subtle: #79838f;
+  --color-on-dark-border: rgba(255, 255, 255, 0.1);
+  --color-on-dark-border-strong: rgba(255, 255, 255, 0.16);
+  --color-accent-on-dark: #5eead4;
+
+  /* --- Decorative glow hues (gradients/glows only — never UI text) --- */
+  --color-glow-teal: #14b8a6;
+  --color-glow-accent: #6366f1;
+
+  /* --- Type --- */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-inter-tight), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, "JetBrains Mono", monospace;
+
+  /* --- Radii --- */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+
+  /* --- Shadows (soft, premium, low-spread) --- */
+  --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-sm: 0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-md: 0 4px 16px -6px rgba(16, 24, 40, 0.12);
+  --shadow-card: 0 1px 0 #eff1f4, 0 12px 32px -18px rgba(16, 24, 40, 0.18);
+  --shadow-lift: 0 28px 60px -30px rgba(15, 118, 110, 0.32);
+  --shadow-glow-teal: 0 18px 50px -22px rgba(20, 184, 166, 0.45);
+  --shadow-on-dark: 0 24px 60px -28px rgba(0, 0, 0, 0.6);
+
+  /* --- Motion --- */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* --- Containers --- */
+  --container-page: 75rem;
+}
+
+:root {
+  color-scheme: light;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background-color: #0f766e;
+    color: #ffffff;
+  }
+  h1, h2, h3 {
+    letter-spacing: -0.021em;
+  }
+}
+
+/* Decorative hairline grid (aria-hidden backgrounds) */
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(15, 25, 30, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 25, 30, 0.035) 1px, transparent 1px);
+  background-size: 58px 58px;
+}
+
+/* Decorative hairline grid for dark backgrounds */
+@utility bg-grid-dark {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 58px 58px;
+}
+
+/* Soft aurora / gradient mesh for dark "moments" — apply to an aria-hidden layer */
+@utility aurora {
+  background-image:
+    radial-gradient(60% 50% at 18% 0%, rgba(20, 184, 166, 0.22), transparent 70%),
+    radial-gradient(55% 50% at 85% 12%, rgba(99, 102, 241, 0.16), transparent 72%),
+    radial-gradient(50% 45% at 50% 108%, rgba(20, 184, 166, 0.1), transparent 70%);
+}
+
+/* Frosted glass card (light surfaces) */
+@utility glass {
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Frosted glass strip on dark surfaces */
+@utility glass-dark {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid var(--color-on-dark-border);
+}
+
+/* Tabular figures for data (prescriptions, ranks, PMIDs) */
+@utility tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
