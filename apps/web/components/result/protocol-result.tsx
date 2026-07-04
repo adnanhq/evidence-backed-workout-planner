@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { LayoutList, FileText, Sparkles, Cog } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { GOAL_LABELS, equipmentLabel, splitLabel } from "@/lib/labels";
+import { protocolRecapLine } from "@/lib/labels";
 import type { GenerateResponse } from "@/types/protocol";
 import { SessionCard } from "./session-card";
 import { EvidenceAppendix } from "./evidence-appendix";
@@ -23,15 +23,7 @@ export function ProtocolResult({
   regenerating?: boolean;
 }) {
   const [tab, setTab] = useState<"protocol" | "markdown">("protocol");
-  const req = data.request;
-  const recap = [
-    GOAL_LABELS[req.goal] ?? req.goal,
-    `${req.sessions} ${req.sessions === 1 ? "session" : "sessions"}/week`,
-    data.splitSummary ?? splitLabel(req.splitTemplate),
-    req.equipment.length ? req.equipment.map(equipmentLabel).join(", ") : "any equipment",
-  ]
-    .filter(Boolean)
-    .join("  ·  ");
+  const recap = protocolRecapLine(data);
 
   const hasMarkdown = Boolean(data.markdown);
 
@@ -61,7 +53,7 @@ export function ProtocolResult({
             )}
           </div>
           <ResultToolbar
-            markdown={data.markdown}
+            data={data}
             onRegenerate={onRegenerate}
             onTweak={onTweak}
             regenerating={regenerating}

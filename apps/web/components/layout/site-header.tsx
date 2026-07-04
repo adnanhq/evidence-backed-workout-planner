@@ -43,20 +43,28 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
-          {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={cn(
-                "rounded-md px-3.5 py-2 text-sm font-medium transition-colors",
-                onDark
-                  ? "text-on-dark/75 hover:text-on-dark"
-                  : "text-muted hover:text-ink",
-              )}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {NAV.map((item) => {
+            const active =
+              pathname === item.href || pathname.startsWith(`${item.href}/`);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "px-3.5 py-2 text-sm font-medium decoration-1 underline-offset-[10px] transition-colors",
+                  onDark
+                    ? "text-on-dark/75 decoration-on-dark-border-strong hover:text-on-dark hover:underline"
+                    : "text-muted decoration-border-strong hover:text-ink hover:underline",
+                  active &&
+                    (onDark
+                      ? "text-on-dark underline decoration-accent-on-dark"
+                      : "text-ink underline decoration-accent"),
+                )}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-2">

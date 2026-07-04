@@ -1,4 +1,5 @@
 import { Hero } from "@/components/landing/hero";
+import { CorpusTicker } from "@/components/landing/corpus-ticker";
 import { StatBand } from "@/components/landing/stat-band";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Methodology } from "@/components/landing/methodology";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <CorpusTicker />
       <StatBand />
       <HowItWorks />
       <Methodology />

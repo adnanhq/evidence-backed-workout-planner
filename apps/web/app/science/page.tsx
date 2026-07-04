@@ -145,7 +145,7 @@ export default function SciencePage() {
       <Section className="pt-12 sm:pt-16">
         <div className="max-w-3xl">
           <Eyebrow>Methodology</Eyebrow>
-          <h1 className="mt-3 font-display text-[2.3rem] font-semibold leading-tight text-ink sm:text-5xl">
+          <h1 className="mt-3 font-heading text-[2.3rem] font-semibold leading-tight text-ink sm:text-5xl">
             The science behind Protocol
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-muted">

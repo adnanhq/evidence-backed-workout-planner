@@ -1,23 +1,26 @@
-import { Reveal } from "@/components/layout/reveal";
+import { CountUp } from "./count-up";
 
 const STATS = [
-  { n: "1,324", l: "exercises analyzed" },
-  { n: "502", l: "peer-reviewed studies" },
-  { n: "RCT-tier", l: "evidence grading" },
-  { n: "8", l: "joint-safety filters" },
+  { value: 1324, label: "exercises analyzed" },
+  { value: 502, label: "peer-reviewed studies" },
+  { value: 103, label: "PubMed queries" },
+  { value: 147, label: "flagged for review" },
 ];
 
 export function StatBand() {
   return (
-    <div className="border-y border-border bg-surface">
-      <div className="mx-auto grid max-w-[var(--container-page)] grid-cols-2 divide-x divide-y divide-border px-0 sm:grid-cols-4 sm:divide-y-0">
-        {STATS.map((s, i) => (
-          <Reveal key={s.l} delay={i * 0.06} className="px-6 py-9 text-center">
-            <div className="tnum font-mono text-3xl font-semibold text-ink sm:text-4xl">
-              {s.n}
+    <div className="border-b border-border bg-surface">
+      <div className="mx-auto grid max-w-[var(--container-page)] grid-cols-2 divide-x divide-y divide-border sm:grid-cols-4 sm:divide-y-0">
+        {STATS.map((s) => (
+          <div key={s.label} className="px-6 py-10 sm:px-8">
+            <CountUp
+              value={s.value}
+              className="tnum block font-mono text-5xl font-semibold tracking-tight text-ink sm:text-6xl"
+            />
+            <div className="mt-3 font-mono text-[0.7rem] uppercase tracking-[0.16em] text-subtle">
+              {s.label}
             </div>
-            <div className="mt-1.5 text-[0.82rem] text-muted">{s.l}</div>
-          </Reveal>
+          </div>
         ))}
       </div>
     </div>

@@ -100,7 +100,7 @@ export function ProtocolView() {
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent-subtle">
             <FlaskConical className="h-6 w-6 text-accent" />
           </div>
-          <h1 className="mt-4 font-display text-2xl font-semibold text-ink">
+          <h1 className="mt-4 font-heading text-2xl font-semibold text-ink">
             No protocol to show yet
           </h1>
           <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted">

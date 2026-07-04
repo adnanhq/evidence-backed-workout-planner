@@ -66,7 +66,7 @@ export function ExerciseDetailView({ id }: { id: string }) {
       </Link>
 
       <header className="mt-5 border-b border-border pb-6">
-        <h1 className="font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+        <h1 className="font-heading text-3xl font-semibold leading-tight text-ink sm:text-4xl">
           {ex.name}
         </h1>
         <div className="mt-3 flex flex-wrap items-center gap-2">

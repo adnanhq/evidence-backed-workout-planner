@@ -41,7 +41,8 @@
   /* --- Type --- */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display: var(--font-inter-tight), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, "JetBrains Mono", monospace;
+  --font-heading: var(--font-space-grotesk), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, "Geist Mono", monospace;
 
   /* --- Radii --- */
   --radius-xs: 0.25rem;
@@ -60,8 +61,26 @@
   --shadow-glow-teal: 0 18px 50px -22px rgba(20, 184, 166, 0.45);
   --shadow-on-dark: 0 24px 60px -28px rgba(0, 0, 0, 0.6);
 
+  /* --- Editorial display scale (type is the graphic) --- */
+  --text-display: clamp(3.25rem, 7.5vw, 6.5rem);
+  --text-display--line-height: 0.98;
+  --text-display--letter-spacing: -0.03em;
+  --text-display--font-weight: 600;
+
+  --text-display-2: clamp(2.25rem, 4.5vw, 3.5rem);
+  --text-display-2--line-height: 1.04;
+  --text-display-2--letter-spacing: -0.025em;
+  --text-display-2--font-weight: 600;
+
   /* --- Motion --- */
   --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-marquee: marquee 70s linear infinite;
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 
   /* --- Containers --- */
   --container-page: 75rem;
@@ -118,12 +137,9 @@
     radial-gradient(50% 45% at 50% 108%, rgba(20, 184, 166, 0.1), transparent 70%);
 }
 
-/* Frosted glass card (light surfaces) */
-@utility glass {
-  background-color: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+/* Horizontal edge fade for scrolling strips (corpus ticker) */
+@utility mask-fade-x {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
 }
 
 /* Frosted glass strip on dark surfaces */

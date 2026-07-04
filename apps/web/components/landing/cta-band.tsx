@@ -1,35 +1,45 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { Section } from "@/components/layout/section";
 import { Reveal } from "@/components/layout/reveal";
 import { buttonClasses } from "@/components/ui/button";
+import { FootnoteBand, Sup } from "./footnote";
 
 export function CtaBand() {
   return (
-    <Section className="py-20">
-      <Reveal>
-        <div className="relative isolate overflow-hidden rounded-2xl bg-ink-surface px-6 py-16 text-center text-on-dark shadow-on-dark sm:px-12">
-          <div aria-hidden className="pointer-events-none absolute inset-0">
-            <div className="aurora absolute inset-0" />
-            <div className="bg-grid-dark absolute inset-0 opacity-50 [mask-image:radial-gradient(60%_60%_at_50%_50%,black,transparent)]" />
-          </div>
-          <div className="relative">
-            <h2 className="mx-auto max-w-2xl font-display text-3xl font-semibold leading-tight text-on-dark sm:text-[2.6rem]">
-              Stop guessing. Start training on evidence.
-            </h2>
-            <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-on-dark-muted">
-              Build a weekly protocol where every set is traceable to the research —
-              in under a minute.
-            </p>
-            <Link
-              href="/build"
-              className={buttonClasses("primary", "lg", "mt-8 shadow-glow-teal")}
-            >
-              Build your protocol <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </div>
-      </Reveal>
-    </Section>
+    <section className="relative isolate overflow-hidden rounded-t-[1.5rem] bg-ink-surface text-on-dark sm:rounded-t-[2rem]">
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="aurora absolute inset-0" />
+        <div className="bg-grid-dark absolute inset-0 opacity-50 [mask-image:radial-gradient(70%_70%_at_50%_30%,black,transparent)]" />
+      </div>
+
+      <div className="relative mx-auto w-full max-w-[var(--container-page)] px-5 py-28 sm:px-8 sm:py-36">
+        <Reveal>
+          <h2 className="max-w-[14ch] font-display text-display text-on-dark">
+            Train on the record.
+            <Sup n={2} targetId="fn-2" />
+          </h2>
+          <Link
+            href="/build"
+            className={buttonClasses("primary", "lg", "mt-12 shadow-glow-teal")}
+          >
+            Build your protocol <ArrowRight className="h-4 w-4" />
+          </Link>
+        </Reveal>
+
+        <FootnoteBand
+          tone="dark"
+          className="mt-24"
+          items={[
+            {
+              n: 2,
+              id: "fn-2",
+              label:
+                "Every citation resolves to PubMed — 502 graded studies; 147 flagged for manual review and labeled as such.",
+            },
+          ]}
+          aside="No opinions were consulted"
+        />
+      </div>
+    </section>
   );
 }

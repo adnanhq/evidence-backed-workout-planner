@@ -1,6 +1,6 @@
-import { ChevronDown } from "lucide-react";
-import { Eyebrow, Section } from "@/components/layout/section";
+import { Section } from "@/components/layout/section";
 import { Reveal } from "@/components/layout/reveal";
+import { LedgerHeading } from "./ledger";
 
 const FAQS = [
   {
@@ -12,11 +12,11 @@ const FAQS = [
     a: "They rank how reliable a study is. Meta-analyses and randomized controlled trials (RCTs) are the strongest; narrative reviews and observational studies are weaker. We always show the tier.",
   },
   {
-    q: "What if there isn't strong evidence for an exercise?",
+    q: "What if the evidence is weak?",
     a: "We tell you. Exercises chosen on biomechanical reasoning rather than a direct study are labeled, and weaker citations are flagged 'lower-trust' — we never hide it.",
   },
   {
-    q: "Can I pick my equipment and protect certain joints?",
+    q: "Can I protect specific joints?",
     a: "Yes. Tell us what equipment you have and which joints to ease load on, and we only suggest exercises that fit — down-ranking ones that stress the joints you flag.",
   },
   {
@@ -27,27 +27,35 @@ const FAQS = [
 
 export function Faq() {
   return (
-    <Section className="py-24 sm:py-28">
-      <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+    <Section className="py-24 sm:py-32">
+      <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
         <Reveal>
-          <Eyebrow>FAQ</Eyebrow>
-          <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-ink sm:text-[2.5rem]">
-            Questions, answered honestly.
-          </h2>
-          <p className="mt-3 text-[0.98rem] leading-relaxed text-muted">
-            How the evidence works — and where its limits are.
-          </p>
+          <LedgerHeading index="04" label="FAQ" title="Questions, answered honestly.">
+            <p>How the evidence works — and where its limits are.</p>
+          </LedgerHeading>
         </Reveal>
 
         <Reveal delay={0.06}>
-          <div className="divide-y divide-border overflow-hidden rounded-xl border border-border bg-surface shadow-card">
-            {FAQS.map((f) => (
-              <details key={f.q} className="group px-5">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 text-[0.98rem] font-medium text-ink [&::-webkit-details-marker]:hidden">
-                  {f.q}
-                  <ChevronDown className="h-4 w-4 shrink-0 text-subtle transition-transform group-open:rotate-180" />
+          <div>
+            {FAQS.map((f, i) => (
+              <details key={f.q} className="group border-t border-border last:border-b">
+                <summary className="grid cursor-pointer list-none grid-cols-[3.5rem_1fr_auto] items-baseline gap-3 py-5 [&::-webkit-details-marker]:hidden">
+                  <span className="tnum font-mono text-sm text-subtle">
+                    04.{i + 1}
+                  </span>
+                  <span className="text-[0.98rem] font-medium text-ink">
+                    {f.q}
+                  </span>
+                  <span
+                    aria-hidden
+                    className="font-mono text-lg leading-none text-subtle transition-transform duration-200 ease-soft group-open:rotate-45"
+                  >
+                    +
+                  </span>
                 </summary>
-                <p className="pb-4 text-[0.9rem] leading-relaxed text-muted">{f.a}</p>
+                <p className="pb-6 pl-[3.75rem] pr-8 text-[0.9rem] leading-relaxed text-muted">
+                  {f.a}
+                </p>
               </details>
             ))}
           </div>

@@ -1,3 +1,5 @@
+import type { GenerateResponse } from "@/types/protocol";
+
 export const MUSCLE_LABELS: Record<string, string> = {
   abs: "Abs",
   biceps: "Biceps",
@@ -124,4 +126,16 @@ export function titleCase(s: string): string {
   return s
     .replace(/_/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+export function protocolRecapLine(data: GenerateResponse): string {
+  const req = data.request;
+  return [
+    GOAL_LABELS[req.goal] ?? req.goal,
+    `${req.sessions} ${req.sessions === 1 ? "session" : "sessions"}/week`,
+    data.splitSummary ?? splitLabel(req.splitTemplate),
+    req.equipment.length ? req.equipment.map(equipmentLabel).join(", ") : "any equipment",
+  ]
+    .filter(Boolean)
+    .join("  ·  ");
 }

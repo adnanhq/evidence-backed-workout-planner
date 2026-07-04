@@ -14,7 +14,7 @@ export default function ExercisesPage() {
       <Section className="pt-12 sm:pt-16">
         <div className="max-w-2xl">
           <Eyebrow>Library</Eyebrow>
-          <h1 className="mt-3 font-display text-[2.1rem] font-semibold leading-tight text-ink sm:text-[2.6rem]">
+          <h1 className="mt-3 font-heading text-[2.1rem] font-semibold leading-tight text-ink sm:text-[2.6rem]">
             1,324 exercises, ranked by evidence
           </h1>
           <p className="mt-4 text-base leading-relaxed text-muted">
