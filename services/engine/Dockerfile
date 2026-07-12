@@ -17,6 +17,7 @@ RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTr
 
 COPY services/engine /app/services/engine
 COPY packages/data /app/packages/data
+COPY exercises-dataset /app/exercises-dataset
 
 WORKDIR /app/services/engine
 EXPOSE 8000

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.git/
+.git-vendored/
+node_modules/
+apps/web/.next/
+apps/web/out/
+data/demo_outputs/
+data/raw/
+.docx_preview/
