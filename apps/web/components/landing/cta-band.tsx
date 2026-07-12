@@ -6,7 +6,7 @@ import { FootnoteBand, Sup } from "./footnote";
 
 export function CtaBand() {
   return (
-    <section className="relative isolate overflow-hidden rounded-t-[1.5rem] bg-ink-surface text-on-dark sm:rounded-t-[2rem]">
+    <section className="relative isolate overflow-hidden bg-ink-surface text-on-dark">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="aurora absolute inset-0" />
         <div className="bg-grid-dark absolute inset-0 opacity-50 [mask-image:radial-gradient(70%_70%_at_50%_30%,black,transparent)]" />
