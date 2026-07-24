@@ -27,11 +27,23 @@ class Settings(BaseSettings):
         default="http://localhost:3000,http://127.0.0.1:3000",
         alias="ALLOWED_ORIGINS",
     )
+    # Vercel hands every deployment its own hostname (project-<hash>-<scope>.vercel.app),
+    # so an exact allowlist breaks on each new preview. This pattern covers the
+    # project's production domain and its preview/branch URLs; set it to "" to
+    # allow nothing beyond `allowed_origins`.
+    allowed_origin_regex: str = Field(
+        default=r"^https://protocol-demo-cse499(-[a-z0-9-]+)?\.vercel\.app$",
+        alias="ALLOWED_ORIGIN_REGEX",
+    )
     max_concurrency: int = Field(default=2, alias="MAX_CONCURRENCY")
 
     @property
     def origins_list(self) -> list[str]:
         return [o.strip() for o in self.allowed_origins.split(",") if o.strip()]
+
+    @property
+    def origin_regex(self) -> str | None:
+        return self.allowed_origin_regex.strip() or None
 
 
 @lru_cache(maxsize=1)

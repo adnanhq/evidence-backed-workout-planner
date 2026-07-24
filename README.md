@@ -98,12 +98,23 @@ Two intentional scope boundaries (documented, not bugs):
 ## Deploy
 
 - **Web** → Vercel (project root `apps/web`). Set `NEXT_PUBLIC_ENGINE_URL` to the engine's
-  public URL.
-- **Engine** → container host (Fly.io / Render / Cloud Run):
+  public URL. It is inlined at build time, so changing it needs a redeploy.
+- **Engine** → container host (Railway / Fly.io / Render / Cloud Run):
   ```bash
   docker build -f services/engine/Dockerfile -t protocol-engine .
   docker run -p 8000:8000 -e GEMINI_API_KEY=... \
     -e ALLOWED_ORIGINS=https://your-vercel-domain.app protocol-engine
+  ```
+- **CORS is the usual deploy break.** The browser calls the engine directly, so the web
+  app's origin must be in the engine's `ALLOWED_ORIGINS` — *exactly*, scheme and host, no
+  trailing slash. Rename the Vercel domain and the engine starts answering preflights with
+  `400 Disallowed CORS origin`, which the UI reports as "Couldn't reach the protocol
+  engine". `ALLOWED_ORIGIN_REGEX` covers the Vercel preview URLs you can't enumerate.
+  Check it from anywhere with:
+  ```bash
+  curl -i -X OPTIONS "$ENGINE_URL/api/protocol/generate" \
+    -H "Origin: https://your-vercel-domain.app" \
+    -H "Access-Control-Request-Method: POST"
   ```
 
 ---

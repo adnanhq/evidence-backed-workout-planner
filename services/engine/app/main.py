@@ -65,6 +65,7 @@ app = FastAPI(title="Protocol Engine API", version="1.0.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_settings.origins_list,
+    allow_origin_regex=_settings.origin_regex,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
