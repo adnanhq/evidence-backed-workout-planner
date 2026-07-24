@@ -8,10 +8,11 @@ export function SessionCard({ session }: { session: ProtocolSession }) {
       id={`session-${session.sessionNumber}`}
       className="scroll-mt-28 overflow-hidden rounded-2xl border border-border bg-surface shadow-card"
     >
-      {/* Dark band with the hero's grid + glow texture — ties each session to the
-          hero and separates it hard from the rows */}
-      <header className="relative overflow-hidden bg-ink-surface px-5 py-4 sm:px-6">
-        <div aria-hidden className="aurora absolute inset-0 opacity-50" />
+      {/* Teal band with the protocol card's grid + sheen texture — ties each
+          session to it and separates it hard from the rows. A shade lighter
+          than that card so the card stays the page's anchor. */}
+      <header className="relative overflow-hidden bg-teal-surface-2 px-5 py-4 sm:px-6">
+        <div aria-hidden className="teal-sheen absolute inset-0 opacity-80" />
         <div
           aria-hidden
           className="bg-grid-dark absolute inset-0 [mask-image:radial-gradient(130%_160%_at_20%_0%,black,transparent)]"
@@ -22,16 +23,16 @@ export function SessionCard({ session }: { session: ProtocolSession }) {
               <span className="tnum shrink-0 font-mono text-[0.8rem] font-medium text-accent-on-dark">
                 {String(session.sessionNumber).padStart(2, "0")}
               </span>
-              <h2 className="truncate font-heading text-lg font-semibold tracking-tight text-on-dark">
+              <h2 className="truncate font-heading text-lg font-semibold tracking-tight text-on-teal">
                 {session.splitLabel}
               </h2>
             </div>
-            <p className="hidden text-[0.75rem] text-on-dark-muted sm:block">
+            <p className="hidden text-[0.75rem] text-on-teal-muted sm:block">
               {session.targetMuscles.map(muscleLabel).join(" · ")}
             </p>
           </div>
           {session.focus && (
-            <p className="mt-0.5 pl-8 text-[0.78rem] text-on-dark-subtle">{session.focus}</p>
+            <p className="mt-0.5 pl-8 text-[0.78rem] text-on-teal-subtle">{session.focus}</p>
           )}
         </div>
       </header>

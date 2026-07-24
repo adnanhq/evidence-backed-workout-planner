@@ -7,9 +7,9 @@ import type { GenerateResponse } from "@/types/protocol";
 
 const BASE =
   "inline-flex h-9 select-none items-center gap-1.5 rounded-lg px-3.5 text-[0.8rem] font-medium transition-colors duration-200 ease-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-on-dark/50 disabled:pointer-events-none disabled:opacity-50";
-const GLASS = "glass-dark text-on-dark hover:bg-white/10";
+const GLASS = "glass-teal text-on-teal hover:bg-white/20";
 
-/** Compact action row rendered on the dark protocol hero. */
+/** Compact action row rendered on the teal protocol hero. */
 export function ResultToolbar({
   data,
   onRegenerate,
@@ -53,7 +53,7 @@ export function ResultToolbar({
       <button
         onClick={downloadPdf}
         disabled={pdfStatus === "generating"}
-        className={cn(BASE, "bg-accent-on-dark text-ink-surface hover:opacity-90")}
+        className={cn(BASE, "bg-on-teal text-teal-surface hover:bg-white")}
       >
         {pdfStatus === "done" ? (
           <>
