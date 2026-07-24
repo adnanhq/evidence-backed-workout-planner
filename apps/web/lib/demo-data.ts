@@ -1,4 +1,7 @@
 import type { GenerateResponse } from "@/types/protocol";
+import { ENGINE_URL } from "./api";
+
+const MEDIA = `${ENGINE_URL}/media/`;
 
 /** Canned, realistic protocol for the landing-page live preview. */
 export const DEMO_PROTOCOL: GenerateResponse = {
@@ -30,6 +33,7 @@ export const DEMO_PROTOCOL: GenerateResponse = {
       exercises: [
         {
           exerciseId: "0025",
+          thumbnail: MEDIA + "images/0025-EIeI8Vf.jpg",
           name: "Barbell Bench Press",
           targetMuscle: "chest",
           targetLabel: "Chest",
@@ -54,6 +58,7 @@ export const DEMO_PROTOCOL: GenerateResponse = {
         },
         {
           exerciseId: "0195",
+          thumbnail: MEDIA + "images/0195-P2lNrGL.jpg",
           name: "Cable Preacher Curl",
           targetMuscle: "biceps",
           targetLabel: "Biceps",
@@ -78,6 +83,7 @@ export const DEMO_PROTOCOL: GenerateResponse = {
         },
         {
           exerciseId: "0319",
+          thumbnail: MEDIA + "images/0319-ESOd5Pl.jpg",
           name: "Dumbbell Incline Fly",
           targetMuscle: "chest",
           targetLabel: "Chest",

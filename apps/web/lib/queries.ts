@@ -41,3 +41,20 @@ export function useExercise(id: string) {
     enabled: Boolean(id),
   });
 }
+
+/**
+ * Resolves an exercise thumbnail, fetching it from the exercises API only when
+ * the protocol payload didn't carry one (protocols stashed before the engine
+ * started embedding thumbnails). Shares the ["exercise", id] cache entry with
+ * the detail page.
+ */
+export function useExerciseThumbnail(id: string, provided: string | null): string | null {
+  const query = useQuery({
+    queryKey: ["exercise", id],
+    queryFn: () => getExercise(id),
+    enabled: Boolean(id) && provided == null,
+    staleTime: Infinity,
+    retry: 1,
+  });
+  return provided ?? query.data?.thumbnail ?? null;
+}

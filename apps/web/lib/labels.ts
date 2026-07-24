@@ -128,6 +128,20 @@ export function titleCase(s: string): string {
     .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+/**
+ * Engine rank strings look like "#1/168 · tied×25". Pull out the rank and
+ * pool size so the UI can phrase it in plain language; the tie-count suffix
+ * is deliberately dropped from user-facing copy.
+ */
+export function parseRankDisplay(
+  rankDisplay: string | null | undefined,
+): { rank: number; total: number } | null {
+  if (!rankDisplay) return null;
+  const m = rankDisplay.match(/#(\d+)\s*\/\s*(\d+)/);
+  if (!m) return null;
+  return { rank: Number(m[1]), total: Number(m[2]) };
+}
+
 export function protocolRecapLine(data: GenerateResponse): string {
   const req = data.request;
   return [

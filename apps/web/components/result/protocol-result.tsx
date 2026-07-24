@@ -1,15 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { LayoutList, FileText, Sparkles, Cog } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { protocolRecapLine } from "@/lib/labels";
+import { Cog } from "lucide-react";
 import type { GenerateResponse } from "@/types/protocol";
+import { Reveal } from "@/components/layout/reveal";
+import { ProtocolHero } from "./protocol-hero";
 import { SessionCard } from "./session-card";
 import { EvidenceAppendix } from "./evidence-appendix";
 import { WarningBanner } from "./warning-banner";
-import { ResultToolbar } from "./result-toolbar";
-import { MarkdownView } from "./markdown-view";
 
 export function ProtocolResult({
   data,
@@ -22,115 +19,62 @@ export function ProtocolResult({
   onTweak?: () => void;
   regenerating?: boolean;
 }) {
-  const [tab, setTab] = useState<"protocol" | "markdown">("protocol");
-  const recap = protocolRecapLine(data);
-
-  const hasMarkdown = Boolean(data.markdown);
+  const hasNotes = data.usedFallback || data.warnings.length > 0;
 
   return (
-    <div>
-      <header className="flex flex-col gap-4 border-b border-border pb-5">
-        <div className="flex flex-wrap items-start justify-between gap-4">
-          <div className="min-w-0">
-            <div className="flex flex-wrap items-center gap-2.5">
-              <h2 className="font-display text-2xl font-semibold text-ink">
-                Your 1-week protocol
-              </h2>
-              {data.splitSummary && (
-                <span className="rounded-full bg-accent-subtle px-2.5 py-0.5 text-xs font-medium text-accent">
-                  {data.splitSummary}
-                </span>
-              )}
-            </div>
-            <p className="mt-1.5 text-sm text-muted">{recap}</p>
-            {!data.usedFallback && (
-              <div className="mt-2">
-                <span className="inline-flex items-center gap-1.5 text-[0.76rem] text-subtle">
-                  <Sparkles className="h-3.5 w-3.5 text-accent" />
-                  AI-planned from your evidence-ranked candidates
-                </span>
+    <div className="space-y-6">
+      <Reveal>
+        <ProtocolHero
+          data={data}
+          onRegenerate={onRegenerate}
+          onTweak={onTweak}
+          regenerating={regenerating}
+        />
+      </Reveal>
+
+      {hasNotes && (
+        <Reveal delay={0.05}>
+          <div className="space-y-2.5">
+            {data.usedFallback && (
+              <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface px-4 py-3">
+                <Cog className="mt-0.5 h-4 w-4 shrink-0 text-subtle" />
+                <p className="text-[0.83rem] leading-relaxed text-muted">
+                  Assembled by the deterministic evidence ranker — the AI planner was
+                  unavailable or its output failed validation.
+                  {onRegenerate && (
+                    <>
+                      {" "}
+                      <button
+                        onClick={onRegenerate}
+                        disabled={regenerating}
+                        className="font-medium text-accent transition-colors hover:text-accent-hover disabled:opacity-50"
+                      >
+                        Regenerate
+                      </button>{" "}
+                      to try the AI planner again.
+                    </>
+                  )}
+                </p>
               </div>
             )}
+            <WarningBanner warnings={data.warnings} />
           </div>
-          <ResultToolbar
-            data={data}
-            onRegenerate={onRegenerate}
-            onTweak={onTweak}
-            regenerating={regenerating}
-          />
-        </div>
-
-        {hasMarkdown && (
-          <div className="flex w-fit items-center gap-1 rounded-lg border border-border bg-surface-muted p-1">
-            <TabButton active={tab === "protocol"} onClick={() => setTab("protocol")}>
-              <LayoutList className="h-4 w-4" /> Protocol
-            </TabButton>
-            <TabButton active={tab === "markdown"} onClick={() => setTab("markdown")}>
-              <FileText className="h-4 w-4" /> Markdown
-            </TabButton>
-          </div>
-        )}
-      </header>
-
-      {data.usedFallback && (
-        <div className="mt-6 rounded-lg border border-[#f0dcb8] bg-warning-subtle px-4 py-3.5">
-          <div className="flex gap-2.5">
-            <Cog className="mt-0.5 h-4 w-4 shrink-0 text-warning" />
-            <div>
-              <p className="text-sm font-medium text-warning">
-                This plan was generated deterministically
-              </p>
-              <p className="mt-1 text-[0.83rem] leading-relaxed text-[#7a5518]">
-                The AI planner was unavailable or its output failed validation, so exercises
-                were selected by the evidence-ranked fallback. Regenerate to try the AI
-                planner again.
-              </p>
-            </div>
-          </div>
-        </div>
+        </Reveal>
       )}
 
-      {tab === "protocol" ? (
-        <div className="mt-6 space-y-6">
-          <WarningBanner warnings={data.warnings} />
-          <div className="space-y-4">
-            {data.sessions.map((session, i) => (
-              <SessionCard key={session.sessionNumber + "-" + i} session={session} />
-            ))}
-          </div>
-          {data.evidenceAppendix.length > 0 && (
-            <div className="border-t border-border pt-8">
-              <EvidenceAppendix items={data.evidenceAppendix} />
-            </div>
-          )}
-        </div>
-      ) : (
-        <div className="mt-6">
-          <MarkdownView markdown={data.markdown} />
-        </div>
+      <div className="space-y-5">
+        {data.sessions.map((session, i) => (
+          <Reveal key={session.sessionNumber + "-" + i} delay={0.08 + i * 0.05}>
+            <SessionCard session={session} />
+          </Reveal>
+        ))}
+      </div>
+
+      {data.evidenceAppendix.length > 0 && (
+        <Reveal delay={0.1}>
+          <EvidenceAppendix items={data.evidenceAppendix} />
+        </Reveal>
       )}
     </div>
-  );
-}
-
-function TabButton({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className={cn(
-        "inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-colors",
-        active ? "bg-surface text-ink shadow-xs" : "text-muted hover:text-ink",
-      )}
-    >
-      {children}
-    </button>
   );
 }

@@ -70,9 +70,11 @@ export function ProtocolView() {
   if (gen.isPending) {
     return (
       <Section className="py-10 sm:py-14">
-        <BackRow onClick={editInputs} />
-        <div className="mt-6">
-          <LoadingProtocol />
+        <div className="mx-auto w-full max-w-4xl">
+          <BackRow onClick={editInputs} />
+          <div className="mt-5">
+            <LoadingProtocol />
+          </div>
         </div>
       </Section>
     );
@@ -81,13 +83,15 @@ export function ProtocolView() {
   if (gen.isError) {
     return (
       <Section className="py-10 sm:py-14">
-        <BackRow onClick={editInputs} />
-        <div className="mt-6">
-          <ProtocolErrorState
-            message={(gen.error as ApiError)?.message ?? "Something went wrong."}
-            onRetry={regenerate}
-            retrying={gen.isPending}
-          />
+        <div className="mx-auto w-full max-w-4xl">
+          <BackRow onClick={editInputs} />
+          <div className="mt-5">
+            <ProtocolErrorState
+              message={(gen.error as ApiError)?.message ?? "Something went wrong."}
+              onRetry={regenerate}
+              retrying={gen.isPending}
+            />
+          </div>
         </div>
       </Section>
     );
@@ -117,14 +121,16 @@ export function ProtocolView() {
 
   return (
     <Section className="py-10 sm:py-14">
-      <BackRow onClick={editInputs} />
-      <div className="mt-6">
-        <ProtocolResult
-          data={stash.response}
-          onRegenerate={regenerate}
-          onTweak={editInputs}
-          regenerating={gen.isPending}
-        />
+      <div className="mx-auto w-full max-w-4xl">
+        <BackRow onClick={editInputs} />
+        <div className="mt-5">
+          <ProtocolResult
+            data={stash.response}
+            onRegenerate={regenerate}
+            onTweak={editInputs}
+            regenerating={gen.isPending}
+          />
+        </div>
       </div>
     </Section>
   );

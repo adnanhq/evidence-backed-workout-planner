@@ -26,7 +26,7 @@ export function LoadingProtocol() {
     <div className="rounded-xl border border-border bg-surface p-6 shadow-card sm:p-8">
       <div className="flex items-center gap-2.5">
         <Loader2 className="h-5 w-5 animate-spin text-accent" />
-        <h3 className="font-display text-xl font-medium text-ink">
+        <h3 className="font-heading text-xl font-semibold text-ink">
           Building your evidence-based protocol
         </h3>
       </div>

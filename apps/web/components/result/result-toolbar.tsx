@@ -2,9 +2,14 @@
 
 import { useState } from "react";
 import { Check, Copy, Download, Loader2, RefreshCw, SlidersHorizontal } from "lucide-react";
-import { buttonClasses } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import type { GenerateResponse } from "@/types/protocol";
 
+const BASE =
+  "inline-flex h-9 select-none items-center gap-1.5 rounded-lg px-3.5 text-[0.8rem] font-medium transition-colors duration-200 ease-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-on-dark/50 disabled:pointer-events-none disabled:opacity-50";
+const GLASS = "glass-dark text-on-dark hover:bg-white/10";
+
+/** Compact action row rendered on the dark protocol hero. */
 export function ResultToolbar({
   data,
   onRegenerate,
@@ -45,27 +50,14 @@ export function ResultToolbar({
 
   return (
     <div className="flex flex-wrap items-center gap-2">
-      {markdown && (
-        <button onClick={copy} className={buttonClasses("outline", "sm")}>
-          {copied ? (
-            <>
-              <Check className="h-4 w-4 text-success" /> Copied
-            </>
-          ) : (
-            <>
-              <Copy className="h-4 w-4" /> Copy as Markdown
-            </>
-          )}
-        </button>
-      )}
       <button
         onClick={downloadPdf}
         disabled={pdfStatus === "generating"}
-        className={buttonClasses("outline", "sm")}
+        className={cn(BASE, "bg-accent-on-dark text-ink-surface hover:opacity-90")}
       >
         {pdfStatus === "done" ? (
           <>
-            <Check className="h-4 w-4 text-success" /> Downloaded
+            <Check className="h-4 w-4" /> Saved
           </>
         ) : pdfStatus === "generating" ? (
           <>
@@ -77,18 +69,27 @@ export function ResultToolbar({
           </>
         )}
       </button>
+      {markdown && (
+        <button onClick={copy} className={cn(BASE, GLASS)}>
+          {copied ? (
+            <>
+              <Check className="h-4 w-4 text-accent-on-dark" /> Copied
+            </>
+          ) : (
+            <>
+              <Copy className="h-4 w-4" /> Copy Markdown
+            </>
+          )}
+        </button>
+      )}
       {onTweak && (
-        <button onClick={onTweak} className={buttonClasses("ghost", "sm")}>
-          <SlidersHorizontal className="h-4 w-4" /> Tweak inputs
+        <button onClick={onTweak} className={cn(BASE, GLASS)}>
+          <SlidersHorizontal className="h-4 w-4" /> Edit inputs
         </button>
       )}
       {onRegenerate && (
-        <button
-          onClick={onRegenerate}
-          disabled={regenerating}
-          className={buttonClasses("subtle", "sm")}
-        >
-          <RefreshCw className={regenerating ? "h-4 w-4 animate-spin" : "h-4 w-4"} />
+        <button onClick={onRegenerate} disabled={regenerating} className={cn(BASE, GLASS)}>
+          <RefreshCw className={cn("h-4 w-4", regenerating && "animate-spin")} />
           Regenerate
         </button>
       )}

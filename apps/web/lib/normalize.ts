@@ -56,6 +56,7 @@ function normalizeExercise(raw: Raw): ProtocolExercise {
     rankDisplay: str(raw.rankDisplay),
     selectionReason: str(raw.selectionReason),
     lowerTrustEvidence: Boolean(raw.lowerTrustEvidence),
+    thumbnail: str(raw.thumbnail),
     prescription: normalizePrescription(raw.prescription as Raw),
     referencePmids: ((raw.referencePmids as unknown[]) ?? []).map(String),
     referenceEvidence: ((raw.referenceEvidence as Raw[]) ?? []).map(normalizeEvidence),

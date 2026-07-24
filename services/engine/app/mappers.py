@@ -41,8 +41,13 @@ def map_evidence(item: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def _map_exercise(ex: dict[str, Any]) -> dict[str, Any]:
+def _map_exercise(
+    ex: dict[str, Any], catalog_by_id: Optional[dict[str, dict[str, Any]]] = None
+) -> dict[str, Any]:
     presc = ex.get("prescription", {}) or {}
+    # Protocol outline exercises carry no media; resolve it from the catalog record.
+    entry = (catalog_by_id or {}).get(ex.get("exercise_id"), {})
+    images = _image_urls(entry)
     return {
         "exerciseId": ex.get("exercise_id"),
         "name": ex.get("name"),
@@ -51,6 +56,7 @@ def _map_exercise(ex: dict[str, Any]) -> dict[str, Any]:
         "rankDisplay": ex.get("rank_display"),
         "selectionReason": ex.get("selection_reason"),
         "lowerTrustEvidence": bool(ex.get("lower_trust_evidence", False)),
+        "thumbnail": images[0] if images else None,
         "prescription": {
             "sets": presc.get("sets"),
             "reps": presc.get("reps"),
@@ -62,13 +68,15 @@ def _map_exercise(ex: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def _map_session(session: dict[str, Any]) -> dict[str, Any]:
+def _map_session(
+    session: dict[str, Any], catalog_by_id: Optional[dict[str, dict[str, Any]]] = None
+) -> dict[str, Any]:
     return {
         "sessionNumber": session.get("session_number"),
         "splitLabel": session.get("split_label"),
         "focus": session.get("focus"),
         "targetMuscles": session.get("target_muscles", []),
-        "exercises": [_map_exercise(e) for e in session.get("exercises", [])],
+        "exercises": [_map_exercise(e, catalog_by_id) for e in session.get("exercises", [])],
     }
 
 
@@ -87,7 +95,11 @@ def _map_request(req: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def map_protocol_response(debug_payload: dict[str, Any], markdown_text: str) -> dict[str, Any]:
+def map_protocol_response(
+    debug_payload: dict[str, Any],
+    markdown_text: str,
+    catalog_by_id: Optional[dict[str, dict[str, Any]]] = None,
+) -> dict[str, Any]:
     outline = debug_payload.get("protocol_outline", {}) or {}
     findings = debug_payload.get("science_findings", []) or []
 
@@ -109,7 +121,7 @@ def map_protocol_response(debug_payload: dict[str, Any], markdown_text: str) -> 
         "usedFallback": bool(debug_payload.get("used_fallback_renderer", False)),
         "exercisesPerSession": outline.get("exercises_per_session"),
         "warnings": debug_payload.get("warnings", []),
-        "sessions": [_map_session(s) for s in outline.get("sessions", [])],
+        "sessions": [_map_session(s, catalog_by_id) for s in outline.get("sessions", [])],
         "evidenceAppendix": appendix,
         "markdown": markdown_text,
     }

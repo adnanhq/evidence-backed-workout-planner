@@ -51,6 +51,7 @@ export interface ProtocolExercise {
   rankDisplay: string | null;
   selectionReason: string | null;
   lowerTrustEvidence: boolean;
+  thumbnail: string | null;
   prescription: Prescription;
   referencePmids: string[];
   referenceEvidence: EvidenceItem[];

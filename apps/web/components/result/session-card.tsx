@@ -4,35 +4,42 @@ import { ExerciseRow } from "./exercise-row";
 
 export function SessionCard({ session }: { session: ProtocolSession }) {
   return (
-    <div className="overflow-hidden rounded-xl border border-border bg-surface shadow-card">
-      <div className="border-b border-border bg-surface-muted/60 px-4 py-3.5 sm:px-5">
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2.5">
-            <span className="tnum rounded-md bg-accent px-2 py-0.5 text-xs font-semibold text-accent-fg">
-              Session {session.sessionNumber}
-            </span>
-            <h3 className="font-display text-lg font-medium text-ink">
-              {session.splitLabel}
-            </h3>
-          </div>
-          <div className="hidden flex-wrap justify-end gap-1.5 sm:flex">
-            {session.targetMuscles.map((m) => (
-              <span
-                key={m}
-                className="rounded-full border border-border px-2 py-0.5 text-[0.7rem] text-muted"
-              >
-                {muscleLabel(m)}
+    <article
+      id={`session-${session.sessionNumber}`}
+      className="scroll-mt-28 overflow-hidden rounded-2xl border border-border bg-surface shadow-card"
+    >
+      {/* Dark band with the hero's grid + glow texture — ties each session to the
+          hero and separates it hard from the rows */}
+      <header className="relative overflow-hidden bg-ink-surface px-5 py-4 sm:px-6">
+        <div aria-hidden className="aurora absolute inset-0 opacity-50" />
+        <div
+          aria-hidden
+          className="bg-grid-dark absolute inset-0 [mask-image:radial-gradient(130%_160%_at_20%_0%,black,transparent)]"
+        />
+        <div className="relative">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+            <div className="flex min-w-0 items-baseline gap-3">
+              <span className="tnum shrink-0 font-mono text-[0.8rem] font-medium text-accent-on-dark">
+                {String(session.sessionNumber).padStart(2, "0")}
               </span>
-            ))}
+              <h2 className="truncate font-heading text-lg font-semibold tracking-tight text-on-dark">
+                {session.splitLabel}
+              </h2>
+            </div>
+            <p className="hidden text-[0.75rem] text-on-dark-muted sm:block">
+              {session.targetMuscles.map(muscleLabel).join(" · ")}
+            </p>
           </div>
+          {session.focus && (
+            <p className="mt-0.5 pl-8 text-[0.78rem] text-on-dark-subtle">{session.focus}</p>
+          )}
         </div>
-        {session.focus && <p className="mt-1 text-[0.8rem] text-subtle">{session.focus}</p>}
-      </div>
+      </header>
       <div className="divide-y divide-border">
         {session.exercises.map((exercise, i) => (
           <ExerciseRow key={exercise.exerciseId + i} exercise={exercise} />
         ))}
       </div>
-    </div>
+    </article>
   );
 }

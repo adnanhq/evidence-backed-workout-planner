@@ -11,6 +11,7 @@ from fastapi.concurrency import run_in_threadpool
 from protocol_engine.protocol_demo import normalize_request, run_protocol_demo
 
 from .config import get_settings
+from .data import exercises_by_id
 from .mappers import map_protocol_response
 from .schemas import GenerateRequest
 
@@ -45,7 +46,9 @@ def _generate_sync(req: GenerateRequest) -> dict[str, Any]:
         persist=False,
         fallback_model=settings.protocol_fallback_model or None,
     )
-    return map_protocol_response(result["debug_payload"], result["markdown_text"])
+    return map_protocol_response(
+        result["debug_payload"], result["markdown_text"], exercises_by_id()
+    )
 
 
 async def generate_protocol(req: GenerateRequest) -> dict[str, Any]:
