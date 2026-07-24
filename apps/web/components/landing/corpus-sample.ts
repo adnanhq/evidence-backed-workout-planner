@@ -76,13 +76,3 @@ export const CORPUS_SAMPLE: CorpusStudy[] = [
     tier: "rct",
   },
 ];
-
-/** The study cited by the hero headline's footnote and the evidence trace. */
-export const HERO_CITATION = {
-  pmid: "39077025",
-  year: 2023,
-  tier: "rct" as EvidenceTier,
-  title:
-    "Effects of 12 weeks of resistance training on regional muscle hypertrophy.",
-  source: "Rev Cardiovasc Med (2023)",
-};

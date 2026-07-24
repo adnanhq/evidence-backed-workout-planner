@@ -46,11 +46,6 @@ export function SiteHeader() {
     };
   }, [menuOpen]);
 
-  // The landing page opens with a dark hero; while unscrolled the transparent
-  // header sits over it and needs light text/logo to stay legible. The open
-  // mobile menu always paints its own solid bar, so drop onDark once it's open.
-  const onDark = pathname === "/" && !scrolled && !menuOpen;
-
   return (
     <header
       className={cn(
@@ -62,7 +57,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 w-full max-w-[var(--container-page)] items-center justify-between px-5 sm:px-8">
         <Link href="/" aria-label="Protocol home" className="shrink-0">
-          <Wordmark tone={onDark ? "inverted" : "default"} />
+          <Wordmark />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
@@ -74,14 +69,8 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "px-3.5 py-2 text-sm font-medium decoration-1 underline-offset-[10px] transition-colors",
-                  onDark
-                    ? "text-on-dark/75 decoration-on-dark-border-strong hover:text-on-dark hover:underline"
-                    : "text-muted decoration-border-strong hover:text-ink hover:underline",
-                  active &&
-                    (onDark
-                      ? "text-on-dark underline decoration-accent-on-dark"
-                      : "text-ink underline decoration-accent"),
+                  "px-3.5 py-2 text-sm font-medium text-muted decoration-border-strong decoration-1 underline-offset-[10px] transition-colors hover:text-ink hover:underline",
+                  active && "text-ink underline decoration-accent",
                 )}
               >
                 {item.label}
@@ -95,7 +84,7 @@ export function SiteHeader() {
             href="/build"
             className={cn(buttonClasses("primary", "sm"), "hidden sm:inline-flex")}
           >
-            Build a protocol
+            Build your plan
           </Link>
           <button
             type="button"
@@ -103,12 +92,7 @@ export function SiteHeader() {
             aria-expanded={menuOpen}
             aria-controls="mobile-nav"
             onClick={() => setMenuOpen((v) => !v)}
-            className={cn(
-              "inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors md:hidden",
-              onDark
-                ? "text-on-dark hover:bg-white/10"
-                : "text-ink hover:bg-surface-muted",
-            )}
+            className="inline-flex h-9 w-9 items-center justify-center rounded-md text-ink transition-colors hover:bg-surface-muted md:hidden"
           >
             {menuOpen ? (
               <X className="h-5 w-5" aria-hidden="true" />
@@ -147,7 +131,7 @@ export function SiteHeader() {
             href="/build"
             className={cn(buttonClasses("primary", "md"), "mt-2 w-full")}
           >
-            Build a protocol
+            Build your plan
           </Link>
         </nav>
       )}

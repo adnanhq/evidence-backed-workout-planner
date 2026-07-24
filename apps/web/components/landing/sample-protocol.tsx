@@ -12,7 +12,7 @@ export function SampleProtocol() {
   const appendix = DEMO_PROTOCOL.evidenceAppendix.slice(0, 2);
 
   return (
-    <section className="relative py-24 sm:py-32">
+    <section id="sample" className="relative scroll-mt-16 py-24 sm:py-32">
       {/* Faint specimen grid behind the live demo */}
       <div
         aria-hidden

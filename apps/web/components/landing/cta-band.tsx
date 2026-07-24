@@ -16,7 +16,7 @@ export function CtaBand() {
         <Reveal>
           <h2 className="max-w-[14ch] font-display text-display text-on-dark">
             Train on the record.
-            <Sup n={2} targetId="fn-2" />
+            <Sup n={1} targetId="fn-1" />
           </h2>
           <Link
             href="/build"
@@ -31,8 +31,8 @@ export function CtaBand() {
           className="mt-24"
           items={[
             {
-              n: 2,
-              id: "fn-2",
+              n: 1,
+              id: "fn-1",
               label:
                 "Every citation resolves to PubMed — 502 graded studies; 147 flagged for manual review and labeled as such.",
             },
