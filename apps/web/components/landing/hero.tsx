@@ -60,7 +60,7 @@ export function Hero() {
           {...rise(16, 0.12)}
           className="mx-auto mt-6 max-w-[56ch] text-pretty text-[1.0625rem] leading-relaxed text-muted sm:text-lg"
         >
-          Tell Protocol your goal, your equipment and the days you can train. It
+          Tell Axiom your goal, your equipment and the days you can train. It
           ranks 1,324 exercises against 502 peer-reviewed studies and lays out
           your training week — with a link to the paper behind every set.
         </motion.p>

@@ -17,7 +17,7 @@ import { TierLegend } from "@/components/evidence/tier-legend";
 export const metadata: Metadata = {
   title: "The science",
   description:
-    "The full Protocol pipeline — how exercises are collected, how evidence is graded and attached, how retrieval and ranking work, and the guardrails around the AI planner.",
+    "The full Axiom pipeline — how exercises are collected, how evidence is graded and attached, how retrieval and ranking work, and the guardrails around the AI planner.",
 };
 
 /* ---------------------------------------------------------------- helpers */
@@ -146,7 +146,7 @@ export default function SciencePage() {
         <div className="max-w-3xl">
           <Eyebrow>Methodology</Eyebrow>
           <h1 className="mt-3 font-heading text-[2.3rem] font-semibold leading-tight text-ink sm:text-5xl">
-            The science behind Protocol
+            The science behind Axiom
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Every recommendation is produced by a six-stage pipeline that turns raw
@@ -294,7 +294,7 @@ export default function SciencePage() {
               <Facts
                 items={[
                   ["1,915", "study–exercise links"],
-                  ["345", "exercises with direct evidence"],
+                  ["346", "exercises with direct evidence"],
                 ]}
               />
             </Stage>
@@ -479,7 +479,7 @@ export default function SciencePage() {
                   is why flags and tiers stay visible on every citation.
                 </p>
                 <p>
-                  Protocol surfaces published research to inform your training — it is
+                  Axiom surfaces published research to inform your training — it is
                   an educational tool, not a substitute for professional medical or
                   coaching advice. Evidence in exercise science evolves, sample sizes
                   are often small, and individual response varies. Always consult a

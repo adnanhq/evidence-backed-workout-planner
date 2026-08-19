@@ -32,7 +32,7 @@ export function HowItWorks() {
               title="From your constraints to a cited plan."
             >
               <p>
-                Tell Protocol what you have and what you&apos;re training for.
+                Tell Axiom what you have and what you&apos;re training for.
                 It does the reading.
               </p>
             </LedgerHeading>

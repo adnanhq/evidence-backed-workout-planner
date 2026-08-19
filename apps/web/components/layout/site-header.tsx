@@ -56,7 +56,7 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex h-16 w-full max-w-[var(--container-page)] items-center justify-between px-5 sm:px-8">
-        <Link href="/" aria-label="Protocol home" className="shrink-0">
+        <Link href="/" aria-label="Axiom home" className="shrink-0">
           <Wordmark />
         </Link>
 

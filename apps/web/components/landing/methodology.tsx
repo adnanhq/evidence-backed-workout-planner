@@ -40,7 +40,7 @@ export function Methodology() {
       <div className="mt-12 grid gap-14 lg:grid-cols-2 lg:gap-20">
         <Reveal>
           <p className="text-[0.98rem] leading-relaxed text-muted">
-            Most training advice is opinion dressed as fact. Protocol starts
+            Most training advice is opinion dressed as fact. Axiom starts
             from the literature instead: a curated corpus of peer-reviewed
             studies, each graded by the strength of its evidence.
           </p>

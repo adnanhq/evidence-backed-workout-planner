@@ -1,8 +1,8 @@
-# Protocol — Science-Backed AI Protocol Builder
+# Axiom — Science-Backed AI Protocol Builder
 
 A web app that generates a peer-reviewed weekly training protocol where **every exercise
 suggestion is ranked and cited to the science behind it**. It pairs a polished Next.js
-frontend with a Python engine that filters 873 exercises, retrieves matching PubMed
+frontend with a Python engine that filters 1,324 exercises, retrieves matching PubMed
 studies from a vector store, and uses an LLM to plan the weekly split.
 
 ```
@@ -65,7 +65,7 @@ The engine warms the embedding model + vector store on startup (~15–30s the fi
 |---|---|
 | `POST /api/protocol/generate` | Generate a cited weekly protocol |
 | `GET /api/taxonomies` | Filter options for the builder |
-| `GET /api/exercises` | Search/filter the 873-exercise catalog |
+| `GET /api/exercises` | Search/filter the 1,324-exercise catalog |
 | `GET /api/exercises/{id}` | One exercise + full evidence |
 | `GET /api/evidence/{pmid}` | Study detail from the corpus |
 | `GET /api/health` | Liveness + warmup status |
@@ -120,4 +120,4 @@ Two intentional scope boundaries (documented, not bugs):
 ---
 
 _Evidence sourced from PubMed/NCBI · exercise data from the Free Exercise DB.
-Protocol is an educational tool, not medical advice._
+Axiom is an educational tool, not medical advice._

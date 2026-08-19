@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Inter, Inter_Tight, Space_Grotesk } from "next/font/google";
+import {
+  Geist_Mono,
+  IBM_Plex_Sans,
+  Inter,
+  Inter_Tight,
+  Space_Grotesk,
+} from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -25,6 +31,13 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["500", "600", "700"],
 });
 
+const ibmPlexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  variable: "--font-ibm-plex-sans",
+  display: "swap",
+  weight: ["500", "600"],
+});
+
 const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-geist-mono",
@@ -33,15 +46,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://protocol.local"),
+  metadataBase: new URL("https://axiom.local"),
   title: {
-    default: "Protocol — Training built on evidence, not opinion",
-    template: "%s · Protocol",
+    default: "Axiom — Training built on evidence, not opinion",
+    template: "%s · Axiom",
   },
   description:
     "Generate a peer-reviewed weekly training protocol in seconds. Every exercise is ranked and cited to the science behind it — 1,324 exercises, 502 PubMed studies.",
   openGraph: {
-    title: "Protocol — Training built on evidence, not opinion",
+    title: "Axiom — Training built on evidence, not opinion",
     description:
       "A science-backed AI protocol builder. Every suggestion links to the peer-reviewed evidence.",
     type: "website",
@@ -54,7 +67,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${interTight.variable} ${spaceGrotesk.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${interTight.variable} ${spaceGrotesk.variable} ${ibmPlexSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-bg text-ink">
         <Providers>

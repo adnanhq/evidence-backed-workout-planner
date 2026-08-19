@@ -53,6 +53,7 @@
   --font-display: var(--font-inter-tight), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-heading: var(--font-space-grotesk), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, "Geist Mono", monospace;
+  --font-wordmark: var(--font-ibm-plex-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 
   /* --- Radii --- */
   --radius-xs: 0.25rem;

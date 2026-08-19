@@ -21,7 +21,7 @@ const FAQS = [
   },
   {
     q: "Is this medical advice?",
-    a: "No. Protocol is an educational tool that surfaces published research. It is not a substitute for professional medical or coaching advice.",
+    a: "No. Axiom is an educational tool that surfaces published research. It is not a substitute for professional medical or coaching advice.",
   },
 ];
 
