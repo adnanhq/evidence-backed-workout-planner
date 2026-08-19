@@ -111,6 +111,17 @@ def map_protocol_response(
             continue
         seen.add(pmid)
         appendix.append(map_evidence(finding))
+    # Studies attached directly to an exercise belong in the appendix alongside the
+    # corpus-level findings, so the study count and bibliography cover every PMID the
+    # response displays on its exercise rows. Mirrors render_protocol_markdown.
+    for session in outline.get("sessions", []) or []:
+        for exercise in session.get("exercises", []) or []:
+            for evidence_item in exercise.get("reference_evidence", []) or []:
+                raw_pmid = evidence_item.get("pmid")
+                if not raw_pmid or str(raw_pmid) in seen:
+                    continue
+                seen.add(str(raw_pmid))
+                appendix.append(map_evidence(evidence_item))
 
     return {
         "request": _map_request(debug_payload.get("request", {})),

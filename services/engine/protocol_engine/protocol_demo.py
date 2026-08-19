@@ -2252,19 +2252,25 @@ def build_outline_from_llm_plan(
 
 
 def build_semantic_query(request: ProtocolRequest, candidates: list[dict[str, Any]]) -> str:
-    candidate_names = ", ".join(candidate["name"] for candidate in candidates[:5])
-    parts = [
-        f"{request.goal} resistance training protocol",
-        f"target muscles: {', '.join(request.muscles)}",
-        f"sessions per week: {request.sessions}",
-        f"split template: {request.split_template}",
-    ]
-    if request.equipment:
-        parts.append(f"equipment available: {', '.join(request.equipment)}")
+    """The text embedded to retrieve science findings for a request.
+
+    Scoped to what the science should be *about*: the target muscles, the training goal,
+    and anything the user wrote. Session count, split template, equipment and candidate
+    exercise names are deliberately excluded -- they describe how a plan is laid out
+    rather than what to retrieve, and catalog product names carry variant and equipment
+    words that abstracts never use, so including them pulls the embedding off-topic.
+
+    Measured over 49 labelled topic queries (research/s2c_query_repair): this scoping
+    reaches nDCG@10 0.215 on held-out queries against 0.091 for the same request
+    rendered as a full field list, p = 0.0088, with no change in how often a request
+    yields any citation.
+
+    ``candidates`` stays in the signature because exercise-specificity is enforced
+    downstream, by the lexical re-rank and acceptance gate in query_findings.
+    """
+    parts = [f"{', '.join(request.muscles)} {request.goal} resistance training"]
     if request.notes:
-        parts.append(f"user notes: {request.notes}")
-    if candidate_names:
-        parts.append(f"candidate exercises: {candidate_names}")
+        parts.append(request.notes)
     return " | ".join(parts)
 
 
@@ -3217,6 +3223,15 @@ def run_protocol_demo(
         used_fallback=used_fallback,
     )
 
+    # Citation containment is checked on every generation: every cited PMID must come
+    # from the allowed set and must also appear in the Evidence Appendix. The check
+    # returns a list of strings and never raises, so it cannot alter the output.
+    # Results are recorded in the debug payload rather than shown to the user, pending
+    # a false-positive rate measured on live output.
+    markdown_validation_errors = validate_generated_markdown(
+        markdown_text, outline, findings, request=request
+    )
+
     debug_payload = {
         "request": asdict(request),
         "selected_model": model,
@@ -3236,6 +3251,7 @@ def run_protocol_demo(
         "raw_response_attempts": raw_response_attempts,
         "llm_protocol_plan": llm_plan,
         "validation_errors": validation_errors,
+        "markdown_validation_errors": markdown_validation_errors,
         "used_fallback_renderer": used_fallback,
         "used_deterministic_fallback": used_fallback,
     }
