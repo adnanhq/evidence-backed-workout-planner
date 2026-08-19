@@ -1,0 +1,674 @@
+{
+  "committed_corpus_mismatches": [],
+  "comparisons": {
+    "abstract_body_effect": {
+      "cohen_kappa": 0.8451494943943108,
+      "cohen_kappa_linear_weighted": 0.8767074269616502,
+      "comparison": "pt_full vs pt_title (abstract body alone)",
+      "exact_agreement": 0.8904382470119522,
+      "exact_agreement_count": 447,
+      "graded_stronger": 55,
+      "graded_stronger_rate": 0.10956175298804781,
+      "graded_weaker": 0,
+      "graded_weaker_rate": 0.0,
+      "inflation_asymmetry_ratio": null,
+      "mean_retrieval_weight_delta": 0.018077689243027873,
+      "mean_tier_score_delta": 0.03286852589641431,
+      "n": 502,
+      "one_directional": true
+    },
+    "pt_full": {
+      "cohen_kappa": 0.7188509854216956,
+      "cohen_kappa_linear_weighted": 0.7650489631336406,
+      "comparison": "pt_full vs pt_only",
+      "confusion": {
+        "controlled_trial": {
+          "controlled_trial": 3,
+          "meta_analysis": 0,
+          "narrative_review": 1,
+          "observational": 0,
+          "other": 7,
+          "rct": 0,
+          "systematic_review": 0
+        },
+        "meta_analysis": {
+          "controlled_trial": 0,
+          "meta_analysis": 37,
+          "narrative_review": 6,
+          "observational": 0,
+          "other": 5,
+          "rct": 0,
+          "systematic_review": 12
+        },
+        "narrative_review": {
+          "controlled_trial": 0,
+          "meta_analysis": 0,
+          "narrative_review": 21,
+          "observational": 0,
+          "other": 1,
+          "rct": 0,
+          "systematic_review": 0
+        },
+        "observational": {
+          "controlled_trial": 0,
+          "meta_analysis": 0,
+          "narrative_review": 2,
+          "observational": 2,
+          "other": 24,
+          "rct": 0,
+          "systematic_review": 0
+        },
+        "other": {
+          "controlled_trial": 0,
+          "meta_analysis": 0,
+          "narrative_review": 0,
+          "observational": 0,
+          "other": 173,
+          "rct": 0,
+          "systematic_review": 0
+        },
+        "rct": {
+          "controlled_trial": 8,
+          "meta_analysis": 0,
+          "narrative_review": 5,
+          "observational": 0,
+          "other": 23,
+          "rct": 154,
+          "systematic_review": 0
+        },
+        "systematic_review": {
+          "controlled_trial": 0,
+          "meta_analysis": 0,
+          "narrative_review": 5,
+          "observational": 0,
+          "other": 1,
+          "rct": 0,
+          "systematic_review": 12
+        }
+      },
+      "exact_agreement": 0.8007968127490039,
+      "exact_agreement_count": 402,
+      "graded_stronger": 100,
+      "graded_stronger_rate": 0.199203187250996,
+      "graded_weaker": 0,
+      "graded_weaker_rate": 0.0,
+      "inflation_asymmetry_ratio": null,
+      "mean_retrieval_weight_delta": 0.033175298804780866,
+      "mean_tier_score_delta": 0.060318725099601574,
+      "n": 502,
+      "one_directional": true,
+      "per_class": {
+        "controlled_trial": {
+          "f1": 0.2727272727272727,
+          "precision": 0.2727272727272727,
+          "predicted_count": 11,
+          "recall": 0.2727272727272727,
+          "reference_count": 11,
+          "true_positive": 3
+        },
+        "meta_analysis": {
+          "f1": 0.7628865979381444,
+          "precision": 0.6166666666666667,
+          "predicted_count": 60,
+          "recall": 1.0,
+          "reference_count": 37,
+          "true_positive": 37
+        },
+        "narrative_review": {
+          "f1": 0.6774193548387099,
+          "precision": 0.9545454545454546,
+          "predicted_count": 22,
+          "recall": 0.525,
+          "reference_count": 40,
+          "true_positive": 21
+        },
+        "observational": {
+          "f1": 0.13333333333333333,
+          "precision": 0.07142857142857142,
+          "predicted_count": 28,
+          "recall": 1.0,
+          "reference_count": 2,
+          "true_positive": 2
+        },
+        "other": {
+          "f1": 0.8501228501228502,
+          "precision": 1.0,
+          "predicted_count": 173,
+          "recall": 0.7393162393162394,
+          "reference_count": 234,
+          "true_positive": 173
+        },
+        "rct": {
+          "f1": 0.8953488372093024,
+          "precision": 0.8105263157894737,
+          "predicted_count": 190,
+          "recall": 1.0,
+          "reference_count": 154,
+          "true_positive": 154
+        },
+        "systematic_review": {
+          "f1": 0.5714285714285715,
+          "precision": 0.6666666666666666,
+          "predicted_count": 18,
+          "recall": 0.5,
+          "reference_count": 24,
+          "true_positive": 12
+        }
+      }
+    },
+    "pt_title": {
+      "cohen_kappa": 0.8659413769281232,
+      "cohen_kappa_linear_weighted": 0.8878778353159175,
+      "comparison": "pt_title vs pt_only",
+      "confusion": {
+        "controlled_trial": {
+          "controlled_trial": 3,
+          "meta_analysis": 0,
+          "narrative_review": 0,
+          "observational": 0,
+          "other": 1,
+          "rct": 0,
+          "systematic_review": 0
+        },
+        "meta_analysis": {
+          "controlled_trial": 0,
+          "meta_analysis": 37,
+          "narrative_review": 6,
+          "observational": 0,
+          "other": 5,
+          "rct": 0,
+          "systematic_review": 9
+        },
+        "narrative_review": {
+          "controlled_trial": 0,
+          "meta_analysis": 0,
+          "narrative_review": 32,
+          "observational": 0,
+          "other": 0,
+          "rct": 0,
+          "systematic_review": 0
+        },
+        "observational": {
+          "controlled_trial": 0,
+          "meta_analysis": 0,
+          "narrative_review": 0,
+          "observational": 2,
+          "other": 7,
+          "rct": 0,
+          "systematic_review": 0
+        },
+        "other": {
+          "controlled_trial": 0,
+          "meta_analysis": 0,
+          "narrative_review": 0,
+          "observational": 0,
+          "other": 213,
+          "rct": 0,
+          "systematic_review": 0
+        },
+        "rct": {
+          "controlled_trial": 8,
+          "meta_analysis": 0,
+          "narrative_review": 0,
+          "observational": 0,
+          "other": 7,
+          "rct": 154,
+          "systematic_review": 0
+        },
+        "systematic_review": {
+          "controlled_trial": 0,
+          "meta_analysis": 0,
+          "narrative_review": 2,
+          "observational": 0,
+          "other": 1,
+          "rct": 0,
+          "systematic_review": 15
+        }
+      },
+      "exact_agreement": 0.9083665338645418,
+      "exact_agreement_count": 456,
+      "graded_stronger": 46,
+      "graded_stronger_rate": 0.09163346613545817,
+      "graded_weaker": 0,
+      "graded_weaker_rate": 0.0,
+      "inflation_asymmetry_ratio": null,
+      "mean_retrieval_weight_delta": 0.015097609561752979,
+      "mean_tier_score_delta": 0.027450199203187232,
+      "n": 502,
+      "one_directional": true,
+      "per_class": {
+        "controlled_trial": {
+          "f1": 0.39999999999999997,
+          "precision": 0.75,
+          "predicted_count": 4,
+          "recall": 0.2727272727272727,
+          "reference_count": 11,
+          "true_positive": 3
+        },
+        "meta_analysis": {
+          "f1": 0.7872340425531915,
+          "precision": 0.6491228070175439,
+          "predicted_count": 57,
+          "recall": 1.0,
+          "reference_count": 37,
+          "true_positive": 37
+        },
+        "narrative_review": {
+          "f1": 0.888888888888889,
+          "precision": 1.0,
+          "predicted_count": 32,
+          "recall": 0.8,
+          "reference_count": 40,
+          "true_positive": 32
+        },
+        "observational": {
+          "f1": 0.3636363636363636,
+          "precision": 0.2222222222222222,
+          "predicted_count": 9,
+          "recall": 1.0,
+          "reference_count": 2,
+          "true_positive": 2
+        },
+        "other": {
+          "f1": 0.953020134228188,
+          "precision": 1.0,
+          "predicted_count": 213,
+          "recall": 0.9102564102564102,
+          "reference_count": 234,
+          "true_positive": 213
+        },
+        "rct": {
+          "f1": 0.9535603715170279,
+          "precision": 0.9112426035502958,
+          "predicted_count": 169,
+          "recall": 1.0,
+          "reference_count": 154,
+          "true_positive": 154
+        },
+        "systematic_review": {
+          "f1": 0.7142857142857143,
+          "precision": 0.8333333333333334,
+          "predicted_count": 18,
+          "recall": 0.625,
+          "reference_count": 24,
+          "true_positive": 15
+        }
+      }
+    }
+  },
+  "disagreement_sample": [
+    {
+      "abstract": "Background and objective Neck dissection remains a cornerstone in the management of head and neck cancers with cervical lymph node metastasis. Despite advances in nerve-sparing surgical techniques, shoulder dysfunction remains a recognized complication following neck dissection. This study aimed to evaluate whether anatomical preservation of the spinal accessory nerve (SAN) correlates with its functional integrity and postoperative shoulder function following neck dissection in head and neck cancer patients. Methods This prospective, longitudinal observational study enrolled 25 patients undergoing selective neck dissection (SND) or modified radical neck dissection (MRND) for biopsy-proven head and neck malignancies. Preoperative and postoperative assessments conducted at two and four weeks included clinical shoulder examination, goniometric range of motion (ROM), Shoulder Pain and Disability Index (SPADI), and electromyography (EMG) of the trapezius muscle. Radiological assessment of sternocleidomastoid (SCM) and trapezius muscle volume was performed preoperatively and at six months. Intraoperative nerve monitoring (IONM) was employed in all cases. Results All patients had normal preoperative shoulder function. At two weeks postoperatively, significant deterioration was observed in shoulder abduction, shrug strength, cervical rotation, and SPADI scores (p < 0.001). Partial recovery was noted at four weeks; however, deficits persisted in a subset of patients. Postoperative EMG demonstrated significant changes on the operated side (p = 0.031). At six months, a statistically significant reduction in the trapezius muscle volume was observed (p < 0.001), with a greater percentage reduction in volume in the MRND group compared to the SND group. IONM parameters did not significantly differ between dissection types and did not consistently correlate with postoperative functional outcomes. Conclusions Anatomical preservation of the SAN does not necessarily ensure functional integrity. Early postoperative shoulder dysfunction occurs even in nerve-sparing procedures, with more pronounced structural changes following a modified radical neck dissection. Multimodal postoperative assessment and early rehabilitation are essential. Larger studies with longer follow-up periods are warranted to further clarify the prognostic role of IONM.",
+      "journal": "Cureus",
+      "pmid": "42005250",
+      "promotion": "other -> observational",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_year": 2026,
+      "tier_pt_full": "observational",
+      "tier_pt_only": "other",
+      "title": "The Impact of Neck Dissection on the Functional Integrity of Spinal Accessory Nerve in Head and Neck Cancers.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42005250/"
+    },
+    {
+      "abstract": "PURPOSE: This study examines the effects of performing accentuated eccentric loading (AEL) resistance exercise one, two, or three times per week, with equal session doses, in resistance-trained athletes. METHODS: Twenty-three strength-trained athletes were allocated to one of three exercise groups: EX1 (n = 7), EX2 (n = 9), and EX3 (n = 7). Participants engaged in AEL full squat training once (EX1), twice (EX2), or three times (EX3) per week for 12 weeks. Maximum concentric (CONM), isometric (ISOM), and eccentric strength (ECCM), and strength endurance (SE70), were assessed using the full squat. Muscular power was evaluated through squat jump (SJ) and countermovement jump (CMJ) tests. Muscle cross-sectional area (CSA) was measured via computed tomography, and muscle fiber type proportions by mATP-ase histochemistry. RESULTS: Across all groups, ISOM (9.1 +/- 8.5%), CONM (9.3 +/- 5.7%), ECCM (14.0 +/- 6.7%), and SE70 (28.6 +/- 16.2%) increased significantly (all P < 0.001). SJ improved by 7.3 +/- 6.9% (P < 0.001), and CMJ improved by 4.4 +/- 6.0% (P = 0.003). Quadriceps CSA increased by 3.6 +/- 4.1% (P < 0.001), and thigh CSA increased by 2.1 +/- 2.9% (P = 0.005). The only significant between-group difference was that EX3 exhibited a greater increase in CONM compared with EX1 (P = 0.03). CONCLUSION: Training with AEL resistance exercise one, two, or three times per week for 12 weeks produced similar effects on maximum strength, power, and hypertrophy in resistance-trained athletes.",
+      "journal": "European journal of applied physiology",
+      "pmid": "40580213",
+      "promotion": "other -> observational",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_year": 2025,
+      "tier_pt_full": "observational",
+      "tier_pt_only": "other",
+      "title": "One, two, or three times a week? examining the optimal frequency for strength and muscle growth in accentuated eccentric exercise.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40580213/"
+    },
+    {
+      "abstract": "AIM: To measure the neuromuscular activation of the pelvic floor and abdominal muscles concurrently with vaginal closure forces induced during a hypopressive exercise (HE) and to identify the contribution of the HEs sequences (posture and maneuver) in the muscle's activation. METHODS: A cross-sectional study design was employed. Sixty-six women who had participated in a physical therapy program focused on HEs were recruited. Pelvic floor muscle (PFM) activation was measured using surface electromyography (sEMG) in supine and in the orthostatic position, and vaginal closure force was measured through vaginal dynamometry in supine. Activation of the abdominal, gluteal, and hip adductor muscles was measured using sEMG. Maximum effort voluntary contractions (MVCs) of the PFMs and reference contractions of the abdominal and hip muscles were acquired for normalization purposes. A HE was then performed in a supine position with one leg raised, then in an orthostatic position. RESULTS: During the supine HE, the peak PFM sEMG amplitude was 74.4% to 86.5% (49.6%-109.6%) of MVC, the peak vaginal closure force was between 51.2% and 55.7% (95.5%-382.9%) of MVC, and the muscles of the lateral abdominal wall were activated between 25.4% and 35.3% of the reference contraction. During the orthostatic HE, PFM activation was 61.4% (40.1%-105.6%) of MVC, and the lateral abdominal wall muscles contracted at 22.8% of the reference activation level. CONCLUSIONS: The PFMs, abdominal, gluteal, and adductor muscles are activated during the performance of a HE. The activation level of the PFMs and abdominal muscles is likely insufficient to result in strength gains; however, they could have an endurance effect.",
+      "journal": "Neurourology and urodynamics",
+      "pmid": "31985114",
+      "promotion": "other -> observational",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_year": 2020,
+      "tier_pt_full": "observational",
+      "tier_pt_only": "other",
+      "title": "Pelvic floor and abdominal muscle responses during hypopressive exercises in women with pelvic floor dysfunction.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31985114/"
+    },
+    {
+      "abstract": "This study compared calf training with initial partial repetitions versus full range-of-motion (ROM) repetitions followed by past-failure partials on gastrocnemius hypertrophy. Twenty-three participants (men: n = 16 and women: n = 7) performed four sets of unilateral Smith machine calf raises to momentary failure twice a week for 8 weeks. One leg was trained using initial partials to their individualized maximum dorsiflexion ROM. The contralateral leg was trained with a full ROM and continued with past-failure partials after failure in peak plantarflexion. Medial gastrocnemius muscle thickness was measured with ultrasonography both baseline and postintervention. A Bayesian framework was used to estimate the average treatment effect (ATE) using credible intervals and Bayes factors (BFs). The ATE posterior distribution indicated a greater increase in muscle hypertrophy for the initial partial condition (0.40 [95% CrI: -0.06 to 0.85 mm]; p (> 0) = 0.958), with a BF of 1.2 suggesting \"anecdotal\" evidence in favor of an effect. Within-condition analyses using standardized mean difference estimates indicated that the interventions were likely to produce medium to large improvements. These findings suggest that both initial partials and past-failure partials are viable strategies for achieving gastrocnemius hypertrophy. Although the average change favored initial partials, the estimated difference was uncertain, and the Bayes factor provided only anecdotal support for a differential effect.",
+      "journal": "European journal of sport science",
+      "pmid": "40850937",
+      "promotion": "other -> observational",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_year": 2025,
+      "tier_pt_full": "observational",
+      "tier_pt_only": "other",
+      "title": "Resistance Training Beyond Momentary Failure: The Effects of Past-Failure Partials Versus Initial Partials on Calf Muscle Hypertrophy Among a Resistance-Trained Cohort.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40850937/"
+    },
+    {
+      "abstract": "Locomotor stability is challenged by internal perturbations, e.g., motor noise, and external perturbations, e.g., changes in surface compliance. One means to compensate for such perturbations is to employ motor synergies, defined here as co-variation among a set of elements that acts to stabilize, or provide similar trial-to-trial (or step-to-step) output, even in the presence of small variations in initial conditions. Whereas evidence exists that synergies related to the upper extremities can be trained, the extent to which lower limb synergies, such as those which may be needed to successfully locomote in complex environments, remains unknown. The purpose of this study was to evaluate if resistance training (RT) in unstable environments could promote coordination patterns associated with stronger synergies during gait. Sixty-eight participants between the age of 65 and 80 were randomly assigned to one of three different RT modalities: stable whole-limb machine-based RT (S-MRT), instability free-weight RT (I-FRT), and stable machine-based adductor/abductor RT (S-MRT(HIP)). Before and after RT, participants walked across an even lab floor and a more challenging uneven surface with and without holding a weighted bag. The uncontrolled manifold control analysis (UCM) was used to calculate the synergy index (i.e., strength of the kinematic synergy) related to stabilization of our performance variable, the mediolateral trajectory of the swing foot, under each condition. Regardless of RT group, there was no effect of RT on the synergy index when walking across the even lab floor. However, the synergy index during the two uneven surface conditions was stronger after I-FRT but was not affected by the other RT modalities. The stronger synergy index for the I-FRT group was due to improved coordination as quantified by an overall increase in variability in elemental variable space but a decrease in the variability that negatively affects performance. The unstable environment offered by I-FRT allows for exploration of motor solutions in a manner that appears to transfer to challenging locomotor tasks. Introducing tasks that promote, rather than limit, exploration of motor solutions seems to be a valuable exercise modality to strengthen kinematic synergies that cannot be achieved with traditional strengthening paradigms (e.g., S-MRT). Clinical Trial Registration: www.ClinicalTrials.gov, identifier NCT03017365.",
+      "journal": "Frontiers in aging neuroscience",
+      "pmid": "30873017",
+      "promotion": "other -> rct",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_year": 2019,
+      "tier_pt_full": "rct",
+      "tier_pt_only": "other",
+      "title": "Instability Resistance Training Decreases Motor Noise During Challenging Walking Tasks in Older Adults: A 10-Week Double-Blinded RCT.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30873017/"
+    },
+    {
+      "abstract": "PURPOSE: The purpose of this study was to compare the effects of squat training with different depths on lower limb muscle volumes. METHODS: Seventeen males were randomly assigned to a full squat training group (FST, n = 8) or half squat training group (HST, n = 9). They completed 10 weeks (2 days per week) of squat training. The muscle volumes (by magnetic resonance imaging) of the knee extensor, hamstring, adductor, and gluteus maximus muscles and the one repetition maximum (1RM) of full and half squats were measured before and after training. RESULTS: The relative increase in 1RM of full squat was significantly greater in FST (31.8 +/- 14.9%) than in HST (11.3 +/- 8.6%) (p = 0.003), whereas there was no difference in the relative increase in 1RM of half squat between FST (24.2 +/- 7.1%) and HST (32.0 +/- 12.1%) (p = 0.132). The volumes of knee extensor muscles significantly increased by 4.9 +/- 2.6% in FST (p < 0.001) and 4.6 +/- 3.1% in HST (p = 0.003), whereas that of rectus femoris and hamstring muscles did not change in either group. The volumes of adductor and gluteus maximus muscles significantly increased in FST (6.2 +/- 2.6% and 6.7 +/- 3.5%) and HST (2.7 +/- 3.1% and 2.2 +/- 2.6%). In addition, relative increases in adductor (p = 0.026) and gluteus maximus (p = 0.008) muscle volumes were significantly greater in FST than in HST. CONCLUSION: The results suggest that full squat training is more effective for developing the lower limb muscles excluding the rectus femoris and hamstring muscles.",
+      "journal": "European journal of applied physiology",
+      "pmid": "31230110",
+      "promotion": "other -> rct",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_year": 2019,
+      "tier_pt_full": "rct",
+      "tier_pt_only": "other",
+      "title": "Effects of squat training with different depths on lower limb muscle volumes.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31230110/"
+    },
+    {
+      "abstract": "Pull-ups are a widely recognized exercise for training and assessing upper-body strength and muscular endurance, requiring coordinated activation of the latissimus dorsi, biceps brachii, forearm flexors, and core stabilizers. However, many individuals experience difficulty performing pull-ups due to inadequate grip strength or core stability. This study aimed to investigate the comparative effects of forearm-specific and core-specific training, combined with standardized pull-up routines, on upper-body performance indicators in physically inactive male students. Thirty participants (age = 21 +/- 1.58 years) were randomly assigned to three groups (n = 10): pull-up plus interval training (PIT), pull-up plus forearm training (PFT), and pull-up plus core training (PCT). All groups performed identical pull-up-based programs for eight weeks, differing only in the supplemental exercises. Before and after the intervention, participants were tested for maximum pull-up repetitions, grip strength (both hands), and dead-hanging time. Significant improvements were found in all variables (p </= 0.009), with group differences in pull-up repetitions (p < 0.001) and right-hand grip strength (p = 0.004). The PFT group achieved the greatest gains, with a 222.5% increase in repetitions, 12% and 14.0% increases in right- and left-hand grip strength, and a 55.3% increase in hanging time. The PCT group showed moderate progress, while PIT yielded the smallest improvement. Forearm-specific training proved the most effective strategy for enhancing pull-up performance, grip strength, and endurance.",
+      "journal": "Sports (Basel, Switzerland)",
+      "pmid": "41441417",
+      "promotion": "other -> rct",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_year": 2025,
+      "tier_pt_full": "rct",
+      "tier_pt_only": "other",
+      "title": "Comparative Effects of Core Versus Forearm Training on Pull-Up Repetition Performance in Physically Inactive Males.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41441417/"
+    },
+    {
+      "abstract": "BACKGROUND: While chronic exercise training has been demonstrated to be an effective non-pharmacological treatment for chronic low back pain (CLBP), there has been a relative lack of evidence or clinical guidelines for whether a posterior chain resistance training programme provides any benefits over general exercise (GE). OBJECTIVES: To determine if chronic posterior chain resistance training (PCRT), defined as exercise programmes of >/=6 weeks duration focused on the thoracic, lumbar and hip extensor musculature, is more effective than GE in improving pain, level of disability, muscular strength and the number of adverse events in recreationally active and sedentary individuals with CLBP. METHODS: Four electronic databases were systematically searched from 25 September 2019 until 30 August 2020. Using the Joanna Briggs Institute (JBI) Critical Appraisal Tools checklist for randomized controlled trials (RCTs), articles were critically appraised and compared against the inclusion/exclusion criteria. Standardized mean difference (SMD), risk difference (RD) and confidence interval (CI) were calculated using Review Manager 5.3. RESULTS: Eight articles were included, with a total of 408 participants (203 PCRT, 205 GE). Both PCRT and GE were effective in improving a number of CLBP-related outcomes, but these effects were often significantly greater in PCRT than GE, especially with greater training durations (i.e. 12-16 weeks compared to 6-8 weeks). Specifically, when compared to GE, PCRT demonstrated a greater reduction in pain (SMD = - 0.61 (95% CI - 1.21 to 0.00), p = 0.05; I(2) = 74%) and level of disability (SMD = - 0.53 (95% CI - 0.97 to - 0.09), p = 0.02; I(2) = 52%), as well as a greater increase in muscle strength (SMD = 0.67 (95% CI 0.21 to 1.13), p = 0.004; I(2) = 0%). No differences in the number of adverse events were reported between PCRT and GE (RD = - 0.02 (95% CI - 0.10 to 0.05), p = 0.57; I(2) = 72%). CONCLUSION: Results of the meta-analysis indicated that 12-16 weeks of PCRT had a statistically significantly greater effect than GE on pain, level of disability and muscular strength, with no significant difference in the number of adverse events for recreationally active and sedentary patients with CLBP. Clinicians should strongly consider utilizing PCRT interventions for 12-16 weeks with patients with CLBP to maximize their improvements in pain, disability and muscle strength. Future research should focus on comparing the efficacy and adverse events associated with specific PCRT exercise training and movement patterns (i.e. deadlift, hip lift) in treating this population. TRIAL REGISTRATION: PROSPERO CRD42020155700 .",
+      "journal": "Sports medicine - open",
+      "pmid": "33683497",
+      "promotion": "systematic_review -> meta_analysis",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "publication_year": 2021,
+      "tier_pt_full": "meta_analysis",
+      "tier_pt_only": "systematic_review",
+      "title": "Posterior-Chain Resistance Training Compared to General Exercise and Walking Programmes for the Treatment of Chronic Low Back Pain in the General Population: A Systematic Review and Meta-Analysis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33683497/"
+    },
+    {
+      "abstract": "OBJECTIVE: To systematically evaluate the effects of resistance training (RT) on muscle strength and muscle hypertrophy in elderly cancer patients, and to provide dose-response relationships of RT variables that could improve muscle strength and morphology in elderly cancer patients. METHOD: The Review Manager 5.3 was applied to analyze the 12 literatures (616 participants) through random or fixed effects model and global effect size to examine upper limb strength, lower extremity strength, and muscle hypertrophy. Sub-group analysis was made on five variables: the total number of repeated training times/week, load intensity, exercise frequency/week, exercise duration and gender. This study also examines the heterogeneity and publication bias. RESULTS: Twelve literatures (616 participants, 60-80 years) were included in meta-analysis. RT significantly increased the upper limb muscular strength (SMD = 0.51, 95% CI: 0.10-0.93; Z = 2.41; p = 0.02) and lower extremity strength (SMD = 0.48, 95% CI: 0.28-0.67; Z = 4.82; p < 0.00001), but had no significant effect on muscle morphology(SMD = 0.21, 95% CI: 0.01-0.42; Z = 1.88; p = 0.06). In subgroup analysis for lower extremity muscle strength in elderly male cancer patients, it was found that male intensity of 70-90%1RM, volume of 400-500 times per week, frequencies of 3 times per week, and session of 12-24 weeks, revealed the greatest effect. Funnel plot of the three studies shows that the results were reliable, and no publication bias was found. CONCLUSION: RT had medium effects on improving muscle strength in elderly cancer patients, but it is not effective in improving muscle hypertrophy. In addition, when RT is performed, different training protocols can have an effect on the growth of muscle strength. Therefore, a lower extremity training protocol with a training intensity of 70-90% 1RM, a total of 400-500 repetitions per week, 3 times per week, and an exercise session of 12-24 weeks is most effective in improving lower extremity strength in elderly male cancer patients.",
+      "journal": "Frontiers in medicine",
+      "pmid": "37089606",
+      "promotion": "systematic_review -> meta_analysis",
+      "publication_types": [
+        "Journal Article",
+        "Systematic Review"
+      ],
+      "publication_year": 2023,
+      "tier_pt_full": "meta_analysis",
+      "tier_pt_only": "systematic_review",
+      "title": "Dose-response relationship of resistance training for muscle morphology and strength in elderly cancer patients: A meta-analysis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37089606/"
+    },
+    {
+      "abstract": "BACKGROUND: Recent evidence supports the positive effects of moderate-to-high-intensity, guidelines-based, progressive resistance exercise training (PRET) compared to waitlist controls among young adults with analogue Generalized Anxiety Disorder (AGAD). The true effects of PRET independent of potential social and psychological benefits of intervention engagement remain unclear. This 10-week randomized controlled trial (RCT) controls for such benefits by quantifying the acute and chronic effects of eight weeks of PRET compared to a low-intensity sham attention-control (SHAM) on GAD symptoms among young women (18-40y) with AGAD. METHODS: The full design and methods of this 10-week RCT are presented herein. Validated cut-scores on both the Psychiatric Diagnostic Screening Questionnaire GAD subscale (>/=6) and the Penn State Worry Questionnaire (>/=45) determined AGAD status. PRET was consistent with World Health Organisation and American College of Sports Medicine guidelines; participants performed two sets of 8-12 repetitions of eight exercises at 70-80 % one-repetition maximum (1RM). SHAM (20 % 1RM) was matched on all intervention features aside from load/intensity. AGAD status and worry severity (primary outcomes) were assessed at baseline, post-two-week familiarization, week 4, week 8, and one-month follow-up. Secondary outcomes were assessed weekly. Two acute resistance exercise trials were nested at weeks one and eight to quantify acute response and potential training-induced changes in acute response. CONCLUSION: This 10-week RCT advances knowledge by anticipated replication of the effects of guidelines-based PRET among young women with AGAD, investigation of a minimally-beneficial dose threshold (i.e., low-intensity SHAM) and dose-response, and control of plausible social and psychological influences of intervention engagement.",
+      "journal": "Psychology of sport and exercise",
+      "pmid": "40480304",
+      "promotion": "controlled_trial -> rct",
+      "publication_types": [
+        "Clinical Trial Protocol",
+        "Journal Article"
+      ],
+      "publication_year": 2025,
+      "tier_pt_full": "rct",
+      "tier_pt_only": "controlled_trial",
+      "title": "Acute and chronic effects of guidelines-based progressive resistance exercise training compared to a low-intensity sham attention-control on signs and symptoms among young adult women with analogue generalized anxiety disorder: Design and methods of a randomized controlled trial.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40480304/"
+    },
+    {
+      "abstract": "We examined how set-volume equated resistance training using either the back squat (SQ) or hip thrust (HT) affected hypertrophy and various strength outcomes. Untrained college-aged participants were randomized into HT (n = 18) or SQ (n = 16) groups. Surface electromyograms (sEMG) from the right gluteus maximus and medius muscles were obtained during the first training session. Participants completed 9 weeks of supervised training (15-17 sessions), before and after which gluteus and leg muscle cross-sectional area (mCSA) was assessed via magnetic resonance imaging. Strength was also assessed prior to and after the training intervention via three-repetition maximum (3RM) testing and an isometric wall push test. Gluteus mCSA increases were similar across both groups. Specifically, estimates [(-) favors HT (+) favors SQ] modestly favored the HT versus SQ for lower [effect +/-SE, -1.6 +/- 2.1 cm(2); CI(95%) (-6.1, 2.0)], mid [-0.5 +/- 1.7 cm(2); CI(95%) (-4.0, 2.6)], and upper [-0.5 +/- 2.6 cm(2); CI(95%) (-5.8, 4.1)] gluteal mCSAs but with appreciable variance. Gluteus medius + minimus [-1.8 +/- 1.5 cm(2); CI(95%) (-4.6, 1.4)] and hamstrings [0.1 +/- 0.6 cm(2); CI(95%) (-0.9, 1.4)] mCSA demonstrated little to no growth with small differences between groups. mCSA changes were greater in SQ for the quadriceps [3.6 +/- 1.5 cm(2); CI(95%) (0.7, 6.4)] and adductors [2.5 +/- 0.7 cm(2); CI(95%) (1.2, 3.9)]. Squat 3RM increases favored SQ [14 +/- 2 kg; CI(95%) (9, 18),] and hip thrust 3RM favored HT [-26 +/- 5 kg; CI(95%) (-34, -16)]. 3RM deadlift [0 +/- 2 kg; CI(95%) (-4, 3)] and wall push strength [-7 +/- 12N; CI(95%) (-32, 17)] similarly improved. All measured gluteal sites showed greater mean sEMG amplitudes during the first bout hip thrust versus squat set, but this did not consistently predict gluteal hypertrophy outcomes. Squat and hip thrust training elicited similar gluteal hypertrophy, greater thigh hypertrophy in SQ, strength increases that favored exercise allocation, and similar deadlift and wall push strength increases.",
+      "journal": "Frontiers in physiology",
+      "pmid": "37877099",
+      "promotion": "other -> controlled_trial",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_year": 2023,
+      "tier_pt_full": "controlled_trial",
+      "tier_pt_only": "other",
+      "title": "Hip thrust and back squat training elicit similar gluteus muscle hypertrophy and transfer similarly to the deadlift.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37877099/"
+    },
+    {
+      "abstract": "OBJECTIVE: This study aimed to compare the effects of moderate- and high-intensity resistance and impact training (MiRIT and HiRIT, respectively) on changes in bone mineral density (BMD) in postmenopausal women with osteoporosis. METHODS: Randomized controlled trials that compared the intervention effects of MiRIT and HiRIT were used as selection criteria to assess study patients with osteoporosis or an osteoporotic condition. Database searches were conducted on August 25, 2022, using CENTRAL, PubMed, CINAHL Web of Science, EMBASE, and MEDLINE. A risk of bias assessment was performed using Revised Cochrane risk of bias tool for the assessment of randomized controlled trials. Point estimates and 95 % confidence intervals of change in BMD derived using dual-energy X-ray absorptiometry were collected as outcomes, and a meta-analysis was performed using the amount of change in BMD before and after the intervention. Adverse event data were also collected. RESULTS: The search yielded six studies (391 patients, mean age 53-65 years) that met the inclusion criteria. The intervention duration ranged from 24 weeks to 13 months. Compared with the MiRIT group, the HiRIT group showed significantly improved BMD of the lumbar spine (standardized mean difference 2.37 [0.10-4.65]). However, a high degree of heterogeneity was observed for three studies (154 patients, I(2) = 98 %). Almost all studies reported minimal adverse events. The certainty of evidence was extremely low because of the risk of bias, inconsistency among studies, and imprecision in terms of sample size. CONCLUSION: Postmenopausal women with osteoporosis may achieve more significantly improved lumbar spine BMD with HiRIT than with MiRIT.",
+      "journal": "Bone reports",
+      "pmid": "36310762",
+      "promotion": "narrative_review -> meta_analysis",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "publication_year": 2022,
+      "tier_pt_full": "meta_analysis",
+      "tier_pt_only": "narrative_review",
+      "title": "A comparison of different exercise intensities for improving bone mineral density in postmenopausal women with osteoporosis: A systematic review and meta-analysis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36310762/"
+    },
+    {
+      "abstract": "BACKGROUND: Foot and ankle muscle strengthening exercises are common interventions for many musculoskeletal conditions that are associated with pain and limited function in the lower limb. The scientific literature has a multitude of strengthening exercises recommended, and they have been criticized for not adhering to best practice and for being poorly reported. The aims of this scoping review were to (i) describe what foot and ankle strengthening exercises have been recommended in the scientific literature, (ii) compare the prescription of these exercises to best practice recommendations, and (iii) assess the completeness of the reporting of these exercises and exercise programs. METHODS: This scoping review was conducted in accordance with the Joanna Briggs Institute methodology for scoping reviews. A systematic search of peer-review journal articles was conducted on 23 February 2023. Study designs that were included were experimental, quasi-experimental, feasibility, pilot studies, and observational. For each study included in the review, study design and participant details such as age, sex, and conditions treated were noted. To describe the foot and ankle strengthening exercises, each exercise was noted, which included its name, the number of sets and repetitions recommended, the load type and its magnitude, and whether there were any progression strategies. Exercises were grouped according to primary movement and a general exercise descriptor. To compare to best practice, each program's prescription parameters of frequency, intensity, and time were compared to the American College of Sports Medicine's (ACSM) guidelines. To assess completeness of reporting, each study was assessed with the Consensus on Exercise Reporting Template (CERT). RESULTS: The search yielded 1511 documents, and 87 were included after full-text screening. Of the included studies, most were randomized controlled trials, and the most common participants were healthy adults (mean age range: 18-83 years). Across all studies, a total of 300 foot and ankle exercises were prescribed. The most common strengthening exercise category involved ankle plantar flexion (25% of 300 exercises), followed by plantar foot intrinsics (16%). The most common prescription of strengthening exercises included 3 sets (37%) of 10 repetitions (38%) performed 3 times per week (34%), often without a prescribed load (66%). Prescribed sets per muscle group met ACSM recommendations for novice lifters in 93% of studies. In contrast, load intensity (for increasing muscle strength) was prescribed at the recommended dose of 60% of 1 repetition maximum or greater in only 2% of exercises. The median score for completeness of reporting according to the CERT checklist was 31% of all items. CONCLUSIONS: This scoping review found that the studies predominantly included ankle plantar flexion and plantar foot intrinsic muscle strengthening exercises, typically prescribed at 3 sets of 10 repetitions, 3 times per week. When compared to best practice recommendations, load intensity in exercise prescription is commonly less than recommended or is not reported. In addition, the review highlights deficiencies in the reporting of exercise programs. We propose using established best-practice exercise prescription guidelines like those from the ACSM and the adoption of CERT for reporting exercises in the scientific literature.",
+      "journal": "Journal of foot and ankle research",
+      "pmid": "40178827",
+      "promotion": "narrative_review -> rct",
+      "publication_types": [
+        "Journal Article",
+        "Scoping Review"
+      ],
+      "publication_year": 2025,
+      "tier_pt_full": "rct",
+      "tier_pt_only": "narrative_review",
+      "title": "Muscle Strengthening Exercises for the Foot and Ankle: A Scoping Review Exploring Adherence to Best Practice for Optimizing Musculoskeletal Health.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40178827/"
+    },
+    {
+      "abstract": "Achilles tendinopathy (AT) is a common condition both in athletes and the general population. The purpose of this study is to highlight the most effective form of exercise in managing pain-related symptoms and functional capacity as well as in a return to life activities, ensuring the quality of life of patients with AT, and creating a protocol to be used in rehabilitation. We conducted a systematic review of the published literature in Pubmed, Scopus, Science Direct, and PEDro for Randomised Controlled Trials concerning interventions that were based exclusively on exercise and delivered in patients 18-65 years old, athletes and non-athletes. An amount of 5235 research articles generated from our search. Five met our inclusion criteria and were included in the review. Research evidence supports the effectiveness of a progressive loading eccentric exercise program based on Alfredson's protocol, which could be modified in intensity and pace to fit the needs of each patient with AT. Future research may focus on the optimal dosage and load of exercise in eccentric training and confirm the effectiveness of other type of exercise, such as a combination of eccentric-concentric training or heavy slow resistance exercise. Pilates could be applied as an alternative, useful, and friendly tool in the rehabilitation of AT.",
+      "journal": "Healthcare (Basel, Switzerland)",
+      "pmid": "37628466",
+      "promotion": "narrative_review -> systematic_review",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "publication_year": 2023,
+      "tier_pt_full": "systematic_review",
+      "tier_pt_only": "narrative_review",
+      "title": "Comparability of the Effectiveness of Different Types of Exercise in the Treatment of Achilles Tendinopathy: A Systematic Review.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37628466/"
+    },
+    {
+      "abstract": "BACKGROUND: Blood Flow Restriction (BFR) training is increasingly recognized as an effective method for enhancing physical performance. BFR combined with low-intensity continuous or resistance training could improve aerobic capacity, muscle hypertrophy, and muscle strength just as effectively as high-intensity training in healthy adults. However, the effects of BFR combined with interval training (BFRIT) on aerobic capacity, anaerobic capacity, and muscle strength are not clear, and experts do not agree in the literature. METHODS: A comprehensive literature search was conducted across six databases by the PRISMA guidelines. Data were extracted from the included studies, and random-effects meta-analyses were conducted to synthesize the effect size (ES), expressed as standardized mean differences (SMD). The heterogeneity was assessed using the I(2) statistic. Additionally, the GRADE framework was employed to evaluate the quality of the evidence derived from this meta-analysis. RESULTS: Twenty-four studies consisting of 607 participants were included. Aerobic capacity was measured using maximal oxygen uptake (V\u0307O2max) or peak oxygen uptake (V\u0307O2peak). Anaerobic capacity was assessed through peak power output (PPO) or mean power output (MPO). Muscle strength was quantified via peak force or torque in knee extension; if unavailable, knee flexion data or one-repetition maximum (1RM) were used instead. The ES of BFRIT on aerobic capacity was significant and small (SMD = 0.33, p < 0.001, I2 = 5.20%); the ES of BFRIT on muscle strength was significant and moderate (SMD = 0.61, p < 0.001, I2 = 29.76%); but the ES of BFRIT on PPO was not significant and trivial(SMD=-0.07, p = 0.74, I2 = 0.0%); the ES of BFRIT on MPO was not significant and small (SMD = 0.23, p = 0.25, I2 = 0%). Subgroup analysis revealed that the effects of BFRIT on aerobic capacity and muscle strength were impacted by the training intensity (high vs. low to moderate), training duration (>/= 6 weeks vs. < 6 weeks), training status (untrained vs. trained), cuff pressure modes (fixed vs. incremental), cuff pressure types (absolute vs. relative), and cuff application phases (during exercise vs. rest intervals alone). CONCLUSIONS: BFRIT is beneficial for healthy adults in improving aerobic capacity and muscle strength. However, the impact of BFRIT on anaerobic capacity remains uncertain due to the limited sample sizes and statistical power in current studies. Future research should focus on larger sample sizes and more robust designs to clarify the potential anaerobic adaptations related to BFRIT. SYSTEMATIC REVIEW REGISTRATION: PROSPERO CRD42024609590.",
+      "journal": "BMC sports science, medicine & rehabilitation",
+      "pmid": "41402947",
+      "promotion": "other -> meta_analysis",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_year": 2025,
+      "tier_pt_full": "meta_analysis",
+      "tier_pt_only": "other",
+      "title": "Effects of blood flow restriction interval training on aerobic, anaerobic capacity, and muscle strength in healthy adults: a systematic review and meta-analysis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41402947/"
+    }
+  ],
+  "environment": {
+    "machine": "arm64",
+    "packages": {
+      "chromadb": "1.5.9",
+      "matplotlib": "3.9.4",
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "sentence_transformers": "5.1.2",
+      "sklearn": "1.6.1",
+      "torch": "2.8.0",
+      "transformers": "4.57.6"
+    },
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "seed": 20260818
+  },
+  "n_disagreements": 100,
+  "n_documents": 502,
+  "overgraded_top_tier": {
+    "examples": [
+      {
+        "pmid": "31538328",
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "title": "Exercise for dysmenorrhoea."
+      },
+      {
+        "pmid": "32107499",
+        "publication_types": [
+          "Journal Article",
+          "Research Support, Non-U.S. Gov't",
+          "Systematic Review"
+        ],
+        "title": "Electromyographic activity in deadlift exercise and its variants. A systematic review."
+      },
+      {
+        "pmid": "33344003",
+        "publication_types": [
+          "Journal Article"
+        ],
+        "title": "A SYSTEMATIC REVIEW AND META-ANALYSIS OF COMMON THERAPEUTIC EXERCISES THAT GENERATE HIGHEST MUSCLE ACTIVITY IN THE GLUTEUS MEDIUS AND GLUTEUS MINIMUS SEGMENTS."
+      },
+      {
+        "pmid": "33683497",
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "title": "Posterior-Chain Resistance Training Compared to General Exercise and Walking Programmes for the Treatment of Chronic Low Back Pain in the General Population: A Systematic Review and Meta-Analysis."
+      },
+      {
+        "pmid": "36310762",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "title": "A comparison of different exercise intensities for improving bone mineral density in postmenopausal women with osteoporosis: A systematic review and meta-analysis."
+      },
+      {
+        "pmid": "36556004",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "title": "Effects of Low-Load Blood Flow Restriction Resistance Training on Muscle Strength and Hypertrophy Compared with Traditional Resistance Training in Healthy Adults Older Than 60 Years: Systematic Review and Meta-Analysis."
+      },
+      {
+        "pmid": "37089606",
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "title": "Dose-response relationship of resistance training for muscle morphology and strength in elderly cancer patients: A meta-analysis."
+      },
+      {
+        "pmid": "37582807",
+        "publication_types": [
+          "Journal Article"
+        ],
+        "title": "Effect of free-weight vs. machine-based strength training on maximal strength, hypertrophy and jump performance - a systematic review and meta-analysis."
+      },
+      {
+        "pmid": "38470617",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "title": "Effects of Lifestyle Interventions on the Improvement of Chronic Non-Specific Low Back Pain: A Systematic Review and Network Meta-Analysis."
+      },
+      {
+        "pmid": "38637473",
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review"
+        ],
+        "title": "Effects of Chronic Static Stretching on Maximal Strength and Muscle Hypertrophy: A Systematic Review and Meta-Analysis with Meta-Regression."
+      }
+    ],
+    "n_graded_meta_analysis": 60,
+    "n_overgraded": 23
+  },
+  "propagation_to_confidence": {
+    "exercises_whose_confidence_level_changes": 19,
+    "exercises_whose_confidence_moves": 117,
+    "exercises_whose_top_study_changes": 38,
+    "exercises_with_linked_studies": 346,
+    "max_confidence_inflation": 0.22006250000000005,
+    "mean_confidence_inflation": 0.01917388607899805
+  },
+  "reproduces_committed_corpus": true,
+  "sensitivity_independent_mapping": {
+    "cohen_kappa": 0.6707598020304009,
+    "cohen_kappa_linear_weighted": 0.7242722738308878,
+    "comparison": "pt_full vs independent hand mapping",
+    "exact_agreement": 0.7629482071713147,
+    "exact_agreement_count": 383,
+    "graded_stronger": 95,
+    "graded_stronger_rate": 0.1892430278884462,
+    "graded_weaker": 24,
+    "graded_weaker_rate": 0.04780876494023904,
+    "inflation_asymmetry_ratio": 3.9583333333333335,
+    "mean_retrieval_weight_delta": 0.02400498007968124,
+    "mean_tier_score_delta": 0.04364541832669316,
+    "n": 502,
+    "one_directional": false
+  },
+  "tier_distribution": {
+    "pt_full": {
+      "controlled_trial": 11,
+      "meta_analysis": 60,
+      "narrative_review": 22,
+      "observational": 28,
+      "other": 173,
+      "rct": 190,
+      "systematic_review": 18
+    },
+    "pt_only": {
+      "controlled_trial": 11,
+      "meta_analysis": 37,
+      "narrative_review": 40,
+      "observational": 2,
+      "other": 234,
+      "rct": 154,
+      "systematic_review": 24
+    },
+    "pt_title": {
+      "controlled_trial": 4,
+      "meta_analysis": 57,
+      "narrative_review": 32,
+      "observational": 9,
+      "other": 213,
+      "rct": 169,
+      "systematic_review": 18
+    }
+  }
+}

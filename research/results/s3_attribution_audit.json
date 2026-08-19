@@ -1,0 +1,690 @@
+{
+  "a_coverage": {
+    "corpus_utilisation_rate": 0.28884462151394424,
+    "direct_evidence_count_histogram": {
+      "0": 978,
+      "1": 54,
+      "2": 25,
+      "3": 24,
+      "4": 46,
+      "6": 5,
+      "7": 11,
+      "8": 181
+    },
+    "exercise_coverage_rate": 0.26132930513595165,
+    "n_corpus_studies": 502,
+    "n_edges": 1915,
+    "n_exercises": 1324,
+    "n_exercises_with_evidence": 346,
+    "n_studies_ever_linked": 145,
+    "studies_per_exercise_cap": 8
+  },
+  "b_muscle_disconnect": {
+    "gap_clusters": {
+      "gap_calves": {
+        "delivery_rate": 0.6666666666666666,
+        "studies_ever_linked": 8,
+        "studies_fetched": 12,
+        "topic": "Calf (gastrocnemius/soleus) training"
+      },
+      "gap_core_abs": {
+        "delivery_rate": 0.10810810810810811,
+        "studies_ever_linked": 4,
+        "studies_fetched": 37,
+        "topic": "Direct abdominal / core training"
+      },
+      "gap_forearms_grip": {
+        "delivery_rate": 0.1,
+        "studies_ever_linked": 2,
+        "studies_fetched": 20,
+        "topic": "Forearm and grip training"
+      },
+      "gap_hip_abductors": {
+        "delivery_rate": 0.3,
+        "studies_ever_linked": 9,
+        "studies_fetched": 30,
+        "topic": "Hip abductor / gluteus medius training"
+      },
+      "gap_hip_adductors": {
+        "delivery_rate": 0.23076923076923078,
+        "studies_ever_linked": 6,
+        "studies_fetched": 26,
+        "topic": "Hip adductor / groin training"
+      },
+      "gap_kettlebell": {
+        "delivery_rate": 0.5833333333333334,
+        "studies_ever_linked": 7,
+        "studies_fetched": 12,
+        "topic": "Kettlebell training"
+      },
+      "gap_machine_vs_free": {
+        "delivery_rate": 0.25,
+        "studies_ever_linked": 1,
+        "studies_fetched": 4,
+        "topic": "Machine vs free-weight resistance training"
+      }
+    },
+    "per_muscle": {
+      "abs": {
+        "corpus_supply": 46,
+        "corpus_supply_ever_linked": 11,
+        "coverage_rate": 0.09467455621301775,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 169,
+        "n_exercises_with_evidence": 16,
+        "supply_delivered_rate": 0.2391304347826087
+      },
+      "biceps": {
+        "corpus_supply": 68,
+        "corpus_supply_ever_linked": 44,
+        "coverage_rate": 0.5827814569536424,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 151,
+        "n_exercises_with_evidence": 88,
+        "supply_delivered_rate": 0.6470588235294118
+      },
+      "calves": {
+        "corpus_supply": 18,
+        "corpus_supply_ever_linked": 14,
+        "coverage_rate": 0.6440677966101694,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 59,
+        "n_exercises_with_evidence": 38,
+        "supply_delivered_rate": 0.7777777777777778
+      },
+      "chest": {
+        "corpus_supply": 27,
+        "corpus_supply_ever_linked": 14,
+        "coverage_rate": 0.27380952380952384,
+        "engine_has_muscle_synonyms": false,
+        "n_exercises": 168,
+        "n_exercises_with_evidence": 46,
+        "supply_delivered_rate": 0.5185185185185185
+      },
+      "delts": {
+        "corpus_supply": 40,
+        "corpus_supply_ever_linked": 22,
+        "coverage_rate": 0.3916083916083916,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 143,
+        "n_exercises_with_evidence": 56,
+        "supply_delivered_rate": 0.55
+      },
+      "forearms": {
+        "corpus_supply": 9,
+        "corpus_supply_ever_linked": 5,
+        "coverage_rate": 0.0,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 37,
+        "n_exercises_with_evidence": 0,
+        "supply_delivered_rate": 0.5555555555555556
+      },
+      "glutes": {
+        "corpus_supply": 56,
+        "corpus_supply_ever_linked": 23,
+        "coverage_rate": 0.2708333333333333,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 144,
+        "n_exercises_with_evidence": 39,
+        "supply_delivered_rate": 0.4107142857142857
+      },
+      "hamstrings": {
+        "corpus_supply": 35,
+        "corpus_supply_ever_linked": 18,
+        "coverage_rate": 0.4642857142857143,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 28,
+        "n_exercises_with_evidence": 13,
+        "supply_delivered_rate": 0.5142857142857142
+      },
+      "hip_abductors": {
+        "corpus_supply": 5,
+        "corpus_supply_ever_linked": 4,
+        "coverage_rate": 0.0,
+        "engine_has_muscle_synonyms": false,
+        "n_exercises": 5,
+        "n_exercises_with_evidence": 0,
+        "supply_delivered_rate": 0.8
+      },
+      "hip_adductors": {
+        "corpus_supply": 5,
+        "corpus_supply_ever_linked": 1,
+        "coverage_rate": 0.16666666666666666,
+        "engine_has_muscle_synonyms": false,
+        "n_exercises": 6,
+        "n_exercises_with_evidence": 1,
+        "supply_delivered_rate": 0.2
+      },
+      "lats": {
+        "corpus_supply": 28,
+        "corpus_supply_ever_linked": 15,
+        "coverage_rate": 0.04938271604938271,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 81,
+        "n_exercises_with_evidence": 4,
+        "supply_delivered_rate": 0.5357142857142857
+      },
+      "mid_back": {
+        "corpus_supply": 0,
+        "corpus_supply_ever_linked": 0,
+        "coverage_rate": 0.07954545454545454,
+        "engine_has_muscle_synonyms": false,
+        "n_exercises": 88,
+        "n_exercises_with_evidence": 7,
+        "supply_delivered_rate": null
+      },
+      "quads": {
+        "corpus_supply": 50,
+        "corpus_supply_ever_linked": 21,
+        "coverage_rate": 0.37209302325581395,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 43,
+        "n_exercises_with_evidence": 16,
+        "supply_delivered_rate": 0.42
+      },
+      "spinal_erectors": {
+        "corpus_supply": 0,
+        "corpus_supply_ever_linked": 0,
+        "coverage_rate": 0.42105263157894735,
+        "engine_has_muscle_synonyms": false,
+        "n_exercises": 19,
+        "n_exercises_with_evidence": 8,
+        "supply_delivered_rate": null
+      },
+      "traps": {
+        "corpus_supply": 26,
+        "corpus_supply_ever_linked": 10,
+        "coverage_rate": 0.0,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 17,
+        "n_exercises_with_evidence": 0,
+        "supply_delivered_rate": 0.38461538461538464
+      },
+      "triceps": {
+        "corpus_supply": 46,
+        "corpus_supply_ever_linked": 22,
+        "coverage_rate": 0.10294117647058823,
+        "engine_has_muscle_synonyms": true,
+        "n_exercises": 136,
+        "n_exercises_with_evidence": 14,
+        "supply_delivered_rate": 0.4782608695652174
+      }
+    }
+  },
+  "c_alias_mechanism": {
+    "alias_firing_rate": 0.028934010152284265,
+    "catalog_alias_word_count": {
+      "histogram": {
+        "1": 1,
+        "2": 922,
+        "3": 523,
+        "4": 489,
+        "5": 356,
+        "6": 197,
+        "7": 87,
+        "8": 49,
+        "9": 10,
+        "10": 2,
+        "11": 3,
+        "12": 1
+      },
+      "mean": 3.5939393939393938,
+      "median": 3.0
+    },
+    "matched_alias_word_count": {
+      "histogram": {
+        "2": 49,
+        "3": 7,
+        "7": 1
+      },
+      "mean": 2.210526315789474,
+      "median": 2
+    },
+    "n_alias_slots_in_catalog": 2640,
+    "n_blocklisted_generic_aliases": 12,
+    "n_distinct_aliases_in_catalog": 1970,
+    "n_distinct_aliases_that_ever_match": 57,
+    "top_matched_aliases": [
+      {
+        "alias": "calf raise",
+        "edges": 288,
+        "words": 2
+      },
+      {
+        "alias": "preacher curl",
+        "edges": 212,
+        "words": 2
+      },
+      {
+        "alias": "biceps curl",
+        "edges": 208,
+        "words": 2
+      },
+      {
+        "alias": "bench press",
+        "edges": 208,
+        "words": 2
+      },
+      {
+        "alias": "leg raise",
+        "edges": 120,
+        "words": 2
+      },
+      {
+        "alias": "shoulder press",
+        "edges": 112,
+        "words": 2
+      },
+      {
+        "alias": "chest press",
+        "edges": 96,
+        "words": 2
+      },
+      {
+        "alias": "leg curl",
+        "edges": 88,
+        "words": 2
+      },
+      {
+        "alias": "lateral raise",
+        "edges": 75,
+        "words": 2
+      },
+      {
+        "alias": "split squat",
+        "edges": 70,
+        "words": 2
+      },
+      {
+        "alias": "leg press",
+        "edges": 56,
+        "words": 2
+      },
+      {
+        "alias": "bicep curl",
+        "edges": 48,
+        "words": 2
+      },
+      {
+        "alias": "leg deadlift",
+        "edges": 36,
+        "words": 2
+      },
+      {
+        "alias": "upright row",
+        "edges": 36,
+        "words": 2
+      },
+      {
+        "alias": "leg squat",
+        "edges": 32,
+        "words": 2
+      },
+      {
+        "alias": "full squat",
+        "edges": 16,
+        "words": 2
+      },
+      {
+        "alias": "leg extension",
+        "edges": 16,
+        "words": 2
+      },
+      {
+        "alias": "back extension",
+        "edges": 12,
+        "words": 2
+      },
+      {
+        "alias": "concentration curl",
+        "edges": 12,
+        "words": 2
+      },
+      {
+        "alias": "overhead press",
+        "edges": 12,
+        "words": 2
+      },
+      {
+        "alias": "romanian deadlift",
+        "edges": 12,
+        "words": 2
+      },
+      {
+        "alias": "arm curl",
+        "edges": 12,
+        "words": 2
+      },
+      {
+        "alias": "push up",
+        "edges": 12,
+        "words": 2
+      },
+      {
+        "alias": "calf raises",
+        "edges": 12,
+        "words": 2
+      },
+      {
+        "alias": "front squat",
+        "edges": 10,
+        "words": 2
+      }
+    ]
+  },
+  "d_fanout": {
+    "citation_list_group_sizes": [
+      36,
+      27,
+      26,
+      26,
+      19,
+      16,
+      15,
+      15,
+      14,
+      12,
+      11,
+      10
+    ],
+    "fanout_max": 47,
+    "fanout_mean": 13.206896551724139,
+    "fanout_median": 10,
+    "largest_identical_citation_group": 36,
+    "most_reused_studies": [
+      [
+        "42264842",
+        47
+      ],
+      [
+        "40944139",
+        45
+      ],
+      [
+        "37015016",
+        43
+      ],
+      [
+        "36856799",
+        42
+      ],
+      [
+        "32705392",
+        40
+      ],
+      [
+        "31156757",
+        39
+      ],
+      [
+        "39162881",
+        39
+      ],
+      [
+        "36199287",
+        38
+      ],
+      [
+        "32735428",
+        36
+      ],
+      [
+        "36048793",
+        36
+      ]
+    ],
+    "n_distinct_citation_lists": 50,
+    "n_evidenced_exercises": 346,
+    "n_linked_studies": 145
+  },
+  "e_runtime_funnel": {
+    "hypertrophy": {
+      "exercise_coverage_at_request_time": 0.18882175226586104,
+      "exercises_with_a_surviving_citation": 250,
+      "modality_shortcut_share": 0.8830486202365309,
+      "offline_links": 1915,
+      "pass_goal_gate": 761,
+      "pass_specificity_gate": 1915,
+      "passed_via_modality_shortcut": 672
+    },
+    "strength": {
+      "exercise_coverage_at_request_time": 0.2515105740181269,
+      "exercises_with_a_surviving_citation": 333,
+      "modality_shortcut_share": 0.9519498607242339,
+      "offline_links": 1915,
+      "pass_goal_gate": 1436,
+      "pass_specificity_gate": 1915,
+      "passed_via_modality_shortcut": 1367
+    }
+  },
+  "environment": {
+    "machine": "arm64",
+    "packages": {
+      "chromadb": "1.5.9",
+      "matplotlib": "3.9.4",
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "sentence_transformers": "5.1.2",
+      "sklearn": "1.6.1",
+      "torch": "2.8.0",
+      "transformers": "4.57.6"
+    },
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "seed": 20260818
+  },
+  "f_ranking": {
+    "hypertrophy": {
+      "evidence_enrichment": 2.8063356164383566,
+      "mean_rank1_tied_share": 0.2815988112262447,
+      "n_rest": 1214,
+      "n_top5": 80,
+      "rank1_ties": [
+        {
+          "muscle": "abs",
+          "out_of": 169,
+          "tie_size": 8,
+          "tied_share": 0.047337278106508875
+        },
+        {
+          "muscle": "biceps",
+          "out_of": 151,
+          "tie_size": 27,
+          "tied_share": 0.17880794701986755
+        },
+        {
+          "muscle": "calves",
+          "out_of": 59,
+          "tie_size": 36,
+          "tied_share": 0.6101694915254238
+        },
+        {
+          "muscle": "chest",
+          "out_of": 168,
+          "tie_size": 25,
+          "tied_share": 0.1488095238095238
+        },
+        {
+          "muscle": "delts",
+          "out_of": 143,
+          "tie_size": 19,
+          "tied_share": 0.13286713286713286
+        },
+        {
+          "muscle": "forearms",
+          "out_of": 37,
+          "tie_size": 26,
+          "tied_share": 0.7027027027027027
+        },
+        {
+          "muscle": "glutes",
+          "out_of": 144,
+          "tie_size": 6,
+          "tied_share": 0.041666666666666664
+        },
+        {
+          "muscle": "hamstrings",
+          "out_of": 28,
+          "tie_size": 11,
+          "tied_share": 0.39285714285714285
+        },
+        {
+          "muscle": "hip_abductors",
+          "out_of": 5,
+          "tie_size": 4,
+          "tied_share": 0.8
+        },
+        {
+          "muscle": "hip_adductors",
+          "out_of": 6,
+          "tie_size": 1,
+          "tied_share": 0.16666666666666666
+        },
+        {
+          "muscle": "lats",
+          "out_of": 81,
+          "tie_size": 3,
+          "tied_share": 0.037037037037037035
+        },
+        {
+          "muscle": "mid_back",
+          "out_of": 88,
+          "tie_size": 6,
+          "tied_share": 0.06818181818181818
+        },
+        {
+          "muscle": "quads",
+          "out_of": 43,
+          "tie_size": 2,
+          "tied_share": 0.046511627906976744
+        },
+        {
+          "muscle": "spinal_erectors",
+          "out_of": 19,
+          "tie_size": 6,
+          "tied_share": 0.3157894736842105
+        },
+        {
+          "muscle": "traps",
+          "out_of": 17,
+          "tie_size": 13,
+          "tied_share": 0.7647058823529411
+        },
+        {
+          "muscle": "triceps",
+          "out_of": 136,
+          "tie_size": 7,
+          "tied_share": 0.051470588235294115
+        }
+      ],
+      "rest_evidenced_rate": 0.24052718286655683,
+      "top5_evidenced_rate": 0.675
+    },
+    "strength": {
+      "evidence_enrichment": 2.326833333333333,
+      "mean_rank1_tied_share": 0.10857938830646413,
+      "n_rest": 1214,
+      "n_top5": 80,
+      "rank1_ties": [
+        {
+          "muscle": "abs",
+          "out_of": 169,
+          "tie_size": 5,
+          "tied_share": 0.029585798816568046
+        },
+        {
+          "muscle": "biceps",
+          "out_of": 151,
+          "tie_size": 26,
+          "tied_share": 0.17218543046357615
+        },
+        {
+          "muscle": "calves",
+          "out_of": 59,
+          "tie_size": 36,
+          "tied_share": 0.6101694915254238
+        },
+        {
+          "muscle": "chest",
+          "out_of": 168,
+          "tie_size": 25,
+          "tied_share": 0.1488095238095238
+        },
+        {
+          "muscle": "delts",
+          "out_of": 143,
+          "tie_size": 1,
+          "tied_share": 0.006993006993006993
+        },
+        {
+          "muscle": "forearms",
+          "out_of": 37,
+          "tie_size": 2,
+          "tied_share": 0.05405405405405406
+        },
+        {
+          "muscle": "glutes",
+          "out_of": 144,
+          "tie_size": 1,
+          "tied_share": 0.006944444444444444
+        },
+        {
+          "muscle": "hamstrings",
+          "out_of": 28,
+          "tie_size": 1,
+          "tied_share": 0.03571428571428571
+        },
+        {
+          "muscle": "hip_abductors",
+          "out_of": 5,
+          "tie_size": 1,
+          "tied_share": 0.2
+        },
+        {
+          "muscle": "hip_adductors",
+          "out_of": 6,
+          "tie_size": 1,
+          "tied_share": 0.16666666666666666
+        },
+        {
+          "muscle": "lats",
+          "out_of": 81,
+          "tie_size": 1,
+          "tied_share": 0.012345679012345678
+        },
+        {
+          "muscle": "mid_back",
+          "out_of": 88,
+          "tie_size": 3,
+          "tied_share": 0.03409090909090909
+        },
+        {
+          "muscle": "quads",
+          "out_of": 43,
+          "tie_size": 1,
+          "tied_share": 0.023255813953488372
+        },
+        {
+          "muscle": "spinal_erectors",
+          "out_of": 19,
+          "tie_size": 1,
+          "tied_share": 0.05263157894736842
+        },
+        {
+          "muscle": "traps",
+          "out_of": 17,
+          "tie_size": 3,
+          "tied_share": 0.17647058823529413
+        },
+        {
+          "muscle": "triceps",
+          "out_of": 136,
+          "tie_size": 1,
+          "tied_share": 0.007352941176470588
+        }
+      ],
+      "rest_evidenced_rate": 0.2471169686985173,
+      "top5_evidenced_rate": 0.575
+    }
+  }
+}

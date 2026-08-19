@@ -1,0 +1,23 @@
+pair_id,attachment_path,exercise_name,pmid,matched_alias,movement_involved,goal_supported,variant_exact,category
+3544:38280014,alias_match,Bodyweight Incline Side Plank,38280014,side plank,no,no,no,unrelated_topic
+0068:36918403,alias_match,Barbell One Leg Squat,36918403,leg squat,yes,no,no,supports_movement_not_variant
+1652:41287002,alias_match,Dumbbell Bicep Curl on Exercise Ball with Leg Raised,41287002,bicep curl,yes,no,no,different_population_or_modality
+1634:37182530,alias_match,Cable Lying Bicep Curl,37182530,bicep curl,no,no,no,term_is_a_clinical_test_not_an_exercise
+0496:38515303,alias_match,Inverse Leg Curl (Bench Support),38515303,leg curl,no,no,no,supports_muscle_not_movement
+0496:42264842,alias_match,Inverse Leg Curl (Bench Support),42264842,leg curl,yes,yes,no,supports_movement_not_variant
+1476:39593440,alias_match,One Leg Squat,39593440,leg squat,no,no,no,term_is_a_clinical_test_not_an_exercise
+0311:32824894,alias_match,Dumbbell Full Can Lateral Raise,32824894,lateral raise,yes,no,no,supports_movement_not_variant
+0396:32669052,alias_match,Dumbbell Seated Lateral Raise,32669052,lateral raise,yes,yes,no,supports_movement_not_variant
+2810:29870422,alias_match,Barbell Split Squat V. 2,29870422,split squat,yes,yes,yes,supports_specific_variant
+1727:35819335,alias_match,Cable Standing Reverse Grip One Arm Overhead Tricep Extension,35819335,elbow extension training performed in the overhead,yes,yes,no,supports_movement_not_variant
+0123:38421430,alias_match,Barbell Wide-Grip Upright Row,38421430,upright row,yes,yes,no,supports_movement_not_variant
+2611:37015016,alias_match,Lever Horizontal One Leg Press,37015016,leg press,no,no,no,unrelated_topic
+0308:33312291,alias_match,Dumbbell Fly,33312291,dumbbell fly,yes,no,yes,different_population_or_modality
+1653:37182530,alias_match,Dumbbell Bicep Curl with Stork Stance,37182530,bicep curl,no,no,no,term_is_a_clinical_test_not_an_exercise
+1653:41287002,alias_match,Dumbbell Bicep Curl with Stork Stance,41287002,bicep curl,yes,no,no,different_population_or_modality
+1757:32857686,alias_match,Dumbbell Single Leg Deadlift,32857686,leg deadlift,yes,no,no,different_population_or_modality
+0098:38280014,alias_match,Barbell Side Split Squat,38280014,split squat,no,no,no,unrelated_topic
+0116:40586278,alias_match,Barbell Straight Leg Deadlift,40586278,leg deadlift,yes,yes,yes,supports_specific_variant
+0763:33352879,alias_match,Smith Reverse Calf Raises,33352879,calf raises,no,no,no,supports_muscle_not_movement
+0404:38464757,alias_match,Dumbbell Seated Shoulder Press (Parallel Grip),38464757,shoulder press,yes,yes,no,supports_movement_not_variant
+0290:37789670,alias_match,Dumbbell Bench Seated Press,37789670,bench press,no,no,no,unrelated_topic

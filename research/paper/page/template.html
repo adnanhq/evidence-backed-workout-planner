@@ -1,0 +1,412 @@
+<title>Retrieval Is Not Grounding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,500;0,600;1,6..72,400&family=Source+Sans+3:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+:root {
+  color-scheme: light;
+  --ground:      #fbfbf9;
+  --panel:       #ffffff;
+  --figure-mat:  #fcfcfb;
+  --ink:         #14171c;
+  --ink-2:       #545a63;
+  --ink-3:       #7d838c;
+  --rule:        #e2e4e0;
+  --rule-soft:   #eef0ec;
+  --accent:      #1b5fae;
+  --accent-soft: #e8f0fa;
+  --tier-ok:     #1c6152;
+  --tier-ok-bg:  #e4f0ec;
+  --tier-mid:    #8a5a06;
+  --tier-mid-bg: #f8efdc;
+  --tier-bad:    #9a3a24;
+  --tier-bad-bg: #f8e8e2;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ground:      #101317;
+    --panel:       #171b21;
+    --figure-mat:  #f4f4f1;
+    --ink:         #edeef0;
+    --ink-2:       #a8aeb8;
+    --ink-3:       #7d838c;
+    --rule:        #2a3038;
+    --rule-soft:   #212730;
+    --accent:      #7cb0ea;
+    --accent-soft: #1a2735;
+    --tier-ok:     #7fc9b4;
+    --tier-ok-bg:  #16302a;
+    --tier-mid:    #dbab55;
+    --tier-mid-bg: #322715;
+    --tier-bad:    #e29079;
+    --tier-bad-bg: #35201a;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground:      #101317;
+  --panel:       #171b21;
+  --figure-mat:  #f4f4f1;
+  --ink:         #edeef0;
+  --ink-2:       #a8aeb8;
+  --ink-3:       #7d838c;
+  --rule:        #2a3038;
+  --rule-soft:   #212730;
+  --accent:      #7cb0ea;
+  --accent-soft: #1a2735;
+  --tier-ok:     #7fc9b4;
+  --tier-ok-bg:  #16302a;
+  --tier-mid:    #dbab55;
+  --tier-mid-bg: #322715;
+  --tier-bad:    #e29079;
+  --tier-bad-bg: #35201a;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.62;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px 120px; }
+.col { max-width: 68ch; }
+
+h1, h2, h3 {
+  font-family: Newsreader, ui-serif, Georgia, serif;
+  font-weight: 500;
+  text-wrap: balance;
+  margin: 0;
+  letter-spacing: -0.012em;
+}
+p { margin: 0; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+/* ---------- masthead ---------- */
+.mast { padding: 88px 0 40px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--ink-3); margin-bottom: 24px;
+}
+.mast h1 { font-size: clamp(2.5rem, 5.4vw, 3.9rem); line-height: 1.06; }
+.mast .sub {
+  font-family: Newsreader, serif; font-size: clamp(1.15rem, 2.1vw, 1.42rem);
+  font-style: italic; color: var(--ink-2); margin-top: 14px; max-width: 40ch;
+  line-height: 1.4;
+}
+.mast .byline {
+  margin-top: 34px; font-size: 14.5px; color: var(--ink-3);
+  display: flex; flex-wrap: wrap; gap: 8px 20px;
+}
+
+/* ---------- lede ---------- */
+.lede { padding: 48px 0 8px; }
+.lede p { font-size: 20.5px; line-height: 1.56; color: var(--ink); }
+.lede p + p { margin-top: 18px; }
+.lede strong { font-weight: 600; }
+
+/* ---------- headline numbers ---------- */
+.stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1px; background: var(--rule); border: 1px solid var(--rule);
+  margin: 52px 0 8px; border-radius: 3px; overflow: hidden;
+}
+.stat { background: var(--panel); padding: 22px 20px 20px; }
+.stat .v {
+  font-family: "IBM Plex Mono", monospace; font-size: 30px; font-weight: 500;
+  letter-spacing: -0.03em; font-variant-numeric: tabular-nums; line-height: 1.1;
+}
+.stat .k { font-size: 13.5px; color: var(--ink-2); margin-top: 9px; line-height: 1.4; }
+
+/* ---------- stage sections ---------- */
+.stage { padding-top: 76px; }
+.stage-head {
+  display: flex; align-items: baseline; gap: 16px;
+  border-top: 2px solid var(--ink); padding-top: 14px; margin-bottom: 6px;
+}
+.stage-no {
+  font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 500;
+  letter-spacing: 0.1em; color: var(--accent); padding-top: 8px;
+}
+.stage h2 { font-size: clamp(1.6rem, 3.1vw, 2.15rem); line-height: 1.18; }
+.stage .q {
+  font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-3);
+  letter-spacing: 0.02em; margin: 14px 0 26px;
+}
+.stage p + p { margin-top: 16px; }
+.stage p { margin-top: 16px; }
+
+.pull {
+  border-left: 2px solid var(--accent); padding: 4px 0 4px 20px;
+  margin: 28px 0; font-family: Newsreader, serif; font-size: 21px;
+  line-height: 1.42; color: var(--ink);
+}
+
+code, .mono { font-family: "IBM Plex Mono", monospace; font-size: 0.88em; }
+code { background: var(--rule-soft); padding: 1.5px 5px; border-radius: 3px; }
+pre {
+  background: var(--rule-soft); border: 1px solid var(--rule); border-radius: 4px;
+  padding: 15px 17px; overflow-x: auto; font-size: 13px; line-height: 1.6; margin: 24px 0;
+}
+pre code { background: none; padding: 0; font-size: inherit; }
+
+/* ---------- figures ---------- */
+figure { margin: 40px 0 0; }
+.mat {
+  background: var(--figure-mat); border: 1px solid var(--rule);
+  border-radius: 4px; padding: 14px; overflow-x: auto;
+}
+.mat img { display: block; width: 100%; height: auto; min-width: 560px; }
+figcaption {
+  margin-top: 12px; font-size: 13.5px; color: var(--ink-2); line-height: 1.5;
+  max-width: 76ch;
+}
+figcaption b { font-family: "IBM Plex Mono", monospace; font-size: 12px;
+  font-weight: 500; color: var(--ink-3); letter-spacing: 0.06em; }
+
+/* ---------- tables ---------- */
+.tw { overflow-x: auto; margin: 30px 0 0; }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 520px; }
+th, td { text-align: left; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+th {
+  font-family: "IBM Plex Mono", monospace; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--ink-3); font-weight: 500;
+  border-bottom: 1px solid var(--rule); padding-bottom: 8px;
+}
+td.num { font-family: "IBM Plex Mono", monospace; font-size: 13px;
+  font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.chip {
+  display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 10.5px;
+  letter-spacing: 0.07em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px;
+  white-space: nowrap;
+}
+.chip.ok  { background: var(--tier-ok-bg);  color: var(--tier-ok); }
+.chip.mid { background: var(--tier-mid-bg); color: var(--tier-mid); }
+.chip.bad { background: var(--tier-bad-bg); color: var(--tier-bad); }
+
+/* ---------- contribution / closing panels ---------- */
+.panel {
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 4px;
+  padding: 30px 32px; margin-top: 34px;
+}
+.panel h3 { font-size: 1.24rem; margin-bottom: 12px; }
+.panel + .panel { margin-top: 18px; }
+.panel p { margin-top: 12px; }
+
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-top: 34px; }
+.grid2 .panel { margin-top: 0; }
+
+.closing { margin-top: 88px; border-top: 2px solid var(--ink); padding-top: 26px; }
+.closing h2 { font-size: 1.75rem; }
+
+footer {
+  margin-top: 76px; padding-top: 22px; border-top: 1px solid var(--rule);
+  font-size: 13.5px; color: var(--ink-3); line-height: 1.6;
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+@media (max-width: 620px) { body { font-size: 16px; } .mast { padding-top: 56px; } }
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div class="eyebrow">CSE498R · research proposal · preliminary results</div>
+    <h1>Retrieval Is Not Grounding</h1>
+    <p class="sub">A stage-wise audit of an evidence-backed exercise recommender — and why measuring the retriever misses every real failure.</p>
+    <div class="byline">
+      <span>502 studies · 1,324 exercises · 1,915 citation links</span>
+      <span>5 embedding models × 4 query formulations × 49 queries</span>
+    </div>
+  </header>
+
+  <section class="lede col">
+    <p>The capstone puts a PubMed citation beside every exercise it recommends. For that citation to be trustworthy, four separate things have to go right: the study has to be graded correctly, the right studies have to be retrieved, the right study has to reach the right exercise, and the interface has to represent all of it honestly.</p>
+    <p>We measured each of those four steps separately. <strong>Three of them turned out to have ground truth already sitting in the pipeline's own data</strong>, so they cost nothing to evaluate. The headline: retrieval — the stage everyone evaluates — is not where grounding fails. Every failure we found lives in the inexpensive logic around it.</p>
+  </section>
+
+  <div class="stats">
+    <div class="stat"><div class="v">0.0%</div><div class="k">of study-grading disagreements are downward. All 100 inflate.</div></div>
+    <div class="stat"><div class="v">~6×</div><div class="k">how much more the query wording matters than the embedding model</div></div>
+    <div class="stat"><div class="v">+137%</div><div class="k">retrieval gain on held-out queries from fixing that wording</div></div>
+    <div class="stat"><div class="v">26.1%</div><div class="k">of catalogued exercises carry any citation at all</div></div>
+    <div class="stat"><div class="v">0 / 37</div><div class="k">forearm exercises citing the 20 forearm studies fetched for them</div></div>
+  </div>
+
+  <!-- ============ S1 ============ -->
+  <section class="stage">
+    <div class="stage-head">
+      <div class="stage-no">S1</div>
+      <h2>The study-design grader inflates, and can only inflate</h2>
+    </div>
+    <div class="q col">reference: MEDLINE publication types · annotation cost: none</div>
+    <div class="col">
+      <p>Every study is graded into an evidence tier — meta-analysis down to <span class="mono">other</span> — and that tier is the largest single term in the study's retrieval weight, which then feeds the confidence score users see. The grader is a first-match keyword cascade:</p>
+      <pre><code>if any(pattern in publication_types or pattern in title_and_abstract
+       for pattern in META_PATTERNS):
+    return "meta_analysis"</code></pre>
+      <p>Notice it checks the bibliographic tags <em>or</em> the abstract text. So the reference condition is <strong>the system's own function, restricted to the tags</strong>. No mapping of ours sits between the system and its ground truth — it is a one-line ablation of a single design decision: should the grader read the abstract body?</p>
+      <p>It agrees with MEDLINE on 80.1% of 502 studies (κ = 0.719). Of the 100 disagreements, 19.9% grade the study <em>stronger</em> and <strong>0.0% grade it weaker</strong>.</p>
+      <div class="pull">That asymmetry is structural, not empirical. Giving a first-match cascade more text can only create matches, never remove them — and the cascade is ordered strongest-tier-first. Reading more text can only promote.</div>
+      <p>The error reaches the interface: re-deriving confidence with corrected tiers moves 117 of 346 evidenced exercises, changes the displayed confidence <em>level</em> for 19, and changes which study is shown first for 38. The fix is one line — restrict the cascade to tags plus title, which recovers 90.8% agreement and removes more than half the inflation.</p>
+    </div>
+    <figure>
+      <div class="mat"><img src="{{f1_tier_grading}}" alt="Left: a confusion matrix of the shipped grader against MEDLINE publication types, with every off-diagonal cell above the diagonal. Right: tier distribution under three progressively wider text views, showing counts shifting toward stronger tiers as more text is read."></div>
+      <figcaption><b>FIG 1</b> &nbsp;Every off-diagonal cell sits above the diagonal. Widening the text the cascade reads shifts studies into stronger tiers and never into weaker ones.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ S2 ============ -->
+  <section class="stage">
+    <div class="stage-head">
+      <div class="stage-no">S2</div>
+      <h2>How the query is written matters far more than which model embeds it</h2>
+    </div>
+    <div class="q col">reference: corpus provenance — which boolean query fetched each study · annotation cost: none</div>
+    <div class="col">
+      <p>When the corpus was built, each study recorded which boolean PubMed query pulled it in. That gives relevance labels for free — and they come from a <em>different retrieval paradigm</em> (boolean keyword search) than the dense vector search under test.</p>
+      <p>We varied five embedding models against four ways of writing the query. The models are chosen to settle one question cleanly: is a biomedical model better because it is biomedical, or just because it is bigger? <span class="mono">bge-base</span>, <span class="mono">PubMedBERT</span> and <span class="mono">S-PubMedBERT-MS-MARCO</span> are all 109.5M parameters at 768 dimensions. Size is held constant.</p>
+      <p>No model differs significantly from the shipped one (Wilcoxon p ≥ 0.062); the range across all five is 0.064 nDCG. The range across query formulations is 0.400 — about six times larger. The shipped model loses <strong>81% of its nDCG</strong> between the raw query and the production query template.</p>
+      <div class="pull">Domain-specific pretraining did not help. At identical size, PubMedBERT was the worst arm tested. The biomedical model that performed well was the one <em>also</em> trained for retrieval — the discriminating factor is retrieval training, not biomedical domain.</div>
+      <p>And although no model is significantly better at retrieval, swapping the model rewrites most of the bibliography: mean Jaccard overlap with the baseline citation set is 0.32. About half of that instability is the fixed distance ceiling failing to transfer between embedding spaces; half is genuine ranking difference. <strong>Retrieval metrics were flat across a change that rewrote the citations.</strong></p>
+    </div>
+    <figure>
+      <div class="mat"><img src="{{f2_retrieval_quality}}" alt="Grouped bar chart of nDCG at 10 for five embedding models across four query formulations, with 95 percent confidence intervals. Scores fall steeply from the boolean query to the production template for every model."></div>
+      <figcaption><b>FIG 2</b> &nbsp;Bars within each group barely separate; the groups themselves collapse from left to right. The model is not the lever — the query is.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ S2c ============ -->
+  <section class="stage">
+    <div class="stage-head">
+      <div class="stage-no">S2c</div>
+      <h2>So we pulled that lever, and measured what came back</h2>
+    </div>
+    <div class="q col">intervention · winner chosen on one half of the queries, gain reported from the other</div>
+    <div class="col">
+      <p>If query formulation is the dominant lever, the useful thing is to pull it rather than point at it. For a chest hypertrophy request the string being embedded was:</p>
+      <pre><code>hypertrophy resistance training protocol | target muscles: chest |
+sessions per week: 3 | split template: auto |
+equipment available: barbell, dumbbell | user notes: ... |
+candidate exercises: Band Bench Press, Barbell Bench Press, ...</code></pre>
+      <p>Roughly three quarters of that is scaffolding. <em>Sessions per week: 3</em> says nothing about which studies to retrieve.</p>
+      <p>Choosing the best of five rewrites and then scoring it on the same queries would be selecting on our own test set, so the 49 clusters were split deterministically in half: the winner was chosen on one half, and its gain read off the other, which played no part in the choice. The winner carries only the muscles, the goal, and what the user wrote:</p>
+      <pre><code>chest hypertrophy resistance training | Beginner programming principles</code></pre>
+      <div class="pull">On held-out queries: 0.215 against 0.091 &mdash; a 137% gain, p&nbsp;=&nbsp;0.0088, better on 12 of the 13 queries that moved. It improves every embedding model tested, and the share of requests yielding any citation is unchanged at 86%.</div>
+      <p>Two side questions fell out. Equipment tokens are neutral. Candidate exercise names are actively <em>harmful</em> &mdash; catalog product names like <span class="mono">Band Two Legs Calf Raise - (Band Under Both Legs) V. 2</span> are dense with variant and equipment words that abstracts never use.</p>
+    </div>
+    <figure>
+      <div class="mat"><img src="{{f7_query_repair}}" alt="Left: bar chart comparing five query formulations on the selection half and the held-out half, with the chosen minimal variant reaching 0.215 on held-out queries. Right: a dumbbell chart showing before and after retrieval scores for all five embedding models, every one improving."></div>
+      <figcaption><b>FIG 7</b> &nbsp;The winner was chosen on the left-hand half and measured on the right. Every embedding model improves, so the gain is a property of the query rather than of one model.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ S2b ============ -->
+  <section class="stage">
+    <div class="stage-head">
+      <div class="stage-no">S2b</div>
+      <h2>The one hard filter is calibrated to a single embedding space</h2>
+    </div>
+    <div class="q col">reference: off-topic probe set · annotation cost: none</div>
+    <div class="col">
+      <p>The engine drops any retrieved passage beyond a cosine distance of 0.50, and the code documents this as calibrated against off-topic probes — "yoga, nutrition, swimming". Those probes are not in the repository, so the claim cannot be reproduced. We supply a probe set that can be.</p>
+      <p>The ceiling turns out to be a property of the embedding space, not of the corpus. Under the shipped model it admits 4.3% of the corpus. Under three of the four alternatives it admits 94.6–100% and rejects <em>none</em> of the off-topic probes; under the fourth it admits 1.5%. The best separating ceiling ranges from 0.200 to 0.525.</p>
+      <p>Even for the shipped model the documented range overstates the filter: in-domain queries reach 0.821, so some legitimate questions are silenced entirely — and four of our five adjacent probes, including the yoga, nutrition and swimming cases the comment names, pass straight through.</p>
+    </div>
+    <figure>
+      <div class="mat"><img src="{{f3_threshold_calibration}}" alt="Five small multiple line charts, one per embedding model, showing the fraction of the corpus admitted as the cosine ceiling rises. A dashed line marks the shipped 0.50 ceiling, which lands at a completely different point on each curve."></div>
+      <figcaption><b>FIG 3</b> &nbsp;The same 0.50 ceiling lands at a different point on every curve. Change the embedding model and the safety filter silently becomes a no-op.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ S3 ============ -->
+  <section class="stage">
+    <div class="stage-head">
+      <div class="stage-no">S3</div>
+      <h2>The corpus holds the science; the name-matching step loses it</h2>
+    </div>
+    <div class="q col">reference: human and model adjudication · annotation cost: 25 items</div>
+    <div class="col">
+      <p>Independently of retrieval, each exercise is linked to studies whose text contains one of its name aliases. The project documents this as intentional — movement-level rather than per-variant attribution. We measured what that decision costs.</p>
+      <p>Only 346 of 1,324 exercises (26.1%) carry any citation, and only 145 of 502 studies (28.9%) ever attach to one. At request time it falls to 18.9% for a hypertrophy request. Coverage ranges from 0% to 64% by muscle — and does not follow supply.</p>
+      <div class="pull">The pipeline ran dedicated queries to fill the forearm evidence gap and fetched 20 studies on grip and forearm training. Not one of the 37 forearm exercises cites any of them. Same for traps, 0 of 17. Same for hip abductors, 0 of 5, from 30 fetched studies.</div>
+      <p>The mechanism explains it. Of 1,970 distinct catalog aliases, only <strong>57 ever match a study</strong> — and 49 of those 57 are exactly two words long. Matched aliases average 2.21 words; the catalog averages 3.59. Attribution only fires for movements that happen to have a short, generic name.</p>
+      <p>The consequences compound: one study is cited for up to 47 different exercises, and the 346 evidenced exercises share only 50 distinct citation lists — the largest group being 36 exercises with byte-identical citations.</p>
+    </div>
+    <figure>
+      <div class="mat"><img src="{{f4_attribution_coverage}}" alt="Two horizontal bar charts sharing a muscle axis. Left shows the share of each muscle's exercises carrying a citation, from 0 percent for forearms and traps to 64 percent for calves. Right shows how many corpus studies mention each muscle, which does not track the left chart."></div>
+      <figcaption><b>FIG 4</b> &nbsp;The two panels do not correspond. Muscles with substantial corpus coverage cite nothing, because attribution depends on name shape rather than on evidence.</figcaption>
+    </figure>
+    <div class="col">
+      <p style="margin-top:44px">Judging sampled citations at three increasing levels of claim specificity shows support collapsing as the claim sharpens. One failure category we did not anticipate: the matched term naming a <strong>clinical assessment test rather than an exercise</strong>. The alias "leg raise" matched a randomised trial of deep-oscillation massage therapy for hamstring flexibility — there, a leg raise is a flexibility test, not something anyone trained.</p>
+    </div>
+    <figure>
+      <div class="mat"><img src="{{f5_citation_specificity}}" alt="Bar chart showing citation support falling from 59 percent for whether the study used the movement, to 32 percent for whether it reports a relevant outcome, to 14 percent for whether it used the exact variant."></div>
+      <figcaption><b>FIG 5</b> &nbsp;Pilot adjudication, n = 22. Support falls from 59% to 32% to 14% as the claim becomes more specific; 9% satisfy all three. The full sample is bounded by free-tier API quota and the harness resumes.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ S4 ============ -->
+  <section class="stage">
+    <div class="stage-head">
+      <div class="stage-no">S4</div>
+      <h2>What the interface promises, checked against what it does</h2>
+    </div>
+    <div class="q col">reference: the system's own published methodology page · annotation cost: none</div>
+    <div class="col">
+      <p>The app publishes a methodology page with its formulas and explicit claims. Auditing a system against its own public specification is cheap, and it is the last link in the chain — it is what a user actually reads.</p>
+      <p>The most consequential guardrail <strong>holds</strong>: the heuristic confidence path is capped below the "high" threshold, and no zero-evidence exercise is ever labelled high. But the label beneath it does a great deal of work — "moderate" is applied to 1,006 exercises of which only <strong>5.9%</strong> have any linked study.</p>
+    </div>
+    <div class="tw"><table>
+      <thead><tr><th>Published claim</th><th>Says</th><th>Measured</th><th>Verdict</th></tr></thead>
+      <tbody>{{claim_rows}}</tbody>
+    </table></div>
+    <figure>
+      <div class="mat"><img src="{{f6_confidence_calibration}}" alt="Left: scatter of displayed confidence score against number of linked studies, showing a floor around 0.36 for exercises with no evidence. Right: bar chart of the probability an exercise has any direct evidence given its label — 100 percent for high, 5.9 percent for moderate, 13.9 percent for low."></div>
+      <figcaption><b>FIG 6</b> &nbsp;The score ranks correctly but has a floor: it can never report the absence of evidence. Separately, every set-and-rep prescription is a goal-dependent constant — the citation beside it supports the exercise choice, never the dose.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ closing ============ -->
+  <section class="closing">
+    <h2>Why this is a paper</h2>
+    <div class="grid2">
+      <div class="panel">
+        <h3>A protocol others can reuse</h3>
+        <p>Literature-RAG pipelines already produce their own ground truth and then discard it. The bibliographic index supplies study-design labels; the boolean queries that assembled the corpus supply relevance labels. Three of the four stages need no manual labelling at all — any team building a PubMed-backed system can run this in an afternoon.</p>
+      </div>
+      <div class="panel">
+        <h3>A finding that generalises</h3>
+        <p>The mechanisms are architectural, not local. First-match keyword cascades over widening text inflate monotonically. Absolute distance thresholds do not transfer across embedding spaces. String-match attribution is biased toward entities with short generic names. Blending heuristic priors with evidence yields a score that cannot express the absence of evidence.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>What we changed, and what we left alone</h3>
+      <p>Four findings were acted on &mdash; the query builder was scoped, the dormant citation-containment check was wired into every generation, the API's evidence appendix was aligned with the Markdown export, and two stale published counts were corrected. All 73 engine tests pass unchanged.</p>
+      <p>One was left alone deliberately. Restricting the study-design grader to publication types and titles would remove more than half the tier inflation &mdash; but tier scores are baked into the corpus, the catalog <em>and</em> the vector store, so making it take effect means rebuilding all three, which shifts rankings the existing quality tests assert on. S1 already measures what that change is worth, so the recommendation is reported rather than risked. Knowing which findings are worth acting on is part of the result.</p>
+    </div>
+
+    <div class="panel">
+      <h3>What the system gets right</h3>
+      <p>This is not a list of bugs — every mechanism measured is a documented design decision, and the paper reports what those decisions cost rather than treating them as defects. Three things were verified as sound: the ranking surfaces evidenced exercises <strong>2.8× more often</strong> than the rest of the catalog; retrieval returns an honestly empty result rather than padding with weak matches; and ranking ties are surfaced rather than concealed.</p>
+    </div>
+
+    <div class="panel">
+      <h3>What remains</h3>
+      <p>Complete the adjudicated citation sample — the harness is built, cached and resumable, and today's run was capped at 22 of 169 by free-tier API quota. Collect the 40 human annotations already prepared as a local task, report human–model agreement, and write up.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Every figure derives from a JSON result file produced by the evaluation harness in <span class="mono">research/</span>. The deterministic stages reproduce byte-identically across runs; each result file records the package versions and sampling seed that produced it. No module writes outside <span class="mono">research/</span> — the capstone is imported and audited in place, not modified.</p>
+  </footer>
+
+</div>

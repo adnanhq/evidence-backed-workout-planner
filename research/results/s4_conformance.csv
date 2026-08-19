@@ -1,0 +1,12 @@
+claim,published,measured,verdict,source
+exercises in catalog,1324,1324,conforms,science/page.tsx
+studies in corpus,502,502,conforms,science/page.tsx:253
+PubMed queries,103,103,conforms,science/page.tsx:254
+studies flagged for review,147,147,conforms,science/page.tsx:256
+exercises with direct evidence,346,346,conforms,science/page.tsx
+automated tests,73,73,conforms,science/page.tsx:460
+exercises (README),1324,1324,conforms,README.md
+no exercise can look highly-evidenced without actual evidence,"confidence hard-capped at c <= 0.72, below the 0.75 'high' threshold","max confidence among 978 zero-evidence exercises = 0.6400; labels: {'moderate': 947, 'low': 31}",conforms,science/page.tsx:326-331
+the model is mathematically unable to cite an exercise (or study) that isn't in its brief,enum-locked response schema,"exercise ids are enum-locked only when supports_structured_output(model) is true (gemma fallbacks receive no schema); the plan schema has no study field at all (study field present), so citations are never model-emitted",qualified,science/page.tsx:429-433
+every cited PMID is checked to be in the allowed set and in the appendix,validate_generated_markdown guardrail,"call sites: {'protocol_demo.py': 1, 'test_protocol_demo.py': 6}; runtime (non-test) call sites: {'protocol_demo.py': 1}",conforms,protocol_demo.py:2824-2919
+the evidence appendix lists the studies behind the protocol,one appendix,the Markdown renderer and the API mapper agree: both merge corpus findings with each exercise's reference_evidence,conforms,protocol_demo.py render_protocol_markdown vs app/mappers.py

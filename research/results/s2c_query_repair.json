@@ -1,0 +1,265 @@
+{
+  "baseline_is_the_frozen_audited_template": true,
+  "dev_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48
+  ],
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "engine_now_uses_the_winner": true,
+  "environment": {
+    "machine": "arm64",
+    "packages": {
+      "chromadb": "1.5.9",
+      "matplotlib": "3.9.4",
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "sentence_transformers": "5.1.2",
+      "sklearn": "1.6.1",
+      "torch": "2.8.0",
+      "transformers": "4.57.6"
+    },
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "seed": 20260818
+  },
+  "heldout_indices": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25,
+    27,
+    29,
+    31,
+    33,
+    35,
+    37,
+    39,
+    41,
+    43,
+    45,
+    47
+  ],
+  "n_queries": 49,
+  "selection_protocol": "variant chosen on the dev half only; the headline gain is read off the held-out half, so the reported improvement is not selected on the queries it is reported from",
+  "variants": {
+    "current": {
+      "delta_vs_current": 0.0,
+      "dev": {
+        "delta_vs_current": 0.0,
+        "n_better": 0,
+        "n_worse": 0,
+        "ndcg_at_10": 0.046440720236350305,
+        "relative_gain": 0.0,
+        "wilcoxon_p": 1.0
+      },
+      "example_query": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | equipment available: barbell, dumbbell | user notes: Beginner programming principles | candidate exercises: Barbell Bench Press, Barbell Decline Bench Press, Barbell Guillotine Bench Press, Barbell Incline Bench Press, Barbell Jm Bench Press",
+      "heldout": {
+        "delta_vs_current": 0.0,
+        "n_better": 0,
+        "n_worse": 0,
+        "ndcg_at_10": 0.09083978585265434,
+        "relative_gain": 0.0,
+        "wilcoxon_p": 1.0
+      },
+      "mean_query_chars": 342.85714285714283,
+      "mrr": 0.15870137686962235,
+      "ndcg_at_10": 0.06818720135454003,
+      "ndcg_at_10_ci": [
+        0.03520726321711413,
+        0.10573053829828617
+      ],
+      "precision_at_10": 0.05714285714285715,
+      "r_precision": 0.05122601055325552,
+      "recall_at_50": 0.14800219127744232,
+      "relative_gain": 0.0
+    },
+    "drop_scheduling": {
+      "delta_vs_current": 0.023525512243278514,
+      "dev": {
+        "delta_vs_current": 0.011258294491503826,
+        "n_better": 5,
+        "n_worse": 4,
+        "ndcg_at_10": 0.05769901472785413,
+        "relative_gain": 0.2424229089085419,
+        "wilcoxon_p": 0.3738398566319153
+      },
+      "example_query": "hypertrophy resistance training protocol | target muscles: chest | equipment available: barbell, dumbbell | user notes: Beginner programming principles | candidate exercises: Barbell Bench Press, Barbell Decline Bench Press, Barbell Guillotine Bench Press, Barbell Incline Bench Press, Barbell Jm Bench Press",
+      "heldout": {
+        "delta_vs_current": 0.036303864068043784,
+        "n_better": 8,
+        "n_worse": 1,
+        "ndcg_at_10": 0.12714364992069813,
+        "relative_gain": 0.3996471780209836,
+        "wilcoxon_p": 0.010862224704815628
+      },
+      "mean_query_chars": 296.85714285714283,
+      "mrr": 0.23926118826386408,
+      "ndcg_at_10": 0.09171271359781853,
+      "ndcg_at_10_ci": [
+        0.05268825988246938,
+        0.13605443862395056
+      ],
+      "precision_at_10": 0.06326530612244899,
+      "r_precision": 0.08119797790738918,
+      "recall_at_50": 0.18709614582564305,
+      "relative_gain": 0.34501360630651745
+    },
+    "drop_scheduling_and_equipment": {
+      "delta_vs_current": 0.023525512243278514,
+      "dev": {
+        "delta_vs_current": 0.011258294491503826,
+        "n_better": 5,
+        "n_worse": 4,
+        "ndcg_at_10": 0.05769901472785413,
+        "relative_gain": 0.2424229089085419,
+        "wilcoxon_p": 0.3738398566319153
+      },
+      "example_query": "hypertrophy resistance training protocol | target muscles: chest | user notes: Beginner programming principles | candidate exercises: Barbell Bench Press, Barbell Decline Bench Press, Barbell Guillotine Bench Press, Barbell Incline Bench Press, Barbell Jm Bench Press",
+      "heldout": {
+        "delta_vs_current": 0.036303864068043784,
+        "n_better": 8,
+        "n_worse": 1,
+        "ndcg_at_10": 0.12714364992069813,
+        "relative_gain": 0.3996471780209836,
+        "wilcoxon_p": 0.010862224704815628
+      },
+      "mean_query_chars": 275.9387755102041,
+      "mrr": 0.23926118826386408,
+      "ndcg_at_10": 0.09171271359781853,
+      "ndcg_at_10_ci": [
+        0.05268825988246938,
+        0.13605443862395056
+      ],
+      "precision_at_10": 0.06326530612244899,
+      "r_precision": 0.08119797790738918,
+      "recall_at_50": 0.18709614582564305,
+      "relative_gain": 0.34501360630651745
+    },
+    "lead_with_need": {
+      "delta_vs_current": 0.10039906000836321,
+      "dev": {
+        "delta_vs_current": 0.10694487678319249,
+        "n_better": 12,
+        "n_worse": 3,
+        "ndcg_at_10": 0.1533855970195428,
+        "relative_gain": 2.3028255427331654,
+        "wilcoxon_p": 0.004505955590264732
+      },
+      "example_query": "chest hypertrophy resistance training | Beginner programming principles | Barbell Bench Press, Barbell Decline Bench Press, Barbell Guillotine Bench Press, Barbell Incline Bench Press, Barbell Jm Bench Press",
+      "heldout": {
+        "delta_vs_current": 0.09358050086791617,
+        "n_better": 9,
+        "n_worse": 1,
+        "ndcg_at_10": 0.1844202867205705,
+        "relative_gain": 1.030170866097234,
+        "wilcoxon_p": 0.0069104298078148
+      },
+      "mean_query_chars": 216.3673469387755,
+      "mrr": 0.31709799873814176,
+      "ndcg_at_10": 0.16858626136290336,
+      "ndcg_at_10_ci": [
+        0.11791207089273203,
+        0.2236870757076603
+      ],
+      "precision_at_10": 0.12653061224489795,
+      "r_precision": 0.12275467886172015,
+      "recall_at_50": 0.3165389050741957,
+      "relative_gain": 1.4724032958375495
+    },
+    "minimal": {
+      "delta_vs_current": 0.11999874931918628,
+      "dev": {
+        "delta_vs_current": 0.11605705484766997,
+        "n_better": 15,
+        "n_worse": 2,
+        "ndcg_at_10": 0.16249777508402027,
+        "relative_gain": 2.499036497647365,
+        "wilcoxon_p": 0.004178572233432509
+      },
+      "example_query": "chest hypertrophy resistance training | Beginner programming principles",
+      "heldout": {
+        "delta_vs_current": 0.12410468106034916,
+        "n_better": 12,
+        "n_worse": 1,
+        "ndcg_at_10": 0.2149444669130035,
+        "relative_gain": 1.3661930165891385,
+        "wilcoxon_p": 0.008774633060101174
+      },
+      "mean_query_chars": 76.3061224489796,
+      "mrr": 0.3434406259976301,
+      "ndcg_at_10": 0.18818595067372632,
+      "ndcg_at_10_ci": [
+        0.12918449307277732,
+        0.2531993319666644
+      ],
+      "precision_at_10": 0.13877551020408166,
+      "r_precision": 0.14215305078940169,
+      "recall_at_50": 0.305410368040808,
+      "relative_gain": 1.759842711467972
+    },
+    "minimal_with_equipment": {
+      "delta_vs_current": 0.11310386405034122,
+      "dev": {
+        "delta_vs_current": 0.10254307972073355,
+        "n_better": 13,
+        "n_worse": 2,
+        "ndcg_at_10": 0.14898379995708386,
+        "relative_gain": 2.208042407586748,
+        "wilcoxon_p": 0.008252636899394443
+      },
+      "example_query": "chest hypertrophy resistance training | Beginner programming principles | barbell, dumbbell",
+      "heldout": {
+        "delta_vs_current": 0.12410468106034916,
+        "n_better": 12,
+        "n_worse": 1,
+        "ndcg_at_10": 0.2149444669130035,
+        "relative_gain": 1.3661930165891385,
+        "wilcoxon_p": 0.008774633060101174
+      },
+      "mean_query_chars": 86.51020408163265,
+      "mrr": 0.3717196243902362,
+      "ndcg_at_10": 0.18129106540488127,
+      "ndcg_at_10_ci": [
+        0.12343362408140378,
+        0.24397500928736393
+      ],
+      "precision_at_10": 0.12653061224489798,
+      "r_precision": 0.13848856190997577,
+      "recall_at_50": 0.30014858370824643,
+      "relative_gain": 1.658725711035662
+    }
+  },
+  "winner": "minimal"
+}

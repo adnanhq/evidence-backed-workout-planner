@@ -1,0 +1,832 @@
+{
+  "environment": {
+    "machine": "arm64",
+    "packages": {
+      "chromadb": "1.5.9",
+      "matplotlib": "3.9.4",
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "sentence_transformers": "5.1.2",
+      "sklearn": "1.6.1",
+      "torch": "2.8.0",
+      "transformers": "4.57.6"
+    },
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "seed": 20260818
+  },
+  "judge_model": "gemini-3.5-flash",
+  "n_failed": 147,
+  "n_judged": 22,
+  "rubric": "You are auditing whether a scientific citation supports an exercise recommendation.\n\nEXERCISE: {exercise_name}\nPrimary muscles: {muscles} | Equipment: {equipment} | Mechanic: {mechanic}\n\nCITED STUDY (PMID {pmid}, {year}, indexed as {tier}):\nTitle: {title}\nAbstract: {abstract}\n\nAnswer three questions at increasing specificity. Answer \"no\" when the abstract does\nnot provide the information; do not give credit for what is merely plausible.\n\n1. movement_involved: Did participants in this study actually PERFORM this movement\n   (or a clearly equivalent variant of it) as part of the intervention or measurement?\n   Beware: a phrase like \"leg raise\" or \"straight leg raise\" is often the name of a\n   CLINICAL ASSESSMENT TEST, not a training exercise. If the movement appears only as\n   a test, or only in a passing mention, answer \"no\".\n\n2. goal_supported: Does this study report a muscle-growth (hypertrophy) or\n   strength/performance OUTCOME that bears on using this exercise for training?\n\n3. variant_exact: Did the study use this SPECIFIC variant - same equipment and same\n   body position (e.g. incline vs flat, cable vs dumbbell, seated vs standing)?\n\nThen choose exactly one category from this list that best describes the link:\n{taxonomy}\n\nReturn JSON only.",
+  "summary": {
+    "alias_match": {
+      "all_three_rate": 0.09090909090909091,
+      "categories": {
+        "different_population_or_modality": 4,
+        "movement_named_only_incidentally": 0,
+        "supports_movement_not_variant": 7,
+        "supports_muscle_not_movement": 2,
+        "supports_specific_variant": 2,
+        "term_is_a_clinical_test_not_an_exercise": 3,
+        "unrelated_topic": 4
+      },
+      "goal_supported_rate": 0.3181818181818182,
+      "movement_involved_rate": 0.5909090909090909,
+      "n": 22,
+      "variant_exact_rate": 0.13636363636363635
+    },
+    "all": {
+      "all_three_rate": 0.09090909090909091,
+      "categories": {
+        "different_population_or_modality": 4,
+        "movement_named_only_incidentally": 0,
+        "supports_movement_not_variant": 7,
+        "supports_muscle_not_movement": 2,
+        "supports_specific_variant": 2,
+        "term_is_a_clinical_test_not_an_exercise": 3,
+        "unrelated_topic": 4
+      },
+      "goal_supported_rate": 0.3181818181818182,
+      "movement_involved_rate": 0.5909090909090909,
+      "n": 22,
+      "variant_exact_rate": 0.13636363636363635
+    }
+  },
+  "taxonomy": [
+    "supports_specific_variant",
+    "supports_movement_not_variant",
+    "supports_muscle_not_movement",
+    "movement_named_only_incidentally",
+    "term_is_a_clinical_test_not_an_exercise",
+    "different_population_or_modality",
+    "unrelated_topic"
+  ],
+  "temperature": 0.0,
+  "verdicts": [
+    {
+      "category": "unrelated_topic",
+      "goal_supported": "no",
+      "movement_involved": "no",
+      "pair_id": "3544:38280014",
+      "reason": "The study evaluated gluteus medius electromyographic activity during a 'side-plank with leg abduction', which is a different exercise variant than the 'Bodyweight Incline Side Plank'. Additionally, the study did not measure activation of the abdominal muscles (the primary muscle group for the incline side plank) nor did it assess any long-term hypertrophy, strength, or performance outcomes.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0001:32009980"
+    },
+    {
+      "category": "supports_movement_not_variant",
+      "goal_supported": "no",
+      "movement_involved": "yes",
+      "pair_id": "0068:36918403",
+      "reason": "The study evaluated the single-leg squat with and without 12RM external resistance, but it did not specify the use of a barbell (the exact variant) and measured acute gluteal muscle forces rather than long-term strength or hypertrophy outcomes.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0015:39959841"
+    },
+    {
+      "category": "different_population_or_modality",
+      "goal_supported": "no",
+      "movement_involved": "yes",
+      "pair_id": "1652:41287002",
+      "reason": "The study evaluated the effects of Kinesio taping (a different therapeutic/performance modality) during bicep curls, rather than evaluating the bicep curl itself as a training exercise. Additionally, it did not use the specific variant of performing the curl on an exercise ball with a leg raised.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0017:39959841"
+    },
+    {
+      "category": "term_is_a_clinical_test_not_an_exercise",
+      "goal_supported": "no",
+      "movement_involved": "no",
+      "pair_id": "1634:37182530",
+      "reason": "The study mentions 'bicep curl strength' as a physical function-related outcome measure (typically the 30-second arm curl test for older adults) rather than evaluating the 'Cable Lying Bicep Curl' as a training exercise.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0018:38156065"
+    },
+    {
+      "category": "supports_muscle_not_movement",
+      "goal_supported": "no",
+      "movement_involved": "no",
+      "pair_id": "0496:38515303",
+      "reason": "The study investigated hamstring hypertrophy (the primary muscle group of the inverse leg curl) but utilized seated leg curls and stiff-leg deadlifts in its training protocol, not the inverse leg curl.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0019:38156065"
+    },
+    {
+      "category": "supports_movement_not_variant",
+      "goal_supported": "yes",
+      "movement_involved": "yes",
+      "pair_id": "0496:42264842",
+      "reason": "The study utilized a standard leg curl exercise (performed at 30% of 1RM, indicating a machine-based resistance exercise) which shares the same primary knee flexion movement, but it did not evaluate the specific bodyweight 'Inverse Leg Curl (Bench Support)' variant.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0030:39364857"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0582:39162881"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0064:32009980"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "3237:32669052"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0087:35206420"
+    },
+    {
+      "category": "term_is_a_clinical_test_not_an_exercise",
+      "goal_supported": "no",
+      "movement_involved": "no",
+      "pair_id": "1476:39593440",
+      "reason": "The single leg squat was utilized in this study strictly as a biomechanical assessment test to measure dynamic knee valgus and correlate it with hip strength, rather than as a training intervention to evaluate strength or hypertrophy outcomes.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0105:35206420"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0379:33312291"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0139:39364857"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "3007:39067184"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0140:39364857"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1425:37015016"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0232:39364857"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0976:30694963"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0279:30153194"
+    },
+    {
+      "category": "supports_movement_not_variant",
+      "goal_supported": "no",
+      "movement_involved": "yes",
+      "pair_id": "0311:32824894",
+      "reason": "The study evaluated lateral raises with external rotation (LR-external), which is biomechanically similar to the full can lateral raise but performed in the frontal plane rather than the scapular plane. Additionally, the study only measured acute electromyographic (EMG) activity rather than long-term strength or hypertrophy outcomes.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0290:35206420"
+    },
+    {
+      "category": "supports_movement_not_variant",
+      "goal_supported": "yes",
+      "movement_involved": "yes",
+      "pair_id": "0396:32669052",
+      "reason": "The study evaluated lateral raises and found significant deltoid hypertrophy and strength improvements. However, the training utilized flywheel and pneumatic resistance modalities rather than dumbbells, and the seated position was not specified.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0290:39593465"
+    },
+    {
+      "category": "supports_specific_variant",
+      "goal_supported": "yes",
+      "movement_involved": "yes",
+      "pair_id": "2810:29870422",
+      "reason": "The study evaluated the barbell split squat (referred to as split squat in a study of unilateral barbell exercises) and measured EMG activity of the vastus lateralis (quadriceps) and other muscles to determine training stimulus, finding that it provides a strong stimulus for the quadriceps and gluteus maximus.",
+      "variant_exact": "yes"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0493:30153194"
+    },
+    {
+      "category": "supports_movement_not_variant",
+      "goal_supported": "yes",
+      "movement_involved": "yes",
+      "pair_id": "1727:35819335",
+      "reason": "The study evaluated overhead cable tricep extensions (one arm) and found significant triceps hypertrophy, supporting the general movement. However, it did not specify the use of a reverse grip or a standing position, which are specific elements of the recommended variant.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0496:38515303"
+    },
+    {
+      "category": "supports_movement_not_variant",
+      "goal_supported": "yes",
+      "movement_involved": "yes",
+      "pair_id": "0123:38421430",
+      "reason": "The study included the upright row as part of a 12-week resistance training program that successfully increased overall strength (1-RM) and fat-free mass. However, the abstract does not specify the use of a barbell or a wide-grip variation.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0518:33114782"
+    },
+    {
+      "category": "unrelated_topic",
+      "goal_supported": "no",
+      "movement_involved": "no",
+      "pair_id": "2611:37015016",
+      "reason": "The study investigated calf raises performed on a horizontal leg press machine to target the gastrocnemius, rather than the Lever Horizontal One Leg Press exercise which targets the glutes and involves hip and knee extension.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0548:29781941"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0395:40692697"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0585:34468591"
+    },
+    {
+      "category": "different_population_or_modality",
+      "goal_supported": "no",
+      "movement_involved": "yes",
+      "pair_id": "0308:33312291",
+      "reason": "The study involved participants performing the dumbbell fly, but it measured acute electromyographical (EMG) activity of the deltoid muscles rather than long-term hypertrophy or strength outcomes. Additionally, it did not measure activation of the primary target muscle (chest/pectoralis major).",
+      "variant_exact": "yes"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0662:30153194"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "3237:33312291"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0664:30558493"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0099:32132843"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0673:30248269"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0411:33344003"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0739:30153194"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1649:37182530"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0739:41316621"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0411:39688914"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0763:38156065"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0696:39162881"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0975:34468591"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0432:40586278"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:0979:30153194"
+    },
+    {
+      "category": "term_is_a_clinical_test_not_an_exercise",
+      "goal_supported": "no",
+      "movement_involved": "no",
+      "pair_id": "1653:37182530",
+      "reason": "The study mentions 'bicep curl strength' as a physical function-related outcome measure (likely referring to the standard 30-second arm curl test for older adults) rather than evaluating the bicep curl (or its stork stance variant) as a training exercise.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0986:30248269"
+    },
+    {
+      "category": "different_population_or_modality",
+      "goal_supported": "no",
+      "movement_involved": "yes",
+      "pair_id": "1653:41287002",
+      "reason": "The study involved participants performing bicep curls, but it investigated the acute effects of Kinesio taping (a different modality) on muscle activation and fatigue rather than the training effects of the exercise itself. Additionally, it did not use the specific 'Stork Stance' variant.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0989:39593465"
+    },
+    {
+      "category": "different_population_or_modality",
+      "goal_supported": "no",
+      "movement_involved": "yes",
+      "pair_id": "1757:32857686",
+      "reason": "The study evaluated the unilateral stiff-leg deadlift (equivalent to a single leg deadlift), but it measured acute electromyographic (EMG) muscle activation rather than long-term muscle growth (hypertrophy) or strength/performance outcomes. Additionally, the study did not specify the use of dumbbells as the equipment.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0993:39593465"
+    },
+    {
+      "category": "unrelated_topic",
+      "goal_supported": "no",
+      "movement_involved": "no",
+      "pair_id": "0098:38280014",
+      "reason": "The study investigated a standard sagittal-plane split squat (SS) to measure gluteus maximus activation, which is a different exercise from the Barbell Side Split Squat (a frontal-plane lateral movement targeting the quads).",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0994:30248269"
+    },
+    {
+      "category": "supports_specific_variant",
+      "goal_supported": "yes",
+      "movement_involved": "yes",
+      "pair_id": "0116:40586278",
+      "reason": "The study evaluated the stiff-leg deadlift (SDL), which is equivalent to the straight leg deadlift, and measured 1RM strength gains and hamstring muscle hypertrophy (specifically of the semimembranosus) over a 9-week training period.",
+      "variant_exact": "yes"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:0998:38156065"
+    },
+    {
+      "category": "supports_muscle_not_movement",
+      "goal_supported": "no",
+      "movement_involved": "no",
+      "pair_id": "0763:33352879",
+      "reason": "The study evaluated standard calf raises (plantar flexion targeting the gastrocnemius and soleus), whereas the exercise in question is the Smith Reverse Calf Raise (dorsiflexion targeting the tibialis anterior/anterior calves). Thus, the study involves a different movement but targets the calf muscle group.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:1015:30153194"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0404:42194886"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1016:41730991"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1258:41549493"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1022:39593465"
+    },
+    {
+      "category": "supports_movement_not_variant",
+      "goal_supported": "yes",
+      "movement_involved": "yes",
+      "pair_id": "0404:38464757",
+      "reason": "The study had participants perform the seated shoulder press and evaluated performance outcomes such as repetitions, velocity, and muscle activation. However, it did not specify the use of dumbbells or a parallel grip, so it supports the general movement but not this specific variant.",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1287:39593465"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0404:41998766"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1314:35438660"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0753:37789670"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1322:39593465"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "3235:32569127"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1333:35438660"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "2963:30856100"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1334:35438660"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1300:30400971"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:1338:30153194"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0603:42194886"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:1369:32009980"
+    },
+    {
+      "category": "unrelated_topic",
+      "goal_supported": "no",
+      "movement_involved": "no",
+      "pair_id": "0290:37789670",
+      "reason": "The study investigated the effects of supervised versus unsupervised resistance training on squat and bench press strength, as well as muscle thickness of the triceps and quadriceps. It did not involve or measure the Dumbbell Bench Seated Press (shoulder press).",
+      "variant_exact": "no"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1394:38156065"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "2144:39162881"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1407:38156065"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0416:41730991"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1411:32009980"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0012:36918403"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:1421:33114782"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0151:37789670"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:1425:30153194"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "3124:39162881"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1425:41316621"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0025:40944139"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:1427:36918403"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0766:38464757"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1494:32049887"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0404:39162881"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:1494:36918403"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0997:41743596"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1629:30248269"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0301:39593465"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:1712:36918403"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0012:37162423"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1720:39593465"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0689:30856100"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:1775:30558493"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0360:39162881"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:2144:39593465"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "2318:32705392"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:2287:34468591"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0450:37789670"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:2287:41316621"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0033:41711603"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:2400:41316621"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0416:34873221"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:2407:30248269"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0382:36856799"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:2611:30153194"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0603:38464757"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:2611:41316621"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0986:41307987"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:3006:32009980"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "2963:37645001"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:3006:32049887"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0315:36976950"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:3007:32009980"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1256:37789670"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:3204:32009980"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0219:41998766"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:hypertrophy:3235:38515303"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1382:37015016"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "sem:strength:3293:39959841"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0452:36828324"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1386:37015016"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "2407:41307987"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0452:31156757"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0742:37015016"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "2401:36856799"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0070:40082069"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0409:40020545"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1616:32315330"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "2741:29533715"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1414:39358929"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0605:37440324"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1615:41979887"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0592:41979887"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1382:37440324"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1414:36828324"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0111:40020545"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "2404:36856799"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1369:37440324"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "2403:41730991"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0400:37440324"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1384:42264842"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1656:29533715"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1371:42264842"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0833:36048793"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1655:34873221"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1381:38684187"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1656:40757563"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "1384:36199287"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0428:32823490"
+    },
+    {
+      "error": "not judged (cached-only mode)",
+      "pair_id": "0417:32735428"
+    }
+  ]
+}

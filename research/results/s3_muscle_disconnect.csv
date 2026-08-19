@@ -1,0 +1,17 @@
+muscle,n_exercises,n_with_evidence,coverage_rate,corpus_supply,supply_ever_linked,supply_delivered_rate
+abs,169,16,0.0947,46,11,0.2391
+biceps,151,88,0.5828,68,44,0.6471
+calves,59,38,0.6441,18,14,0.7778
+chest,168,46,0.2738,27,14,0.5185
+delts,143,56,0.3916,40,22,0.55
+forearms,37,0,0.0,9,5,0.5556
+glutes,144,39,0.2708,56,23,0.4107
+hamstrings,28,13,0.4643,35,18,0.5143
+hip_abductors,5,0,0.0,5,4,0.8
+hip_adductors,6,1,0.1667,5,1,0.2
+lats,81,4,0.0494,28,15,0.5357
+mid_back,88,7,0.0795,0,0,
+quads,43,16,0.3721,50,21,0.42
+spinal_erectors,19,8,0.4211,0,0,
+traps,17,0,0.0,26,10,0.3846
+triceps,136,14,0.1029,46,22,0.4783

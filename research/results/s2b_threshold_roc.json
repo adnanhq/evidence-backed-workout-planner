@@ -1,0 +1,1297 @@
+{
+  "arms": {
+    "baseline_minilm": {
+      "at_shipped_ceiling_0.50": {
+        "in_domain_queries_silenced": 0.14285714285714285,
+        "mean_corpus_fraction_admitted": 0.04285068457762853,
+        "mean_precision_of_admitted_set": 0.1688535094396513,
+        "mean_recall_of_admitted_set": 0.4813505421705806,
+        "off_topic_adjacent_rejected": 0.2,
+        "off_topic_far_rejected": 1.0,
+        "threshold": 0.5
+      },
+      "best_separating_ceiling_in_this_space": 0.425,
+      "family": "general",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "nearest_distance_in_domain": {
+        "max": 0.8209190964698792,
+        "min": 0.22253507375717163,
+        "p50": 0.36845481395721436
+      },
+      "nearest_distance_off_topic": {
+        "max": 0.8918355703353882,
+        "min": 0.329939067363739,
+        "p50": 0.5517184734344482
+      },
+      "separability_auc": 0.8049886621315193,
+      "sweep": [
+        {
+          "in_domain_queries_silenced": 1.0,
+          "mean_corpus_fraction_admitted": 0.0,
+          "mean_precision_of_admitted_set": NaN,
+          "mean_recall_of_admitted_set": 0.0,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.2
+        },
+        {
+          "in_domain_queries_silenced": 0.9795918367346939,
+          "mean_corpus_fraction_admitted": 1.614569878584345e-05,
+          "mean_precision_of_admitted_set": 1.0,
+          "mean_recall_of_admitted_set": 0.0007849293563579278,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.225
+        },
+        {
+          "in_domain_queries_silenced": 0.9591836734693877,
+          "mean_corpus_fraction_admitted": 3.22913975716869e-05,
+          "mean_precision_of_admitted_set": 1.0,
+          "mean_recall_of_admitted_set": 0.0024856096284667714,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.25
+        },
+        {
+          "in_domain_queries_silenced": 0.9387755102040817,
+          "mean_corpus_fraction_admitted": 4.843709635753036e-05,
+          "mean_precision_of_admitted_set": 0.6666666666666666,
+          "mean_recall_of_admitted_set": 0.0024856096284667714,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.275
+        },
+        {
+          "in_domain_queries_silenced": 0.8979591836734694,
+          "mean_corpus_fraction_admitted": 0.00019374838543012143,
+          "mean_precision_of_admitted_set": 0.5666666666666667,
+          "mean_recall_of_admitted_set": 0.007967032967032966,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.3
+        },
+        {
+          "in_domain_queries_silenced": 0.8163265306122449,
+          "mean_corpus_fraction_admitted": 0.00037135107207439936,
+          "mean_precision_of_admitted_set": 0.5185185185185186,
+          "mean_recall_of_admitted_set": 0.0152145473574045,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.325
+        },
+        {
+          "in_domain_queries_silenced": 0.5918367346938775,
+          "mean_corpus_fraction_admitted": 0.001178636011366572,
+          "mean_precision_of_admitted_set": 0.465,
+          "mean_recall_of_admitted_set": 0.07335164835164835,
+          "off_topic_adjacent_rejected": 0.8,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.35
+        },
+        {
+          "in_domain_queries_silenced": 0.4897959183673469,
+          "mean_corpus_fraction_admitted": 0.0023572720227331445,
+          "mean_precision_of_admitted_set": 0.4596969696969697,
+          "mean_recall_of_admitted_set": 0.13058234282724077,
+          "off_topic_adjacent_rejected": 0.8,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.375
+        },
+        {
+          "in_domain_queries_silenced": 0.42857142857142855,
+          "mean_corpus_fraction_admitted": 0.004343192973391888,
+          "mean_precision_of_admitted_set": 0.4723581118129991,
+          "mean_recall_of_admitted_set": 0.2059800702440737,
+          "off_topic_adjacent_rejected": 0.8,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.4
+        },
+        {
+          "in_domain_queries_silenced": 0.3469387755102041,
+          "mean_corpus_fraction_admitted": 0.007685352622061484,
+          "mean_precision_of_admitted_set": 0.3956113265855913,
+          "mean_recall_of_admitted_set": 0.27205645365654046,
+          "off_topic_adjacent_rejected": 0.8,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.425
+        },
+        {
+          "in_domain_queries_silenced": 0.22448979591836735,
+          "mean_corpus_fraction_admitted": 0.013449367088607597,
+          "mean_precision_of_admitted_set": 0.3067036764442099,
+          "mean_recall_of_admitted_set": 0.35756877798324443,
+          "off_topic_adjacent_rejected": 0.4,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.45
+        },
+        {
+          "in_domain_queries_silenced": 0.1836734693877551,
+          "mean_corpus_fraction_admitted": 0.02342740893825885,
+          "mean_precision_of_admitted_set": 0.23122226557763842,
+          "mean_recall_of_admitted_set": 0.4161401783146912,
+          "off_topic_adjacent_rejected": 0.2,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.475
+        },
+        {
+          "in_domain_queries_silenced": 0.14285714285714285,
+          "mean_corpus_fraction_admitted": 0.04285068457762853,
+          "mean_precision_of_admitted_set": 0.1688535094396513,
+          "mean_recall_of_admitted_set": 0.4813505421705806,
+          "off_topic_adjacent_rejected": 0.2,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.5
+        },
+        {
+          "in_domain_queries_silenced": 0.14285714285714285,
+          "mean_corpus_fraction_admitted": 0.0745769826918109,
+          "mean_precision_of_admitted_set": 0.12143419307902814,
+          "mean_recall_of_admitted_set": 0.541031885119891,
+          "off_topic_adjacent_rejected": 0.2,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.525
+        },
+        {
+          "in_domain_queries_silenced": 0.10204081632653061,
+          "mean_corpus_fraction_admitted": 0.12261043657969517,
+          "mean_precision_of_admitted_set": 0.0903774082462482,
+          "mean_recall_of_admitted_set": 0.583601449359997,
+          "off_topic_adjacent_rejected": 0.2,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.55
+        },
+        {
+          "in_domain_queries_silenced": 0.10204081632653061,
+          "mean_corpus_fraction_admitted": 0.1894374838543012,
+          "mean_precision_of_admitted_set": 0.07520119921538053,
+          "mean_recall_of_admitted_set": 0.6406113566833105,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.575
+        },
+        {
+          "in_domain_queries_silenced": 0.10204081632653061,
+          "mean_corpus_fraction_admitted": 0.2720065874451047,
+          "mean_precision_of_admitted_set": 0.05545343271082888,
+          "mean_recall_of_admitted_set": 0.7088259345865134,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.6
+        },
+        {
+          "in_domain_queries_silenced": 0.10204081632653061,
+          "mean_corpus_fraction_admitted": 0.36742766726943943,
+          "mean_precision_of_admitted_set": 0.04771123664644347,
+          "mean_recall_of_admitted_set": 0.7967549141274156,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.625
+        },
+        {
+          "in_domain_queries_silenced": 0.08163265306122448,
+          "mean_corpus_fraction_admitted": 0.4676763110307413,
+          "mean_precision_of_admitted_set": 0.06285374771167196,
+          "mean_recall_of_admitted_set": 0.8264303325349226,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.65
+        },
+        {
+          "in_domain_queries_silenced": 0.08163265306122448,
+          "mean_corpus_fraction_admitted": 0.5623385430121416,
+          "mean_precision_of_admitted_set": 0.056788207460986,
+          "mean_recall_of_admitted_set": 0.8470998383976547,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.675
+        },
+        {
+          "in_domain_queries_silenced": 0.08163265306122448,
+          "mean_corpus_fraction_admitted": 0.6477008524928959,
+          "mean_precision_of_admitted_set": 0.04583025940053144,
+          "mean_recall_of_admitted_set": 0.8660456843626064,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.7
+        },
+        {
+          "in_domain_queries_silenced": 0.08163265306122448,
+          "mean_corpus_fraction_admitted": 0.7170950658744512,
+          "mean_precision_of_admitted_set": 0.04056049824528251,
+          "mean_recall_of_admitted_set": 0.8816325575591192,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.725
+        },
+        {
+          "in_domain_queries_silenced": 0.04081632653061224,
+          "mean_corpus_fraction_admitted": 0.7706826401446656,
+          "mean_precision_of_admitted_set": 0.05454066291109566,
+          "mean_recall_of_admitted_set": 0.8909783102287969,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.75,
+          "threshold": 0.75
+        },
+        {
+          "in_domain_queries_silenced": 0.02040816326530612,
+          "mean_corpus_fraction_admitted": 0.8095776285197621,
+          "mean_precision_of_admitted_set": 0.04056516954529498,
+          "mean_recall_of_admitted_set": 0.9007774538386782,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.5,
+          "threshold": 0.775
+        },
+        {
+          "in_domain_queries_silenced": 0.02040816326530612,
+          "mean_corpus_fraction_admitted": 0.8367346938775511,
+          "mean_precision_of_admitted_set": 0.030962040791213934,
+          "mean_recall_of_admitted_set": 0.9041302235179786,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.25,
+          "threshold": 0.8
+        }
+      ]
+    },
+    "biomed_base": {
+      "at_shipped_ceiling_0.50": {
+        "in_domain_queries_silenced": 0.2653061224489796,
+        "mean_corpus_fraction_admitted": 0.01514466546112116,
+        "mean_precision_of_admitted_set": 0.19333009090779457,
+        "mean_recall_of_admitted_set": 0.2054669670496852,
+        "off_topic_adjacent_rejected": 0.4,
+        "off_topic_far_rejected": 1.0,
+        "threshold": 0.5
+      },
+      "best_separating_ceiling_in_this_space": 0.525,
+      "family": "biomedical",
+      "model": "NeuML/pubmedbert-base-embeddings",
+      "nearest_distance_in_domain": {
+        "max": 0.7294068336486816,
+        "min": 0.23655563592910767,
+        "p50": 0.44940000772476196
+      },
+      "nearest_distance_off_topic": {
+        "max": 0.8122074007987976,
+        "min": 0.32774680852890015,
+        "p50": 0.5461609363555908
+      },
+      "separability_auc": 0.7664399092970522,
+      "sweep": [
+        {
+          "in_domain_queries_silenced": 1.0,
+          "mean_corpus_fraction_admitted": 0.0,
+          "mean_precision_of_admitted_set": NaN,
+          "mean_recall_of_admitted_set": 0.0,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.2
+        },
+        {
+          "in_domain_queries_silenced": 1.0,
+          "mean_corpus_fraction_admitted": 0.0,
+          "mean_precision_of_admitted_set": NaN,
+          "mean_recall_of_admitted_set": 0.0,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.225
+        },
+        {
+          "in_domain_queries_silenced": 0.9591836734693877,
+          "mean_corpus_fraction_admitted": 3.22913975716869e-05,
+          "mean_precision_of_admitted_set": 0.5,
+          "mean_recall_of_admitted_set": 0.0017006802721088435,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.25
+        },
+        {
+          "in_domain_queries_silenced": 0.9591836734693877,
+          "mean_corpus_fraction_admitted": 4.843709635753036e-05,
+          "mean_precision_of_admitted_set": 0.5,
+          "mean_recall_of_admitted_set": 0.0017006802721088435,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.275
+        },
+        {
+          "in_domain_queries_silenced": 0.9387755102040817,
+          "mean_corpus_fraction_admitted": 0.00014531128907259108,
+          "mean_precision_of_admitted_set": 0.7222222222222222,
+          "mean_recall_of_admitted_set": 0.003846153846153846,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.3
+        },
+        {
+          "in_domain_queries_silenced": 0.8571428571428571,
+          "mean_corpus_fraction_admitted": 0.00029062257814518216,
+          "mean_precision_of_admitted_set": 0.6428571428571429,
+          "mean_recall_of_admitted_set": 0.015279958137100993,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.325
+        },
+        {
+          "in_domain_queries_silenced": 0.7755102040816326,
+          "mean_corpus_fraction_admitted": 0.0005650994575045209,
+          "mean_precision_of_admitted_set": 0.5367965367965368,
+          "mean_recall_of_admitted_set": 0.03666741421843462,
+          "off_topic_adjacent_rejected": 0.8,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.35
+        },
+        {
+          "in_domain_queries_silenced": 0.7346938775510204,
+          "mean_corpus_fraction_admitted": 0.0009525962283647636,
+          "mean_precision_of_admitted_set": 0.5122100122100123,
+          "mean_recall_of_admitted_set": 0.05762502803319129,
+          "off_topic_adjacent_rejected": 0.8,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.375
+        },
+        {
+          "in_domain_queries_silenced": 0.673469387755102,
+          "mean_corpus_fraction_admitted": 0.0016952983725135623,
+          "mean_precision_of_admitted_set": 0.6037946428571428,
+          "mean_recall_of_admitted_set": 0.09003143693764623,
+          "off_topic_adjacent_rejected": 0.8,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.4
+        },
+        {
+          "in_domain_queries_silenced": 0.6326530612244898,
+          "mean_corpus_fraction_admitted": 0.0026640402996641697,
+          "mean_precision_of_admitted_set": 0.43353580165437394,
+          "mean_recall_of_admitted_set": 0.09835232432931085,
+          "off_topic_adjacent_rejected": 0.8,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.425
+        },
+        {
+          "in_domain_queries_silenced": 0.4897959183673469,
+          "mean_corpus_fraction_admitted": 0.004649961250322915,
+          "mean_precision_of_admitted_set": 0.35256110556110554,
+          "mean_recall_of_admitted_set": 0.1329185216288994,
+          "off_topic_adjacent_rejected": 0.6,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.45
+        },
+        {
+          "in_domain_queries_silenced": 0.3673469387755102,
+          "mean_corpus_fraction_admitted": 0.008573366055282874,
+          "mean_precision_of_admitted_set": 0.21679239482844795,
+          "mean_recall_of_admitted_set": 0.16740558977858153,
+          "off_topic_adjacent_rejected": 0.4,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.475
+        },
+        {
+          "in_domain_queries_silenced": 0.2653061224489796,
+          "mean_corpus_fraction_admitted": 0.01514466546112116,
+          "mean_precision_of_admitted_set": 0.19333009090779457,
+          "mean_recall_of_admitted_set": 0.2054669670496852,
+          "off_topic_adjacent_rejected": 0.4,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.5
+        },
+        {
+          "in_domain_queries_silenced": 0.16326530612244897,
+          "mean_corpus_fraction_admitted": 0.025590932575561876,
+          "mean_precision_of_admitted_set": 0.16962900427339273,
+          "mean_recall_of_admitted_set": 0.2670131964204912,
+          "off_topic_adjacent_rejected": 0.4,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.525
+        },
+        {
+          "in_domain_queries_silenced": 0.12244897959183673,
+          "mean_corpus_fraction_admitted": 0.04201110824076465,
+          "mean_precision_of_admitted_set": 0.13700571514202228,
+          "mean_recall_of_admitted_set": 0.3181631021296675,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.55
+        },
+        {
+          "in_domain_queries_silenced": 0.10204081632653061,
+          "mean_corpus_fraction_admitted": 0.06692392146732111,
+          "mean_precision_of_admitted_set": 0.11450900891557021,
+          "mean_recall_of_admitted_set": 0.3771511086930666,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.575
+        },
+        {
+          "in_domain_queries_silenced": 0.10204081632653061,
+          "mean_corpus_fraction_admitted": 0.1011850942908809,
+          "mean_precision_of_admitted_set": 0.08560125185399825,
+          "mean_recall_of_admitted_set": 0.4363622489940896,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.6
+        },
+        {
+          "in_domain_queries_silenced": 0.10204081632653061,
+          "mean_corpus_fraction_admitted": 0.146554507879101,
+          "mean_precision_of_admitted_set": 0.06880802837109555,
+          "mean_recall_of_admitted_set": 0.49810890559528376,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.625
+        },
+        {
+          "in_domain_queries_silenced": 0.061224489795918366,
+          "mean_corpus_fraction_admitted": 0.20259622836476365,
+          "mean_precision_of_admitted_set": 0.07259383422066946,
+          "mean_recall_of_admitted_set": 0.5314154963409791,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.65
+        },
+        {
+          "in_domain_queries_silenced": 0.04081632653061224,
+          "mean_corpus_fraction_admitted": 0.26880973908550765,
+          "mean_precision_of_admitted_set": 0.050643128245874885,
+          "mean_recall_of_admitted_set": 0.5717205198807036,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.675
+        },
+        {
+          "in_domain_queries_silenced": 0.04081632653061224,
+          "mean_corpus_fraction_admitted": 0.342708602428313,
+          "mean_precision_of_admitted_set": 0.043410820783586865,
+          "mean_recall_of_admitted_set": 0.6279899818447016,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.7
+        },
+        {
+          "in_domain_queries_silenced": 0.02040816326530612,
+          "mean_corpus_fraction_admitted": 0.4202725393955052,
+          "mean_precision_of_admitted_set": 0.043448527613851096,
+          "mean_recall_of_admitted_set": 0.7128361854042243,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.725
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.5005166623611469,
+          "mean_precision_of_admitted_set": 0.03928082192948246,
+          "mean_recall_of_admitted_set": 0.7754399895215522,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.75,
+          "threshold": 0.75
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.5774670627744768,
+          "mean_precision_of_admitted_set": 0.035531379990744405,
+          "mean_recall_of_admitted_set": 0.8153306799830268,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.5,
+          "threshold": 0.775
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.6477008524928957,
+          "mean_precision_of_admitted_set": 0.031114273720372367,
+          "mean_recall_of_admitted_set": 0.8549095261069825,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.25,
+          "threshold": 0.8
+        }
+      ]
+    },
+    "biomed_retrieval": {
+      "at_shipped_ceiling_0.50": {
+        "in_domain_queries_silenced": 0.0,
+        "mean_corpus_fraction_admitted": 1.0,
+        "mean_precision_of_admitted_set": 0.023579152776648495,
+        "mean_recall_of_admitted_set": 1.0,
+        "off_topic_adjacent_rejected": 0.0,
+        "off_topic_far_rejected": 0.0,
+        "threshold": 0.5
+      },
+      "best_separating_ceiling_in_this_space": 0.2,
+      "family": "biomedical",
+      "model": "pritamdeka/S-PubMedBert-MS-MARCO",
+      "nearest_distance_in_domain": {
+        "max": 0.13747847080230713,
+        "min": 0.06412792205810547,
+        "p50": 0.08408552408218384
+      },
+      "nearest_distance_off_topic": {
+        "max": 0.15248137712478638,
+        "min": 0.08064115047454834,
+        "p50": 0.12480568885803223
+      },
+      "separability_auc": 0.8594104308390023,
+      "sweep": [
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9985307414104881,
+          "mean_precision_of_admitted_set": 0.023580126518245714,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.2
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.225
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.25
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.275
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.3
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.325
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.35
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.375
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.4
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.425
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.45
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.475
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.5
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.525
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.55
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.575
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.6
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.625
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.65
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.675
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.7
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.725
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.75
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.775
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.8
+        }
+      ]
+    },
+    "general_base": {
+      "at_shipped_ceiling_0.50": {
+        "in_domain_queries_silenced": 0.0,
+        "mean_corpus_fraction_admitted": 0.9455889950917077,
+        "mean_precision_of_admitted_set": 0.023524039766006134,
+        "mean_recall_of_admitted_set": 0.9838840298023971,
+        "off_topic_adjacent_rejected": 0.0,
+        "off_topic_far_rejected": 0.0,
+        "threshold": 0.5
+      },
+      "best_separating_ceiling_in_this_space": 0.275,
+      "family": "general",
+      "model": "BAAI/bge-base-en-v1.5",
+      "nearest_distance_in_domain": {
+        "max": 0.4289904832839966,
+        "min": 0.1629655361175537,
+        "p50": 0.22161591053009033
+      },
+      "nearest_distance_off_topic": {
+        "max": 0.48663318157196045,
+        "min": 0.23816895484924316,
+        "p50": 0.3182638883590698
+      },
+      "separability_auc": 0.9206349206349206,
+      "sweep": [
+        {
+          "in_domain_queries_silenced": 0.8775510204081632,
+          "mean_corpus_fraction_admitted": 0.00014531128907259105,
+          "mean_precision_of_admitted_set": 0.8333333333333334,
+          "mean_recall_of_admitted_set": 0.027995813710099425,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.2
+        },
+        {
+          "in_domain_queries_silenced": 0.46938775510204084,
+          "mean_corpus_fraction_admitted": 0.0010010333247222943,
+          "mean_precision_of_admitted_set": 0.6602564102564104,
+          "mean_recall_of_admitted_set": 0.12188521422129756,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.225
+        },
+        {
+          "in_domain_queries_silenced": 0.32653061224489793,
+          "mean_corpus_fraction_admitted": 0.004423921467321106,
+          "mean_precision_of_admitted_set": 0.4393248165975439,
+          "mean_recall_of_admitted_set": 0.25198186260860467,
+          "off_topic_adjacent_rejected": 0.8,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.25
+        },
+        {
+          "in_domain_queries_silenced": 0.1836734693877551,
+          "mean_corpus_fraction_admitted": 0.01687225523120641,
+          "mean_precision_of_admitted_set": 0.2292593984148899,
+          "mean_recall_of_admitted_set": 0.3693424453583013,
+          "off_topic_adjacent_rejected": 0.8,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.275
+        },
+        {
+          "in_domain_queries_silenced": 0.10204081632653061,
+          "mean_corpus_fraction_admitted": 0.06261301989150088,
+          "mean_precision_of_admitted_set": 0.18359956350814607,
+          "mean_recall_of_admitted_set": 0.5019257059712708,
+          "off_topic_adjacent_rejected": 0.4,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.3
+        },
+        {
+          "in_domain_queries_silenced": 0.061224489795918366,
+          "mean_corpus_fraction_admitted": 0.18058964091965904,
+          "mean_precision_of_admitted_set": 0.14151464572847552,
+          "mean_recall_of_admitted_set": 0.6367289610030495,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.325
+        },
+        {
+          "in_domain_queries_silenced": 0.061224489795918366,
+          "mean_corpus_fraction_admitted": 0.3596454404546629,
+          "mean_precision_of_admitted_set": 0.1030990388209234,
+          "mean_recall_of_admitted_set": 0.7300063390240296,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.35
+        },
+        {
+          "in_domain_queries_silenced": 0.04081632653061224,
+          "mean_corpus_fraction_admitted": 0.5424954792043399,
+          "mean_precision_of_admitted_set": 0.08383225496534981,
+          "mean_recall_of_admitted_set": 0.8349099355069827,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.375
+        },
+        {
+          "in_domain_queries_silenced": 0.02040816326530612,
+          "mean_corpus_fraction_admitted": 0.6899380005166623,
+          "mean_precision_of_admitted_set": 0.041146413750038226,
+          "mean_recall_of_admitted_set": 0.8762099884874526,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.4
+        },
+        {
+          "in_domain_queries_silenced": 0.02040816326530612,
+          "mean_corpus_fraction_admitted": 0.7938840092999223,
+          "mean_precision_of_admitted_set": 0.031689344691507144,
+          "mean_recall_of_admitted_set": 0.9152777403103065,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.425
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.8617282355980368,
+          "mean_precision_of_admitted_set": 0.025467992070150616,
+          "mean_recall_of_admitted_set": 0.9327421444768385,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.75,
+          "threshold": 0.45
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9112632394730044,
+          "mean_precision_of_admitted_set": 0.024756062614829214,
+          "mean_recall_of_admitted_set": 0.9751538710722383,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.5,
+          "threshold": 0.475
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9455889950917077,
+          "mean_precision_of_admitted_set": 0.023524039766006134,
+          "mean_recall_of_admitted_set": 0.9838840298023971,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.5
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9717288814259882,
+          "mean_precision_of_admitted_set": 0.02377973092171689,
+          "mean_recall_of_admitted_set": 0.9968253968253967,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.525
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9883750968741931,
+          "mean_precision_of_admitted_set": 0.02361913319955367,
+          "mean_recall_of_admitted_set": 0.999092970521542,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.55
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9964963833634722,
+          "mean_precision_of_admitted_set": 0.02360518593529406,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.575
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9990151123740636,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.6
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9997901059157843,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.625
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9999515629036425,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.65
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.675
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.7
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.725
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.75
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.775
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.8
+        }
+      ]
+    },
+    "general_small": {
+      "at_shipped_ceiling_0.50": {
+        "in_domain_queries_silenced": 0.0,
+        "mean_corpus_fraction_admitted": 0.9819652544562131,
+        "mean_precision_of_admitted_set": 0.023747449679997968,
+        "mean_recall_of_admitted_set": 1.0,
+        "off_topic_adjacent_rejected": 0.0,
+        "off_topic_far_rejected": 0.0,
+        "threshold": 0.5
+      },
+      "best_separating_ceiling_in_this_space": 0.275,
+      "family": "general",
+      "model": "BAAI/bge-small-en-v1.5",
+      "nearest_distance_in_domain": {
+        "max": 0.38633549213409424,
+        "min": 0.12962430715560913,
+        "p50": 0.18875330686569214
+      },
+      "nearest_distance_off_topic": {
+        "max": 0.3926864266395569,
+        "min": 0.20915085077285767,
+        "p50": 0.29613620042800903
+      },
+      "separability_auc": 0.9229024943310657,
+      "sweep": [
+        {
+          "in_domain_queries_silenced": 0.3469387755102041,
+          "mean_corpus_fraction_admitted": 0.0034228881425988123,
+          "mean_precision_of_admitted_set": 0.3879623440285205,
+          "mean_recall_of_admitted_set": 0.21240176967103971,
+          "off_topic_adjacent_rejected": 1.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.2
+        },
+        {
+          "in_domain_queries_silenced": 0.14285714285714285,
+          "mean_corpus_fraction_admitted": 0.018018599845001298,
+          "mean_precision_of_admitted_set": 0.2306982932379603,
+          "mean_recall_of_admitted_set": 0.3453558986373828,
+          "off_topic_adjacent_rejected": 0.6,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.225
+        },
+        {
+          "in_domain_queries_silenced": 0.10204081632653061,
+          "mean_corpus_fraction_admitted": 0.07644988375096876,
+          "mean_precision_of_admitted_set": 0.1487455725859147,
+          "mean_recall_of_admitted_set": 0.4635942485913771,
+          "off_topic_adjacent_rejected": 0.6,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.25
+        },
+        {
+          "in_domain_queries_silenced": 0.08163265306122448,
+          "mean_corpus_fraction_admitted": 0.22303668302764143,
+          "mean_precision_of_admitted_set": 0.11499959632251458,
+          "mean_recall_of_admitted_set": 0.6344767099074244,
+          "off_topic_adjacent_rejected": 0.6,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.275
+        },
+        {
+          "in_domain_queries_silenced": 0.08163265306122448,
+          "mean_corpus_fraction_admitted": 0.4224037716352363,
+          "mean_precision_of_admitted_set": 0.07104880653758397,
+          "mean_recall_of_admitted_set": 0.7263183364881011,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.3
+        },
+        {
+          "in_domain_queries_silenced": 0.08163265306122448,
+          "mean_corpus_fraction_admitted": 0.6062386980108496,
+          "mean_precision_of_admitted_set": 0.04121313466554813,
+          "mean_recall_of_admitted_set": 0.811702730211898,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.325
+        },
+        {
+          "in_domain_queries_silenced": 0.04081632653061224,
+          "mean_corpus_fraction_admitted": 0.73659907000775,
+          "mean_precision_of_admitted_set": 0.05037856050909913,
+          "mean_recall_of_admitted_set": 0.8798012540056579,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.35
+        },
+        {
+          "in_domain_queries_silenced": 0.02040816326530612,
+          "mean_corpus_fraction_admitted": 0.818360888659261,
+          "mean_precision_of_admitted_set": 0.033711865073735615,
+          "mean_recall_of_admitted_set": 0.902407177917382,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 1.0,
+          "threshold": 0.375
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.8707213898217516,
+          "mean_precision_of_admitted_set": 0.027478315995932156,
+          "mean_recall_of_admitted_set": 0.9168934240362812,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.4
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9044336088865929,
+          "mean_precision_of_admitted_set": 0.024873009250283577,
+          "mean_recall_of_admitted_set": 0.9503968253968254,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.425
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9324948333763889,
+          "mean_precision_of_admitted_set": 0.0240569864545434,
+          "mean_recall_of_admitted_set": 0.9735827664399093,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.45
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9597164815293208,
+          "mean_precision_of_admitted_set": 0.02371314031341723,
+          "mean_recall_of_admitted_set": 0.9891156462585035,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.475
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9819652544562131,
+          "mean_precision_of_admitted_set": 0.023747449679997968,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.5
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9941068199431677,
+          "mean_precision_of_admitted_set": 0.023603528640331103,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.525
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.998401575820202,
+          "mean_precision_of_admitted_set": 0.023582804307638067,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.55
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9996286489279257,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.575
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9998546887109275,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.6
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9999677086024283,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.625
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 0.9999838543012142,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.65
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.675
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.7
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.725
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.75
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.775
+        },
+        {
+          "in_domain_queries_silenced": 0.0,
+          "mean_corpus_fraction_admitted": 1.0,
+          "mean_precision_of_admitted_set": 0.023579152776648495,
+          "mean_recall_of_admitted_set": 1.0,
+          "off_topic_adjacent_rejected": 0.0,
+          "off_topic_far_rejected": 0.0,
+          "threshold": 0.8
+        }
+      ]
+    }
+  },
+  "documented_claim": "legitimate builder queries score 0.23-0.45; off-topic probes (yoga, nutrition, swimming) score >= 0.51 (protocol_demo.py:32-36)",
+  "environment": {
+    "machine": "arm64",
+    "packages": {
+      "chromadb": "1.5.9",
+      "matplotlib": "3.9.4",
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "sentence_transformers": "5.1.2",
+      "sklearn": "1.6.1",
+      "torch": "2.8.0",
+      "transformers": "4.57.6"
+    },
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "seed": 20260818
+  },
+  "off_topic_probes": {
+    "adjacent": [
+      "yoga practice for flexibility and stress",
+      "sports nutrition protein timing for recovery",
+      "competitive swimming stroke technique",
+      "marathon endurance running training plan",
+      "sleep quality and daytime fatigue"
+    ],
+    "far": [
+      "dental caries prevention in children",
+      "urban air pollution and childhood asthma",
+      "convolutional neural networks for image classification",
+      "monetary policy and inflation expectations"
+    ]
+  },
+  "shipped_ceiling": 0.5
+}

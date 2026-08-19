@@ -1,0 +1,4690 @@
+{
+  "design": {
+    "arms": [
+      {
+        "family": "general",
+        "key": "baseline_minilm",
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "role": "production baseline"
+      },
+      {
+        "family": "general",
+        "key": "general_small",
+        "model": "BAAI/bge-small-en-v1.5",
+        "role": "dimension-matched general"
+      },
+      {
+        "family": "general",
+        "key": "general_base",
+        "model": "BAAI/bge-base-en-v1.5",
+        "role": "size control for the biomedical arms"
+      },
+      {
+        "family": "biomedical",
+        "key": "biomed_base",
+        "model": "NeuML/pubmedbert-base-embeddings",
+        "role": "domain-specific"
+      },
+      {
+        "family": "biomedical",
+        "key": "biomed_retrieval",
+        "model": "pritamdeka/S-PubMedBert-MS-MARCO",
+        "role": "domain-specific, retrieval-tuned"
+      }
+    ],
+    "formulations": [
+      "boolean",
+      "topic",
+      "question",
+      "production_template",
+      "production_template_fixed"
+    ],
+    "label_caveat": "labels are incomplete, so precision is a lower bound; recall is recall against the boolean-query result set",
+    "label_source": "corpus provenance (topic_clusters)",
+    "n_queries": 49,
+    "search": "exact brute-force cosine, not the production HNSW index",
+    "seed": 20260818,
+    "template_request": {
+      "avoid_joints": "",
+      "equipment": "",
+      "experience": "intermediate",
+      "goal": "hypertrophy",
+      "muscles": "chest",
+      "notes": "",
+      "session_minutes": 60,
+      "sessions": 3
+    },
+    "unit_of_analysis": "cluster (one query per corpus-represented cluster)"
+  },
+  "encode_seconds": {
+    "baseline_minilm": 0.0,
+    "biomed_base": 0.0,
+    "biomed_retrieval": 0.0,
+    "general_base": 0.0,
+    "general_small": 0.0
+  },
+  "environment": {
+    "machine": "arm64",
+    "packages": {
+      "chromadb": "1.5.9",
+      "matplotlib": "3.9.4",
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "sentence_transformers": "5.1.2",
+      "sklearn": "1.6.1",
+      "torch": "2.8.0",
+      "transformers": "4.57.6"
+    },
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "seed": 20260818
+  },
+  "queries": [
+    {
+      "boolean_alt": "adherence supervised resistance training beginners",
+      "cluster_id": "beginner_programming",
+      "formulations": {
+        "boolean": "novice resistance training program design guidelines",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Beginner programming principles",
+        "production_template_fixed": "chest hypertrophy resistance training | Beginner programming principles",
+        "question": "what does the research say about Beginner programming principles for resistance training?",
+        "topic": "Beginner programming principles"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 1,
+      "topic": "Beginner programming principles"
+    },
+    {
+      "boolean_alt": "bench press triceps extension hypertrophy comparison",
+      "cluster_id": "compound_vs_isolation",
+      "formulations": {
+        "boolean": "single-joint multi-joint resistance training hypertrophy trial",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Compound vs isolation tradeoffs",
+        "production_template_fixed": "chest hypertrophy resistance training | Compound vs isolation tradeoffs",
+        "question": "what does the research say about Compound vs isolation tradeoffs for resistance training?",
+        "topic": "Compound vs isolation tradeoffs"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 4,
+      "topic": "Compound vs isolation tradeoffs"
+    },
+    {
+      "boolean_alt": "periodization fatigue management resistance training review",
+      "cluster_id": "deload_protocols",
+      "formulations": {
+        "boolean": "resistance training tapering strength performance trial",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Deload protocols",
+        "production_template_fixed": "chest hypertrophy resistance training | Deload protocols",
+        "question": "what does the research say about Deload protocols for resistance training?",
+        "topic": "Deload protocols"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 15,
+      "topic": "Deload protocols"
+    },
+    {
+      "boolean_alt": "(\"bench press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_bench_press",
+      "formulations": {
+        "boolean": "(\"bench press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: bench press",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: bench press",
+        "question": "what does the research say about Exercise-specific evidence: bench press for resistance training?",
+        "topic": "Exercise-specific evidence: bench press"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: bench press"
+    },
+    {
+      "boolean_alt": "(\"bicep curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_bicep_curl",
+      "formulations": {
+        "boolean": "(\"bicep curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: biceps | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: bicep curl",
+        "production_template_fixed": "biceps hypertrophy resistance training | Exercise-specific evidence: bicep curl",
+        "question": "what does the research say about Exercise-specific evidence: bicep curl for resistance training?",
+        "topic": "Exercise-specific evidence: bicep curl"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "biceps",
+      "n_relevant": 3,
+      "topic": "Exercise-specific evidence: bicep curl"
+    },
+    {
+      "boolean_alt": "(\"calf raise\") AND (calf gastrocnemius) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_calf_raise",
+      "formulations": {
+        "boolean": "(\"calf raise\") AND (calf gastrocnemius) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: calves | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: calf raise",
+        "production_template_fixed": "calves hypertrophy resistance training | Exercise-specific evidence: calf raise",
+        "question": "what does the research say about Exercise-specific evidence: calf raise for resistance training?",
+        "topic": "Exercise-specific evidence: calf raise"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "calves",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: calf raise"
+    },
+    {
+      "boolean_alt": "(\"chest press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_chest_press",
+      "formulations": {
+        "boolean": "(\"chest press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: chest press",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: chest press",
+        "question": "what does the research say about Exercise-specific evidence: chest press for resistance training?",
+        "topic": "Exercise-specific evidence: chest press"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: chest press"
+    },
+    {
+      "boolean_alt": "(\"concentration curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_concentration_curl",
+      "formulations": {
+        "boolean": "(\"concentration curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: biceps | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: concentration curl",
+        "production_template_fixed": "biceps hypertrophy resistance training | Exercise-specific evidence: concentration curl",
+        "question": "what does the research say about Exercise-specific evidence: concentration curl for resistance training?",
+        "topic": "Exercise-specific evidence: concentration curl"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "biceps",
+      "n_relevant": 1,
+      "topic": "Exercise-specific evidence: concentration curl"
+    },
+    {
+      "boolean_alt": "(\"crunch\") AND (abdominal) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_crunch",
+      "formulations": {
+        "boolean": "(\"crunch\") AND (abdominal) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: crunch",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: crunch",
+        "question": "what does the research say about Exercise-specific evidence: crunch for resistance training?",
+        "topic": "Exercise-specific evidence: crunch"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: crunch"
+    },
+    {
+      "boolean_alt": "(\"curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_curl",
+      "formulations": {
+        "boolean": "(\"curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: curl",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: curl",
+        "question": "what does the research say about Exercise-specific evidence: curl for resistance training?",
+        "topic": "Exercise-specific evidence: curl"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: curl"
+    },
+    {
+      "boolean_alt": "(\"deadlift\") AND (gluteus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_deadlift",
+      "formulations": {
+        "boolean": "(\"deadlift\") AND (gluteus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: deadlift",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: deadlift",
+        "question": "what does the research say about Exercise-specific evidence: deadlift for resistance training?",
+        "topic": "Exercise-specific evidence: deadlift"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: deadlift"
+    },
+    {
+      "boolean_alt": "(\"extension\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_extension",
+      "formulations": {
+        "boolean": "(\"extension\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: extension",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: extension",
+        "question": "what does the research say about Exercise-specific evidence: extension for resistance training?",
+        "topic": "Exercise-specific evidence: extension"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: extension"
+    },
+    {
+      "boolean_alt": "(\"fly\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_fly",
+      "formulations": {
+        "boolean": "(\"fly\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: fly",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: fly",
+        "question": "what does the research say about Exercise-specific evidence: fly for resistance training?",
+        "topic": "Exercise-specific evidence: fly"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 2,
+      "topic": "Exercise-specific evidence: fly"
+    },
+    {
+      "boolean_alt": "(\"kickback\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_kickback",
+      "formulations": {
+        "boolean": "(\"kickback\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: kickback",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: kickback",
+        "question": "what does the research say about Exercise-specific evidence: kickback for resistance training?",
+        "topic": "Exercise-specific evidence: kickback"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 1,
+      "topic": "Exercise-specific evidence: kickback"
+    },
+    {
+      "boolean_alt": "(\"lateral raise\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_lateral_raise",
+      "formulations": {
+        "boolean": "(\"lateral raise\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: delts | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: lateral raise",
+        "production_template_fixed": "delts hypertrophy resistance training | Exercise-specific evidence: lateral raise",
+        "question": "what does the research say about Exercise-specific evidence: lateral raise for resistance training?",
+        "topic": "Exercise-specific evidence: lateral raise"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "delts",
+      "n_relevant": 6,
+      "topic": "Exercise-specific evidence: lateral raise"
+    },
+    {
+      "boolean_alt": "(\"leg calf raise\") AND (calf gastrocnemius) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_leg_calf_raise",
+      "formulations": {
+        "boolean": "(\"leg calf raise\") AND (calf gastrocnemius) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: calves | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: leg calf raise",
+        "production_template_fixed": "calves hypertrophy resistance training | Exercise-specific evidence: leg calf raise",
+        "question": "what does the research say about Exercise-specific evidence: leg calf raise for resistance training?",
+        "topic": "Exercise-specific evidence: leg calf raise"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "calves",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: leg calf raise"
+    },
+    {
+      "boolean_alt": "(\"leg curl\") AND (hamstring) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_leg_curl",
+      "formulations": {
+        "boolean": "(\"leg curl\") AND (hamstring) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: hamstrings | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: leg curl",
+        "production_template_fixed": "hamstrings hypertrophy resistance training | Exercise-specific evidence: leg curl",
+        "question": "what does the research say about Exercise-specific evidence: leg curl for resistance training?",
+        "topic": "Exercise-specific evidence: leg curl"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "hamstrings",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: leg curl"
+    },
+    {
+      "boolean_alt": "(\"leg hip raise\") AND (abdominal) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_leg_hip_raise",
+      "formulations": {
+        "boolean": "(\"leg hip raise\") AND (abdominal) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: leg hip raise",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: leg hip raise",
+        "question": "what does the research say about Exercise-specific evidence: leg hip raise for resistance training?",
+        "topic": "Exercise-specific evidence: leg hip raise"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: leg hip raise"
+    },
+    {
+      "boolean_alt": "(\"leg split squat\") AND (quadriceps) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_leg_split_squat",
+      "formulations": {
+        "boolean": "(\"leg split squat\") AND (quadriceps) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: quads | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: leg split squat",
+        "production_template_fixed": "quads hypertrophy resistance training | Exercise-specific evidence: leg split squat",
+        "question": "what does the research say about Exercise-specific evidence: leg split squat for resistance training?",
+        "topic": "Exercise-specific evidence: leg split squat"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "quads",
+      "n_relevant": 7,
+      "topic": "Exercise-specific evidence: leg split squat"
+    },
+    {
+      "boolean_alt": "(\"military press\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_military_press",
+      "formulations": {
+        "boolean": "(\"military press\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: delts | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: military press",
+        "production_template_fixed": "delts hypertrophy resistance training | Exercise-specific evidence: military press",
+        "question": "what does the research say about Exercise-specific evidence: military press for resistance training?",
+        "topic": "Exercise-specific evidence: military press"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "delts",
+      "n_relevant": 1,
+      "topic": "Exercise-specific evidence: military press"
+    },
+    {
+      "boolean_alt": "(\"overhead tricep extension\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_overhead_tricep_extension",
+      "formulations": {
+        "boolean": "(\"overhead tricep extension\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: overhead tricep extension",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: overhead tricep extension",
+        "question": "what does the research say about Exercise-specific evidence: overhead tricep extension for resistance training?",
+        "topic": "Exercise-specific evidence: overhead tricep extension"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 2,
+      "topic": "Exercise-specific evidence: overhead tricep extension"
+    },
+    {
+      "boolean_alt": "(\"preacher curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_preacher_curl",
+      "formulations": {
+        "boolean": "(\"preacher curl\") AND (biceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: biceps | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: preacher curl",
+        "production_template_fixed": "biceps hypertrophy resistance training | Exercise-specific evidence: preacher curl",
+        "question": "what does the research say about Exercise-specific evidence: preacher curl for resistance training?",
+        "topic": "Exercise-specific evidence: preacher curl"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "biceps",
+      "n_relevant": 7,
+      "topic": "Exercise-specific evidence: preacher curl"
+    },
+    {
+      "boolean_alt": "(\"press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_press",
+      "formulations": {
+        "boolean": "(\"press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: press",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: press",
+        "question": "what does the research say about Exercise-specific evidence: press for resistance training?",
+        "topic": "Exercise-specific evidence: press"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: press"
+    },
+    {
+      "boolean_alt": "(\"pull up\") AND (latissimus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_pull_up",
+      "formulations": {
+        "boolean": "(\"pull up\") AND (latissimus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: lats | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: pull up",
+        "production_template_fixed": "lats hypertrophy resistance training | Exercise-specific evidence: pull up",
+        "question": "what does the research say about Exercise-specific evidence: pull up for resistance training?",
+        "topic": "Exercise-specific evidence: pull up"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "lats",
+      "n_relevant": 6,
+      "topic": "Exercise-specific evidence: pull up"
+    },
+    {
+      "boolean_alt": "(\"pulldown\") AND (latissimus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_pulldown",
+      "formulations": {
+        "boolean": "(\"pulldown\") AND (latissimus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: pulldown",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: pulldown",
+        "question": "what does the research say about Exercise-specific evidence: pulldown for resistance training?",
+        "topic": "Exercise-specific evidence: pulldown"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: pulldown"
+    },
+    {
+      "boolean_alt": "(\"pullover\") AND (latissimus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_pullover",
+      "formulations": {
+        "boolean": "(\"pullover\") AND (latissimus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: pullover",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: pullover",
+        "question": "what does the research say about Exercise-specific evidence: pullover for resistance training?",
+        "topic": "Exercise-specific evidence: pullover"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 2,
+      "topic": "Exercise-specific evidence: pullover"
+    },
+    {
+      "boolean_alt": "(\"push up\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_push_up",
+      "formulations": {
+        "boolean": "(\"push up\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: push up",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: push up",
+        "question": "what does the research say about Exercise-specific evidence: push up for resistance training?",
+        "topic": "Exercise-specific evidence: push up"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "chest",
+      "n_relevant": 1,
+      "topic": "Exercise-specific evidence: push up"
+    },
+    {
+      "boolean_alt": "(\"reverse bench press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_reverse_bench_press",
+      "formulations": {
+        "boolean": "(\"reverse bench press\") AND (chest pectoralis) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: reverse bench press",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: reverse bench press",
+        "question": "what does the research say about Exercise-specific evidence: reverse bench press for resistance training?",
+        "topic": "Exercise-specific evidence: reverse bench press"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "chest",
+      "n_relevant": 1,
+      "topic": "Exercise-specific evidence: reverse bench press"
+    },
+    {
+      "boolean_alt": "(\"row\") AND (upper back) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_row",
+      "formulations": {
+        "boolean": "(\"row\") AND (upper back) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: row",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: row",
+        "question": "what does the research say about Exercise-specific evidence: row for resistance training?",
+        "topic": "Exercise-specific evidence: row"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: row"
+    },
+    {
+      "boolean_alt": "leg extension squat quadriceps hypertrophy comparison",
+      "cluster_id": "exercise_selection_lengthened",
+      "formulations": {
+        "boolean": "resistance training long muscle length hypertrophy randomized trial",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise selection and lengthened position research",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise selection and lengthened position research",
+        "question": "what does the research say about Exercise selection and lengthened position research for resistance training?",
+        "topic": "Exercise selection and lengthened position research"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 31,
+      "topic": "Exercise selection and lengthened position research"
+    },
+    {
+      "boolean_alt": "(\"shoulder press\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_shoulder_press",
+      "formulations": {
+        "boolean": "(\"shoulder press\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: delts | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: shoulder press",
+        "production_template_fixed": "delts hypertrophy resistance training | Exercise-specific evidence: shoulder press",
+        "question": "what does the research say about Exercise-specific evidence: shoulder press for resistance training?",
+        "topic": "Exercise-specific evidence: shoulder press"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "delts",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: shoulder press"
+    },
+    {
+      "boolean_alt": "(\"shrug\") AND (trapezius) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_shrug",
+      "formulations": {
+        "boolean": "(\"shrug\") AND (trapezius) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: shrug",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: shrug",
+        "question": "what does the research say about Exercise-specific evidence: shrug for resistance training?",
+        "topic": "Exercise-specific evidence: shrug"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: shrug"
+    },
+    {
+      "boolean_alt": "(\"squat\") AND (gluteus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_squat",
+      "formulations": {
+        "boolean": "(\"squat\") AND (gluteus) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: squat",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: squat",
+        "question": "what does the research say about Exercise-specific evidence: squat for resistance training?",
+        "topic": "Exercise-specific evidence: squat"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: squat"
+    },
+    {
+      "boolean_alt": "(\"tricep dip\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_tricep_dip",
+      "formulations": {
+        "boolean": "(\"tricep dip\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: tricep dip",
+        "production_template_fixed": "chest hypertrophy resistance training | Exercise-specific evidence: tricep dip",
+        "question": "what does the research say about Exercise-specific evidence: tricep dip for resistance training?",
+        "topic": "Exercise-specific evidence: tricep dip"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 3,
+      "topic": "Exercise-specific evidence: tricep dip"
+    },
+    {
+      "boolean_alt": "(\"tricep extension\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_tricep_extension",
+      "formulations": {
+        "boolean": "(\"tricep extension\") AND (triceps brachii) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: triceps | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: tricep extension",
+        "production_template_fixed": "triceps hypertrophy resistance training | Exercise-specific evidence: tricep extension",
+        "question": "what does the research say about Exercise-specific evidence: tricep extension for resistance training?",
+        "topic": "Exercise-specific evidence: tricep extension"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "triceps",
+      "n_relevant": 8,
+      "topic": "Exercise-specific evidence: tricep extension"
+    },
+    {
+      "boolean_alt": "(\"upright row\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+      "cluster_id": "exercise_upright_row",
+      "formulations": {
+        "boolean": "(\"upright row\") AND (deltoid shoulder) AND (resistance training OR strength training OR hypertrophy OR electromyography OR muscle activation)",
+        "production_template": "hypertrophy resistance training protocol | target muscles: delts | sessions per week: 3 | split template: auto | user notes: Exercise-specific evidence: upright row",
+        "production_template_fixed": "delts hypertrophy resistance training | Exercise-specific evidence: upright row",
+        "question": "what does the research say about Exercise-specific evidence: upright row for resistance training?",
+        "topic": "Exercise-specific evidence: upright row"
+      },
+      "muscle_source": "catalog_alias_lookup",
+      "muscles": "delts",
+      "n_relevant": 2,
+      "topic": "Exercise-specific evidence: upright row"
+    },
+    {
+      "boolean_alt": "split routine full body frequency hypertrophy meta-analysis",
+      "cluster_id": "frequency",
+      "formulations": {
+        "boolean": "resistance training frequency muscle group hypertrophy strength",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Training frequency per muscle group",
+        "production_template_fixed": "chest hypertrophy resistance training | Training frequency per muscle group",
+        "question": "what does the research say about Training frequency per muscle group for resistance training?",
+        "topic": "Training frequency per muscle group"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 30,
+      "topic": "Training frequency per muscle group"
+    },
+    {
+      "boolean_alt": "seated standing calf raise soleus gastrocnemius muscle growth",
+      "cluster_id": "gap_calves",
+      "formulations": {
+        "boolean": "calf raise gastrocnemius soleus hypertrophy resistance training",
+        "production_template": "hypertrophy resistance training protocol | target muscles: calves | sessions per week: 3 | split template: auto | user notes: Calf (gastrocnemius/soleus) training",
+        "production_template_fixed": "calves hypertrophy resistance training | Calf (gastrocnemius/soleus) training",
+        "question": "what does the research say about Calf (gastrocnemius/soleus) training for resistance training?",
+        "topic": "Calf (gastrocnemius/soleus) training"
+      },
+      "muscle_source": "gap_cluster_id",
+      "muscles": "calves",
+      "n_relevant": 12,
+      "topic": "Calf (gastrocnemius/soleus) training"
+    },
+    {
+      "boolean_alt": "oblique abdominal exercise electromyography comparison",
+      "cluster_id": "gap_core_abs",
+      "formulations": {
+        "boolean": "abdominal exercise rectus abdominis muscle activation electromyography",
+        "production_template": "hypertrophy resistance training protocol | target muscles: abs | sessions per week: 3 | split template: auto | user notes: Direct abdominal / core training",
+        "production_template_fixed": "abs hypertrophy resistance training | Direct abdominal / core training",
+        "question": "what does the research say about Direct abdominal / core training for resistance training?",
+        "topic": "Direct abdominal / core training"
+      },
+      "muscle_source": "gap_cluster_id",
+      "muscles": "abs",
+      "n_relevant": 37,
+      "topic": "Direct abdominal / core training"
+    },
+    {
+      "boolean_alt": "wrist curl forearm muscle activation electromyography",
+      "cluster_id": "gap_forearms_grip",
+      "formulations": {
+        "boolean": "forearm wrist flexor extensor resistance training hypertrophy",
+        "production_template": "hypertrophy resistance training protocol | target muscles: forearms | sessions per week: 3 | split template: auto | user notes: Forearm and grip training",
+        "production_template_fixed": "forearms hypertrophy resistance training | Forearm and grip training",
+        "question": "what does the research say about Forearm and grip training for resistance training?",
+        "topic": "Forearm and grip training"
+      },
+      "muscle_source": "gap_cluster_id",
+      "muscles": "forearms",
+      "n_relevant": 20,
+      "topic": "Forearm and grip training"
+    },
+    {
+      "boolean_alt": "hip abductor training strength hypertrophy randomized trial",
+      "cluster_id": "gap_hip_abductors",
+      "formulations": {
+        "boolean": "hip abduction gluteus medius activation resistance exercise",
+        "production_template": "hypertrophy resistance training protocol | target muscles: hip_abductors | sessions per week: 3 | split template: auto | user notes: Hip abductor / gluteus medius training",
+        "production_template_fixed": "hip_abductors hypertrophy resistance training | Hip abductor / gluteus medius training",
+        "question": "what does the research say about Hip abductor / gluteus medius training for resistance training?",
+        "topic": "Hip abductor / gluteus medius training"
+      },
+      "muscle_source": "gap_cluster_id",
+      "muscles": "hip_abductors",
+      "n_relevant": 30,
+      "topic": "Hip abductor / gluteus medius training"
+    },
+    {
+      "boolean_alt": "groin adductor training injury prevention randomized trial",
+      "cluster_id": "gap_hip_adductors",
+      "formulations": {
+        "boolean": "hip adductor strengthening exercise muscle activation",
+        "production_template": "hypertrophy resistance training protocol | target muscles: hip_adductors | sessions per week: 3 | split template: auto | user notes: Hip adductor / groin training",
+        "production_template_fixed": "hip_adductors hypertrophy resistance training | Hip adductor / groin training",
+        "question": "what does the research say about Hip adductor / groin training for resistance training?",
+        "topic": "Hip adductor / groin training"
+      },
+      "muscle_source": "gap_cluster_id",
+      "muscles": "hip_adductors",
+      "n_relevant": 26,
+      "topic": "Hip adductor / groin training"
+    },
+    {
+      "boolean_alt": "kettlebell exercise conditioning intervention strength",
+      "cluster_id": "gap_kettlebell",
+      "formulations": {
+        "boolean": "kettlebell training strength power randomized controlled trial",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Kettlebell training",
+        "production_template_fixed": "chest hypertrophy resistance training | Kettlebell training",
+        "question": "what does the research say about Kettlebell training for resistance training?",
+        "topic": "Kettlebell training"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 12,
+      "topic": "Kettlebell training"
+    },
+    {
+      "boolean_alt": "resistance machine free weight strength transfer trial",
+      "cluster_id": "gap_machine_vs_free",
+      "formulations": {
+        "boolean": "machine versus free weight resistance training hypertrophy strength",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Machine vs free-weight resistance training",
+        "production_template_fixed": "chest hypertrophy resistance training | Machine vs free-weight resistance training",
+        "question": "what does the research say about Machine vs free-weight resistance training for resistance training?",
+        "topic": "Machine vs free-weight resistance training"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 4,
+      "topic": "Machine vs free-weight resistance training"
+    },
+    {
+      "boolean_alt": "low back pain resistance exercise programming review",
+      "cluster_id": "injury_modifications",
+      "formulations": {
+        "boolean": "resistance training modification injury pain knee shoulder",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Injury-specific training modifications",
+        "production_template_fixed": "chest hypertrophy resistance training | Injury-specific training modifications",
+        "question": "what does the research say about Injury-specific training modifications for resistance training?",
+        "topic": "Injury-specific training modifications"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 22,
+      "topic": "Injury-specific training modifications"
+    },
+    {
+      "boolean_alt": "periodization autoregulation strength training meta-analysis",
+      "cluster_id": "progressive_overload",
+      "formulations": {
+        "boolean": "progressive overload resistance training hypertrophy strength review",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Progressive overload",
+        "production_template_fixed": "chest hypertrophy resistance training | Progressive overload",
+        "question": "what does the research say about Progressive overload for resistance training?",
+        "topic": "Progressive overload"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 35,
+      "topic": "Progressive overload"
+    },
+    {
+      "boolean_alt": "training to failure low load hypertrophy review",
+      "cluster_id": "rep_ranges",
+      "formulations": {
+        "boolean": "low load high load resistance training hypertrophy strength meta-analysis",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Rep ranges for hypertrophy vs strength",
+        "production_template_fixed": "chest hypertrophy resistance training | Rep ranges for hypertrophy vs strength",
+        "question": "what does the research say about Rep ranges for hypertrophy vs strength for resistance training?",
+        "topic": "Rep ranges for hypertrophy vs strength"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 47,
+      "topic": "Rep ranges for hypertrophy vs strength"
+    },
+    {
+      "boolean_alt": "short rest long rest hypertrophy comparison",
+      "cluster_id": "rest_periods",
+      "formulations": {
+        "boolean": "rest interval resistance training hypertrophy strength meta-analysis",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Rest periods",
+        "production_template_fixed": "chest hypertrophy resistance training | Rest periods",
+        "question": "what does the research say about Rest periods for resistance training?",
+        "topic": "Rest periods"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 28,
+      "topic": "Rest periods"
+    },
+    {
+      "boolean_alt": "training volume recovery fatigue resistance training",
+      "cluster_id": "volume_landmarks",
+      "formulations": {
+        "boolean": "resistance training volume dose response hypertrophy meta-analysis",
+        "production_template": "hypertrophy resistance training protocol | target muscles: chest | sessions per week: 3 | split template: auto | user notes: Volume landmarks (MEV/MAV/MRV)",
+        "production_template_fixed": "chest hypertrophy resistance training | Volume landmarks (MEV/MAV/MRV)",
+        "question": "what does the research say about Volume landmarks (MEV/MAV/MRV) for resistance training?",
+        "topic": "Volume landmarks (MEV/MAV/MRV)"
+      },
+      "muscle_source": "default_no_muscle_implied",
+      "muscles": "chest",
+      "n_relevant": 45,
+      "topic": "Volume landmarks (MEV/MAV/MRV)"
+    }
+  ],
+  "stage1": {
+    "baseline_minilm": {
+      "boolean": {
+        "mrr": 0.652815676944886,
+        "ndcg_at_10": 0.4464686711888959,
+        "ndcg_at_10_ci": [
+          0.37281129903625415,
+          0.5205387767453569
+        ],
+        "precision_at_10": 0.30204081632653057,
+        "precision_at_20": 0.22040816326530607,
+        "precision_at_5": 0.4040816326530613,
+        "precision_at_50": 0.12612244897959185,
+        "r_precision": 0.33913229020942665,
+        "recall_at_10": 0.39652375952083213,
+        "recall_at_20": 0.5450751052637792,
+        "recall_at_5": 0.26886128325169967,
+        "recall_at_50": 0.6834369851724497
+      },
+      "production_template": {
+        "mrr": 0.20032605559224637,
+        "ndcg_at_10": 0.08556145088609968,
+        "ndcg_at_10_ci": [
+          0.04318385830548083,
+          0.13410216574376796
+        ],
+        "precision_at_10": 0.0673469387755102,
+        "precision_at_20": 0.056122448979591844,
+        "precision_at_5": 0.08571428571428572,
+        "precision_at_50": 0.04448979591836736,
+        "r_precision": 0.05735610222779834,
+        "recall_at_10": 0.046164817857070606,
+        "recall_at_20": 0.08335727303308159,
+        "recall_at_5": 0.034835798227517305,
+        "recall_at_50": 0.18674443206049948
+      },
+      "production_template_fixed": {
+        "mrr": 0.3434406259976301,
+        "ndcg_at_10": 0.18818595067372632,
+        "ndcg_at_10_ci": [
+          0.12918449307277732,
+          0.2531993319666644
+        ],
+        "precision_at_10": 0.13877551020408166,
+        "precision_at_20": 0.10102040816326531,
+        "precision_at_5": 0.1673469387755102,
+        "precision_at_50": 0.0726530612244898,
+        "r_precision": 0.14215305078940169,
+        "recall_at_10": 0.13587503357683908,
+        "recall_at_20": 0.18195349931759663,
+        "recall_at_5": 0.08789065245090344,
+        "recall_at_50": 0.305410368040808
+      },
+      "question": {
+        "mrr": 0.38068258808847183,
+        "ndcg_at_10": 0.20148588444314888,
+        "ndcg_at_10_ci": [
+          0.1356307778165449,
+          0.27266631442381745
+        ],
+        "precision_at_10": 0.14489795918367349,
+        "precision_at_20": 0.1153061224489796,
+        "precision_at_5": 0.19183673469387752,
+        "precision_at_50": 0.07836734693877555,
+        "r_precision": 0.14462300836140007,
+        "recall_at_10": 0.13771568388687713,
+        "recall_at_20": 0.2071187677129436,
+        "recall_at_5": 0.09955500850301462,
+        "recall_at_50": 0.32533916013318764
+      },
+      "topic": {
+        "mrr": 0.49131520166466125,
+        "ndcg_at_10": 0.3666151411987715,
+        "ndcg_at_10_ci": [
+          0.27797435218791555,
+          0.45553548899647067
+        ],
+        "precision_at_10": 0.28775510204081634,
+        "precision_at_20": 0.21020408163265303,
+        "precision_at_5": 0.33061224489795915,
+        "precision_at_50": 0.12000000000000001,
+        "r_precision": 0.295700547320454,
+        "recall_at_10": 0.3127238772624174,
+        "recall_at_20": 0.44585942356487085,
+        "recall_at_5": 0.2049285081161455,
+        "recall_at_50": 0.5712762406874574
+      }
+    },
+    "biomed_base": {
+      "boolean": {
+        "mrr": 0.5453798305983834,
+        "ndcg_at_10": 0.3466330162983015,
+        "ndcg_at_10_ci": [
+          0.2735101700494579,
+          0.42250121790682765
+        ],
+        "precision_at_10": 0.23877551020408166,
+        "precision_at_20": 0.16734693877551018,
+        "precision_at_5": 0.3346938775510204,
+        "precision_at_50": 0.09714285714285717,
+        "r_precision": 0.2271294769939595,
+        "recall_at_10": 0.3052888209524714,
+        "recall_at_20": 0.3744094034322068,
+        "recall_at_5": 0.2239031965941467,
+        "recall_at_50": 0.5013957700719707
+      },
+      "production_template": {
+        "mrr": 0.13014857881829278,
+        "ndcg_at_10": 0.0621827456162439,
+        "ndcg_at_10_ci": [
+          0.03013260420475265,
+          0.0996069941636123
+        ],
+        "precision_at_10": 0.05714285714285715,
+        "precision_at_20": 0.060204081632653075,
+        "precision_at_5": 0.0653061224489796,
+        "precision_at_50": 0.050612244897959194,
+        "r_precision": 0.05195659077167068,
+        "recall_at_10": 0.04230326674964105,
+        "recall_at_20": 0.09473395501017255,
+        "recall_at_5": 0.026452795286924676,
+        "recall_at_50": 0.23037475569971755
+      },
+      "production_template_fixed": {
+        "mrr": 0.424962899029256,
+        "ndcg_at_10": 0.22525827966499726,
+        "ndcg_at_10_ci": [
+          0.16078534105501102,
+          0.2916791082961198
+        ],
+        "precision_at_10": 0.15510204081632656,
+        "precision_at_20": 0.10714285714285714,
+        "precision_at_5": 0.20000000000000004,
+        "precision_at_50": 0.07306122448979595,
+        "r_precision": 0.16512185433788393,
+        "recall_at_10": 0.16041146610670234,
+        "recall_at_20": 0.21014821991423338,
+        "recall_at_5": 0.1141019941606133,
+        "recall_at_50": 0.332440360728148
+      },
+      "question": {
+        "mrr": 0.2418628997452242,
+        "ndcg_at_10": 0.12140192378688344,
+        "ndcg_at_10_ci": [
+          0.0711844928447901,
+          0.17859552683832156
+        ],
+        "precision_at_10": 0.08571428571428572,
+        "precision_at_20": 0.06938775510204083,
+        "precision_at_5": 0.10612244897959185,
+        "precision_at_50": 0.05959183673469388,
+        "r_precision": 0.10287324740527436,
+        "recall_at_10": 0.08360750192057183,
+        "recall_at_20": 0.1121813081718114,
+        "recall_at_5": 0.05486535585319779,
+        "recall_at_50": 0.2301083997885505
+      },
+      "topic": {
+        "mrr": 0.41962275000757954,
+        "ndcg_at_10": 0.2673907535636099,
+        "ndcg_at_10_ci": [
+          0.18794936328358428,
+          0.34910441459242797
+        ],
+        "precision_at_10": 0.19795918367346937,
+        "precision_at_20": 0.1346938775510204,
+        "precision_at_5": 0.23265306122448975,
+        "precision_at_50": 0.0853061224489796,
+        "r_precision": 0.19827554674108253,
+        "recall_at_10": 0.20236600997564957,
+        "recall_at_20": 0.2532927421512437,
+        "recall_at_5": 0.14094133224615205,
+        "recall_at_50": 0.37811486703464897
+      }
+    },
+    "biomed_retrieval": {
+      "boolean": {
+        "mrr": 0.7107814804243375,
+        "ndcg_at_10": 0.46172681611001093,
+        "ndcg_at_10_ci": [
+          0.3930044082882302,
+          0.5299583084203571
+        ],
+        "precision_at_10": 0.31020408163265306,
+        "precision_at_20": 0.21326530612244896,
+        "precision_at_5": 0.4081632653061224,
+        "precision_at_50": 0.12367346938775511,
+        "r_precision": 0.3103605910512751,
+        "recall_at_10": 0.4090826475573579,
+        "recall_at_20": 0.5072181566708341,
+        "recall_at_5": 0.2540569997071335,
+        "recall_at_50": 0.6743682418650554
+      },
+      "production_template": {
+        "mrr": 0.2155469790352051,
+        "ndcg_at_10": 0.10421595913275164,
+        "ndcg_at_10_ci": [
+          0.05542014672807674,
+          0.159908173969528
+        ],
+        "precision_at_10": 0.07959183673469389,
+        "precision_at_20": 0.06224489795918367,
+        "precision_at_5": 0.10612244897959185,
+        "precision_at_50": 0.04408163265306124,
+        "r_precision": 0.07655876244988623,
+        "recall_at_10": 0.06849496604864777,
+        "recall_at_20": 0.105523100504051,
+        "recall_at_5": 0.04831741207121146,
+        "recall_at_50": 0.18285363062757204
+      },
+      "production_template_fixed": {
+        "mrr": 0.4260801848345026,
+        "ndcg_at_10": 0.20175016869523274,
+        "ndcg_at_10_ci": [
+          0.13837982319576583,
+          0.27062609662180104
+        ],
+        "precision_at_10": 0.12244897959183676,
+        "precision_at_20": 0.09285714285714286,
+        "precision_at_5": 0.18775510204081636,
+        "precision_at_50": 0.0685714285714286,
+        "r_precision": 0.16079640140577486,
+        "recall_at_10": 0.139744620598836,
+        "recall_at_20": 0.21123987523564508,
+        "recall_at_5": 0.1224096322190673,
+        "recall_at_50": 0.33845033531942603
+      },
+      "question": {
+        "mrr": 0.48117865868029264,
+        "ndcg_at_10": 0.2855208494986611,
+        "ndcg_at_10_ci": [
+          0.2139103651743264,
+          0.36176122139156563
+        ],
+        "precision_at_10": 0.1877551020408163,
+        "precision_at_20": 0.14489795918367349,
+        "precision_at_5": 0.26122448979591834,
+        "precision_at_50": 0.08897959183673472,
+        "r_precision": 0.21573585240086157,
+        "recall_at_10": 0.22995823850074262,
+        "recall_at_20": 0.3046300025954894,
+        "recall_at_5": 0.17158876252064661,
+        "recall_at_50": 0.40296673146847534
+      },
+      "topic": {
+        "mrr": 0.5524421685385729,
+        "ndcg_at_10": 0.4175736287707392,
+        "ndcg_at_10_ci": [
+          0.33018154055354887,
+          0.5050793432747427
+        ],
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.2091836734693877,
+        "precision_at_5": 0.3387755102040816,
+        "precision_at_50": 0.11836734693877554,
+        "r_precision": 0.3338462488904409,
+        "recall_at_10": 0.3672924818201665,
+        "recall_at_20": 0.46963772132276044,
+        "recall_at_5": 0.22006943433343776,
+        "recall_at_50": 0.6266395999843256
+      }
+    },
+    "general_base": {
+      "boolean": {
+        "mrr": 0.7151801709356832,
+        "ndcg_at_10": 0.45796479630193315,
+        "ndcg_at_10_ci": [
+          0.38209149546473753,
+          0.5342144261687104
+        ],
+        "precision_at_10": 0.2897959183673469,
+        "precision_at_20": 0.21122448979591835,
+        "precision_at_5": 0.4081632653061225,
+        "precision_at_50": 0.12448979591836733,
+        "r_precision": 0.3395490347891143,
+        "recall_at_10": 0.35650590398289755,
+        "recall_at_20": 0.5057258239902196,
+        "recall_at_5": 0.28196407268200024,
+        "recall_at_50": 0.6465562542716465
+      },
+      "production_template": {
+        "mrr": 0.2323596209260386,
+        "ndcg_at_10": 0.12576623065024686,
+        "ndcg_at_10_ci": [
+          0.06905527937091992,
+          0.19169512742020892
+        ],
+        "precision_at_10": 0.08775510204081632,
+        "precision_at_20": 0.07040816326530615,
+        "precision_at_5": 0.1183673469387755,
+        "precision_at_50": 0.0559183673469388,
+        "r_precision": 0.10079169340861663,
+        "recall_at_10": 0.09230696844293415,
+        "recall_at_20": 0.1435227179032594,
+        "recall_at_5": 0.06512985133263031,
+        "recall_at_50": 0.25431148985699153
+      },
+      "production_template_fixed": {
+        "mrr": 0.5584643792524265,
+        "ndcg_at_10": 0.3260841724391915,
+        "ndcg_at_10_ci": [
+          0.25440456531768396,
+          0.39918496279902965
+        ],
+        "precision_at_10": 0.20408163265306123,
+        "precision_at_20": 0.16224489795918368,
+        "precision_at_5": 0.2693877551020408,
+        "precision_at_50": 0.0922448979591837,
+        "r_precision": 0.2402964588353912,
+        "recall_at_10": 0.2793533659896608,
+        "recall_at_20": 0.38289542910549174,
+        "recall_at_5": 0.21119097510375365,
+        "recall_at_50": 0.46592360393258236
+      },
+      "question": {
+        "mrr": 0.5620599253080103,
+        "ndcg_at_10": 0.35975108990670485,
+        "ndcg_at_10_ci": [
+          0.27496466624336896,
+          0.4467190589343599
+        ],
+        "precision_at_10": 0.24489795918367346,
+        "precision_at_20": 0.16020408163265304,
+        "precision_at_5": 0.3061224489795919,
+        "precision_at_50": 0.09632653061224491,
+        "r_precision": 0.26007099974225606,
+        "recall_at_10": 0.2752565443102331,
+        "recall_at_20": 0.3200356373339019,
+        "recall_at_5": 0.19906991275787933,
+        "recall_at_50": 0.44467069754142724
+      },
+      "topic": {
+        "mrr": 0.6129452261376178,
+        "ndcg_at_10": 0.4441898389443056,
+        "ndcg_at_10_ci": [
+          0.34875321775845247,
+          0.5379432798443583
+        ],
+        "precision_at_10": 0.3,
+        "precision_at_20": 0.21020408163265308,
+        "precision_at_5": 0.3918367346938776,
+        "precision_at_50": 0.12000000000000001,
+        "r_precision": 0.3437664676322528,
+        "recall_at_10": 0.3655569217290954,
+        "recall_at_20": 0.45775596185475315,
+        "recall_at_5": 0.2742130395905975,
+        "recall_at_50": 0.5815117781119349
+      }
+    },
+    "general_small": {
+      "boolean": {
+        "mrr": 0.6642848594219467,
+        "ndcg_at_10": 0.4102841207480345,
+        "ndcg_at_10_ci": [
+          0.3312854860275287,
+          0.49026553735135153
+        ],
+        "precision_at_10": 0.2673469387755103,
+        "precision_at_20": 0.19183673469387755,
+        "precision_at_5": 0.346938775510204,
+        "precision_at_50": 0.11510204081632656,
+        "r_precision": 0.298723568030783,
+        "recall_at_10": 0.33992007638653665,
+        "recall_at_20": 0.45065351530761294,
+        "recall_at_5": 0.21230213944765788,
+        "recall_at_50": 0.5931123388185006
+      },
+      "production_template": {
+        "mrr": 0.21055250097064354,
+        "ndcg_at_10": 0.11031256879772931,
+        "ndcg_at_10_ci": [
+          0.059493605262025163,
+          0.16855507508609135
+        ],
+        "precision_at_10": 0.08571428571428574,
+        "precision_at_20": 0.06020408163265306,
+        "precision_at_5": 0.09795918367346942,
+        "precision_at_50": 0.046530612244897976,
+        "r_precision": 0.08341138060928516,
+        "recall_at_10": 0.0882483587937904,
+        "recall_at_20": 0.11845182789918265,
+        "recall_at_5": 0.05425669761318914,
+        "recall_at_50": 0.1947103574997766
+      },
+      "production_template_fixed": {
+        "mrr": 0.37322880950164405,
+        "ndcg_at_10": 0.21788333538960022,
+        "ndcg_at_10_ci": [
+          0.15006224995487163,
+          0.2901465155602046
+        ],
+        "precision_at_10": 0.1571428571428571,
+        "precision_at_20": 0.12755102040816324,
+        "precision_at_5": 0.19591836734693877,
+        "precision_at_50": 0.07714285714285718,
+        "r_precision": 0.17453222760605835,
+        "recall_at_10": 0.17997461083968166,
+        "recall_at_20": 0.2812658503195391,
+        "recall_at_5": 0.11679326589927069,
+        "recall_at_50": 0.3689942870944509
+      },
+      "question": {
+        "mrr": 0.41575868226022744,
+        "ndcg_at_10": 0.24278993073753427,
+        "ndcg_at_10_ci": [
+          0.17986365920583391,
+          0.31097525391940056
+        ],
+        "precision_at_10": 0.1795918367346938,
+        "precision_at_20": 0.12959183673469388,
+        "precision_at_5": 0.21632653061224488,
+        "precision_at_50": 0.08204081632653064,
+        "r_precision": 0.16356900682254708,
+        "recall_at_10": 0.20248934283433462,
+        "recall_at_20": 0.26290311665068306,
+        "recall_at_5": 0.11187574632310107,
+        "recall_at_50": 0.3561130260453022
+      },
+      "topic": {
+        "mrr": 0.5326651617650001,
+        "ndcg_at_10": 0.3727996945220574,
+        "ndcg_at_10_ci": [
+          0.2831346332945135,
+          0.4640156349144992
+        ],
+        "precision_at_10": 0.2653061224489796,
+        "precision_at_20": 0.1836734693877551,
+        "precision_at_5": 0.34285714285714286,
+        "precision_at_50": 0.10448979591836734,
+        "r_precision": 0.262745461122753,
+        "recall_at_10": 0.29827358742833654,
+        "recall_at_20": 0.3741037416051073,
+        "recall_at_5": 0.2279652804287572,
+        "recall_at_50": 0.5158248286142478
+      }
+    }
+  },
+  "stage1_paired_vs_baseline": {
+    "biomed_base": {
+      "mean_delta": -0.02337870526985579,
+      "n_better": 8,
+      "n_worse": 10,
+      "wilcoxon_p": 0.24846555845586238
+    },
+    "biomed_retrieval": {
+      "mean_delta": 0.018654508246651953,
+      "n_better": 9,
+      "n_worse": 9,
+      "wilcoxon_p": 0.17011443450093056
+    },
+    "general_base": {
+      "mean_delta": 0.040204779764147165,
+      "n_better": 16,
+      "n_worse": 6,
+      "wilcoxon_p": 0.061933030635496676
+    },
+    "general_small": {
+      "mean_delta": 0.024751117911629622,
+      "n_better": 12,
+      "n_worse": 6,
+      "wilcoxon_p": 0.17011443450093056
+    }
+  },
+  "stage2": {
+    "baseline_minilm": {
+      "distance_p05": 0.40788087248802185,
+      "distance_p50": 0.5870661735534668,
+      "jaccard_vs_baseline_fixed_threshold": 1.0,
+      "jaccard_vs_baseline_rank_matched": 1.0,
+      "mean_chunks_within_0.50": 277.3265306122449,
+      "mean_citations_per_query": 5.020408163265306,
+      "median_chunks_within_0.50": 279.0,
+      "queries_with_any_citation_rate": 0.8571428571428571,
+      "queries_with_empty_pool": 0
+    },
+    "biomed_base": {
+      "distance_p05": 0.46376216411590576,
+      "distance_p50": 0.6310825347900391,
+      "jaccard_vs_baseline_fixed_threshold": 0.33836322407750974,
+      "jaccard_vs_baseline_rank_matched": 0.37128427128427127,
+      "mean_chunks_within_0.50": 132.28571428571428,
+      "mean_citations_per_query": 4.081632653061225,
+      "median_chunks_within_0.50": 127.0,
+      "queries_with_any_citation_rate": 0.7959183673469388,
+      "queries_with_empty_pool": 0
+    },
+    "biomed_retrieval": {
+      "distance_p05": 0.06964902579784393,
+      "distance_p50": 0.09652209281921387,
+      "jaccard_vs_baseline_fixed_threshold": 0.3185793798038698,
+      "jaccard_vs_baseline_rank_matched": 0.5572400388726919,
+      "mean_chunks_within_0.50": 1264.0,
+      "mean_citations_per_query": 5.142857142857143,
+      "median_chunks_within_0.50": 1264.0,
+      "queries_with_any_citation_rate": 0.8571428571428571,
+      "queries_with_empty_pool": 0
+    },
+    "general_base": {
+      "distance_p05": 0.2938843369483948,
+      "distance_p50": 0.37556755542755127,
+      "jaccard_vs_baseline_fixed_threshold": 0.32701652089407207,
+      "jaccard_vs_baseline_rank_matched": 0.45370174043643424,
+      "mean_chunks_within_0.50": 1245.938775510204,
+      "mean_citations_per_query": 5.142857142857143,
+      "median_chunks_within_0.50": 1246.0,
+      "queries_with_any_citation_rate": 0.8571428571428571,
+      "queries_with_empty_pool": 0
+    },
+    "general_small": {
+      "distance_p05": 0.23758795857429504,
+      "distance_p50": 0.317472904920578,
+      "jaccard_vs_baseline_fixed_threshold": 0.31779309126247923,
+      "jaccard_vs_baseline_rank_matched": 0.5242306446388079,
+      "mean_chunks_within_0.50": 1258.9591836734694,
+      "mean_citations_per_query": 5.142857142857143,
+      "median_chunks_within_0.50": 1259.0,
+      "queries_with_any_citation_rate": 0.8571428571428571,
+      "queries_with_empty_pool": 0
+    }
+  },
+  "stage2_cited_pmids": {
+    "baseline_minilm": [
+      [
+        "32645111",
+        "36896022",
+        "32705392",
+        "39593465",
+        "39557768",
+        "34375990"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "36896022",
+        "32705392",
+        "39593465",
+        "39557768",
+        "34375990",
+        "40267413"
+      ],
+      [
+        "32645111",
+        "37229415",
+        "36026487",
+        "36896022",
+        "36612622",
+        "32705392"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40757563",
+        "41979887",
+        "41287002"
+      ],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "36896022",
+        "36612622",
+        "32705392"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40757563",
+        "41979887",
+        "41287002"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32705392",
+        "38890005",
+        "36896022",
+        "35206420",
+        "40692697",
+        "32669052"
+      ],
+      [],
+      [],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "36199287",
+        "40911904",
+        "38651426",
+        "40981025",
+        "35622106",
+        "36293790"
+      ],
+      [
+        "32705392",
+        "36896022",
+        "35206420",
+        "40692697",
+        "32669052",
+        "41743596"
+      ],
+      [
+        "32645111",
+        "37229415",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40757563",
+        "41979887",
+        "41287002"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "36896022",
+        "36612622",
+        "32705392"
+      ],
+      [
+        "41441417",
+        "40981044",
+        "41562724",
+        "36896022",
+        "35992501",
+        "34529554"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "37229415",
+        "36026487",
+        "36896022",
+        "36612622",
+        "32705392"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "35936912",
+        "42194886",
+        "41998766",
+        "32705392",
+        "40757582",
+        "38890005"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "35069251",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "32645111",
+        "37229415",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "35819335",
+        "28677940",
+        "38684187",
+        "32645111",
+        "41222890",
+        "32705392"
+      ],
+      [
+        "32705392",
+        "36896022",
+        "35206420",
+        "40692697",
+        "32669052",
+        "41743596"
+      ],
+      [
+        "32645111",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677",
+        "39557768"
+      ],
+      [],
+      [
+        "38010201",
+        "29043659"
+      ],
+      [],
+      [],
+      [],
+      [
+        "32645111",
+        "32705392",
+        "39593465",
+        "39557768",
+        "34375990",
+        "38240811"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "39593465",
+        "39557768",
+        "34375990",
+        "40267413"
+      ]
+    ],
+    "biomed_base": [
+      [
+        "35069251"
+      ],
+      [
+        "35069251"
+      ],
+      [],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "40944139",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "41730991",
+        "40981044",
+        "41901575",
+        "41287002",
+        "36856799",
+        "30153194"
+      ],
+      [],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "40944139",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36856799",
+        "30153194"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "35069251",
+        "40944139",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "35069251",
+        "39593465",
+        "39162881"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "39593465",
+        "34375990"
+      ],
+      [
+        "36026487",
+        "35069251",
+        "39162881"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "39593465",
+        "40944139"
+      ],
+      [
+        "36896022",
+        "35936912",
+        "40692697",
+        "39162881"
+      ],
+      [],
+      [],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "40325746",
+        "38651426",
+        "33916599",
+        "36293790",
+        "32310159",
+        "31687405"
+      ],
+      [
+        "35206420",
+        "36896022",
+        "39162881",
+        "34525451"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "36896022",
+        "35069251",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "36856799",
+        "30153194"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "39593465",
+        "40944139"
+      ],
+      [
+        "40981044"
+      ],
+      [
+        "36026487",
+        "35069251",
+        "32645111",
+        "39593465",
+        "40944139",
+        "39162881"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "39593465",
+        "40944139"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "40944139",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "40944139",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "35069251",
+        "32645111",
+        "39593465",
+        "40944139",
+        "37555451"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "39593465",
+        "40944139"
+      ],
+      [
+        "42194886",
+        "41998766",
+        "35206420",
+        "36896022",
+        "35936912",
+        "40692697"
+      ],
+      [
+        "36026487",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "40944139",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "35069251",
+        "32645111",
+        "39593465",
+        "40944139",
+        "37555451"
+      ],
+      [
+        "35819335",
+        "28677940",
+        "39716392",
+        "37789670",
+        "38684187",
+        "41222890"
+      ],
+      [
+        "41998766",
+        "36896022",
+        "35206420",
+        "35936912",
+        "39162881"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "33634677",
+        "34375990"
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "33634677",
+        "34375990"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "39593465",
+        "34375990"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "33634677",
+        "34375990"
+      ],
+      []
+    ],
+    "biomed_retrieval": [
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40300761",
+        "40757563",
+        "41979887"
+      ],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40300761",
+        "40757563",
+        "41979887"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "35936912",
+        "41998766",
+        "32705392",
+        "40757582",
+        "38890005",
+        "38464757"
+      ],
+      [],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32107499",
+        "31191088",
+        "40325746",
+        "40911904",
+        "36199287",
+        "38006325"
+      ],
+      [
+        "35936912",
+        "41998766",
+        "32705392",
+        "40757582",
+        "38890005",
+        "38464757"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "41931150",
+        "41307987",
+        "39364857",
+        "36828324",
+        "40300761",
+        "40757563"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "41441417",
+        "40981044",
+        "38288256",
+        "41562724",
+        "31171405",
+        "36896022"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "35936912",
+        "41998766",
+        "42194886",
+        "32705392",
+        "40757582",
+        "38890005"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "35819335",
+        "28677940",
+        "37420659",
+        "34428569",
+        "39716392",
+        "38684187"
+      ],
+      [
+        "35936912",
+        "41998766",
+        "32705392",
+        "40757582",
+        "38890005",
+        "38464757"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [],
+      [
+        "38010201",
+        "32072792",
+        "29043659",
+        "36705372",
+        "37624139",
+        "30443664"
+      ],
+      [],
+      [],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "39157494",
+        "39686276",
+        "36612622"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ]
+    ],
+    "general_base": [
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "39157494",
+        "36612622",
+        "38744142"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40300761",
+        "40757563",
+        "41979887"
+      ],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40300761",
+        "40757563",
+        "41979887"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "40692697",
+        "41998766",
+        "32705392",
+        "40757582",
+        "38890005",
+        "38464757"
+      ],
+      [],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "40325746",
+        "40911904",
+        "36199287",
+        "38651426",
+        "38006325",
+        "38890005"
+      ],
+      [
+        "35936912",
+        "41998766",
+        "40757582",
+        "38890005",
+        "38464757",
+        "35206420"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "40757582",
+        "39686276",
+        "39157494",
+        "36612622"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40300761",
+        "40757563",
+        "41979887"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "41441417",
+        "40981044",
+        "38288256",
+        "41562724",
+        "36157003",
+        "35992501"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "40757582",
+        "39686276",
+        "39157494",
+        "36612622"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "35936912",
+        "40692697",
+        "42194886",
+        "41998766",
+        "40757582",
+        "38890005"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "35819335",
+        "28677940",
+        "37420659",
+        "34428569",
+        "39716392",
+        "38684187"
+      ],
+      [
+        "41998766",
+        "40757582",
+        "38890005",
+        "38464757",
+        "35206420",
+        "36896022"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [],
+      [
+        "38010201",
+        "32072792",
+        "29043659",
+        "36705372",
+        "37624139",
+        "30443664"
+      ],
+      [],
+      [],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ]
+    ],
+    "general_small": [
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "40757582",
+        "39686276",
+        "39157494",
+        "36612622"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "41931150",
+        "41307987",
+        "39364857",
+        "36828324",
+        "40300761",
+        "40757563"
+      ],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "41931150",
+        "41307987",
+        "39364857",
+        "36828324",
+        "40300761",
+        "40757563"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "41998766",
+        "32705392",
+        "40757582",
+        "38890005",
+        "35206420",
+        "36896022"
+      ],
+      [],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "31191088",
+        "40325746",
+        "40911904",
+        "36199287",
+        "38651426",
+        "38890005"
+      ],
+      [
+        "35936912",
+        "41998766",
+        "32705392",
+        "40757582",
+        "38890005",
+        "36896022"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "41931150",
+        "41307987",
+        "39364857",
+        "36828324",
+        "40300761",
+        "40757563"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "41978026",
+        "40981044",
+        "38288256",
+        "41562724",
+        "34529554",
+        "35992501"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "35936912",
+        "41998766",
+        "32705392",
+        "40757582",
+        "38890005",
+        "35206420"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "40757582",
+        "39686276",
+        "39157494",
+        "36612622"
+      ],
+      [
+        "35819335",
+        "28677940",
+        "37420659",
+        "34428569",
+        "39716392",
+        "38684187"
+      ],
+      [
+        "41998766",
+        "32705392",
+        "40757582",
+        "38890005",
+        "35206420",
+        "36896022"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [],
+      [
+        "38010201",
+        "32072792",
+        "29043659",
+        "36705372",
+        "37624139",
+        "30443664"
+      ],
+      [],
+      [],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39157494",
+        "39686276"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "39157494"
+      ]
+    ]
+  },
+  "stage2_cited_pmids_rank_matched": {
+    "baseline_minilm": [
+      [
+        "32645111",
+        "36896022",
+        "32705392",
+        "39593465",
+        "39557768",
+        "34375990"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "36896022",
+        "32705392",
+        "39593465",
+        "39557768",
+        "34375990",
+        "40267413"
+      ],
+      [
+        "32645111",
+        "37229415",
+        "36026487",
+        "36896022",
+        "36612622",
+        "32705392"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40757563",
+        "41979887",
+        "41287002"
+      ],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "36896022",
+        "36612622",
+        "32705392"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40757563",
+        "41979887",
+        "41287002"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32705392",
+        "38890005",
+        "36896022",
+        "35206420",
+        "40692697",
+        "32669052"
+      ],
+      [],
+      [],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "36199287",
+        "40911904",
+        "38651426",
+        "40981025",
+        "35622106",
+        "36293790"
+      ],
+      [
+        "32705392",
+        "36896022",
+        "35206420",
+        "40692697",
+        "32669052",
+        "41743596"
+      ],
+      [
+        "32645111",
+        "37229415",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40757563",
+        "41979887",
+        "41287002"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "36896022",
+        "36612622",
+        "32705392"
+      ],
+      [
+        "41441417",
+        "40981044",
+        "41562724",
+        "36896022",
+        "35992501",
+        "34529554"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "37229415",
+        "36026487",
+        "36896022",
+        "36612622",
+        "32705392"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "35936912",
+        "42194886",
+        "41998766",
+        "32705392",
+        "40757582",
+        "38890005"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "35069251",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "32645111",
+        "37229415",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "35819335",
+        "28677940",
+        "38684187",
+        "32645111",
+        "41222890",
+        "32705392"
+      ],
+      [
+        "32705392",
+        "36896022",
+        "35206420",
+        "40692697",
+        "32669052",
+        "41743596"
+      ],
+      [
+        "32645111",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677",
+        "39557768"
+      ],
+      [],
+      [
+        "38010201",
+        "29043659"
+      ],
+      [],
+      [],
+      [],
+      [
+        "32645111",
+        "32705392",
+        "39593465",
+        "39557768",
+        "34375990",
+        "38240811"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36896022",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "39593465",
+        "39557768",
+        "34375990",
+        "40267413"
+      ]
+    ],
+    "biomed_base": [
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "35069251",
+        "32645111",
+        "33634677",
+        "34375990",
+        "36361276"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32705392",
+        "40944139"
+      ],
+      [
+        "36976950",
+        "36828324",
+        "41730991",
+        "40981044",
+        "41901575",
+        "41287002"
+      ],
+      [],
+      [
+        "36026487",
+        "36612622",
+        "36896022",
+        "35069251",
+        "38744142",
+        "40944139"
+      ],
+      [
+        "41944385",
+        "41901575",
+        "41730991",
+        "41287002",
+        "36856799",
+        "30153194"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "41998766",
+        "36896022",
+        "35206420",
+        "35936912",
+        "40692697",
+        "32669052"
+      ],
+      [],
+      [],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "40325746",
+        "29502464",
+        "38651426",
+        "38006325",
+        "33916599",
+        "36293790"
+      ],
+      [
+        "41998766",
+        "42194886",
+        "35206420",
+        "36896022",
+        "35936912",
+        "40692697"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "36896022",
+        "35069251",
+        "38744142",
+        "40944139"
+      ],
+      [
+        "41944385",
+        "41901575",
+        "41730991",
+        "36856799",
+        "30153194"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "40981044",
+        "38288256",
+        "32226628",
+        "30909261"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32705392",
+        "40944139"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "42194886",
+        "41998766",
+        "35206420",
+        "36896022",
+        "35936912",
+        "40692697"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "35819335",
+        "28677940",
+        "39716392",
+        "37789670",
+        "38684187",
+        "41222890"
+      ],
+      [
+        "41998766",
+        "36896022",
+        "35206420",
+        "35936912",
+        "40692697",
+        "32669052"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "33634677",
+        "34375990"
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "32645111",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "40944139",
+        "32645111"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32645111",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "35069251",
+        "38744142",
+        "32645111",
+        "33634677",
+        "32226628"
+      ]
+    ],
+    "biomed_retrieval": [
+      [
+        "36026487",
+        "39593465",
+        "33634677",
+        "34375990",
+        "38240811",
+        "40267413"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677",
+        "39557768"
+      ],
+      [
+        "36026487",
+        "39593465",
+        "33634677",
+        "34375990",
+        "38240811",
+        "40267413"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "36976950",
+        "36501840",
+        "39716392"
+      ],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "36976950",
+        "36501840",
+        "39716392"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "41998766",
+        "32705392",
+        "38890005",
+        "40692697",
+        "32669052",
+        "41743596"
+      ],
+      [],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "32705392",
+        "39593465",
+        "33634677",
+        "34375990"
+      ],
+      [
+        "40325746",
+        "40911904",
+        "36199287",
+        "38006325",
+        "41730991",
+        "33634677"
+      ],
+      [
+        "41998766",
+        "32705392",
+        "38890005",
+        "40692697",
+        "32669052",
+        "41743596"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "36976950",
+        "36501840",
+        "39716392"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "41441417",
+        "40981044",
+        "41562724"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "36896022",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "35936912",
+        "41998766",
+        "42194886",
+        "32705392",
+        "38890005",
+        "40692697"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "35819335",
+        "39716392",
+        "38684187",
+        "32705392",
+        "39959841",
+        "33634677"
+      ],
+      [
+        "41998766",
+        "32705392",
+        "38890005",
+        "40692697",
+        "32669052",
+        "41743596"
+      ],
+      [
+        "36026487",
+        "32705392",
+        "39593465",
+        "33634677",
+        "39557768",
+        "34375990"
+      ],
+      [],
+      [
+        "29043659"
+      ],
+      [],
+      [],
+      [],
+      [
+        "36026487",
+        "39593465",
+        "33634677",
+        "34375990",
+        "38240811",
+        "40267413"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "32705392",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "36026487",
+        "39593465",
+        "33634677",
+        "40267413",
+        "31156757"
+      ]
+    ],
+    "general_base": [
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32705392"
+      ],
+      [
+        "32645111",
+        "36612622",
+        "38744142",
+        "40944139",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "38744142",
+        "39593465",
+        "33634677"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "40757582",
+        "39686276",
+        "36612622",
+        "35069251"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "36501840",
+        "39716392",
+        "32645111"
+      ],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "39686276",
+        "36612622",
+        "35069251",
+        "38744142"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40757563",
+        "36501840",
+        "32645111"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32705392"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "40757582",
+        "36612622",
+        "35069251",
+        "38744142"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "39686276",
+        "36612622",
+        "36896022",
+        "35069251"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32705392"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "38744142",
+        "32705392",
+        "40944139"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "39686276",
+        "36612622",
+        "35069251",
+        "38744142"
+      ],
+      [
+        "40692697",
+        "32705392",
+        "38890005",
+        "35206420",
+        "32669052",
+        "41944385"
+      ],
+      [],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "38744142",
+        "32705392",
+        "40944139"
+      ],
+      [
+        "40325746",
+        "40911904",
+        "36199287",
+        "38651426",
+        "38006325",
+        "33916599"
+      ],
+      [
+        "38890005",
+        "35206420",
+        "40692697",
+        "32669052",
+        "32705392",
+        "39162881"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "40757582",
+        "39686276",
+        "36612622",
+        "35069251"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "36976950",
+        "36501840",
+        "39716392"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "39686276",
+        "36612622",
+        "35069251",
+        "38744142"
+      ],
+      [
+        "41441417",
+        "40981044",
+        "36157003",
+        "35992501"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "38744142",
+        "32705392",
+        "40944139"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "39686276",
+        "36612622",
+        "35069251",
+        "38744142"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32705392"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "37229415",
+        "40757582",
+        "39686276",
+        "36612622"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "38744142",
+        "32705392",
+        "40944139"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "39686276",
+        "36612622",
+        "38744142",
+        "32705392"
+      ],
+      [
+        "35936912",
+        "40692697",
+        "42194886",
+        "41998766",
+        "40757582",
+        "38890005"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32705392"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32705392"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "38744142",
+        "32705392"
+      ],
+      [
+        "35819335",
+        "28677940",
+        "39716392",
+        "38684187",
+        "39959841",
+        "33634677"
+      ],
+      [
+        "41998766",
+        "38890005",
+        "35206420",
+        "40692697",
+        "32669052",
+        "32705392"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "38744142",
+        "32705392",
+        "39593465"
+      ],
+      [],
+      [
+        "29043659"
+      ],
+      [],
+      [],
+      [],
+      [
+        "32645111",
+        "36612622",
+        "38744142",
+        "39593465",
+        "33634677",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "39686276",
+        "36612622",
+        "35069251",
+        "38744142"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "38744142",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "38744142",
+        "32705392",
+        "40944139"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "32705392",
+        "40944139"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "38744142",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "38744142",
+        "39593465",
+        "39557768",
+        "36812922"
+      ]
+    ],
+    "general_small": [
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "34375990"
+      ],
+      [
+        "36026487",
+        "36612622",
+        "39593465",
+        "39557768",
+        "38240811",
+        "40267413"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40757563",
+        "36501840",
+        "32645111"
+      ],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "40757563",
+        "36501840",
+        "32645111"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "32705392",
+        "39593465"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "38890005",
+        "40692697",
+        "32669052",
+        "39077025",
+        "35992501",
+        "39162881"
+      ],
+      [],
+      [],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "40325746",
+        "40911904",
+        "36199287",
+        "38651426",
+        "40981025",
+        "35622106"
+      ],
+      [
+        "32705392",
+        "38890005",
+        "40692697",
+        "39077025",
+        "39162881"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "41307987",
+        "39364857",
+        "36828324",
+        "36501840",
+        "32645111",
+        "41730991"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "40981044",
+        "34529554",
+        "35992501",
+        "31171405"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "39593465",
+        "39557768",
+        "34375990"
+      ],
+      [
+        "38890005",
+        "40692697",
+        "39077025",
+        "35992501",
+        "39162881"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "35819335",
+        "28677940",
+        "38684187",
+        "41222890",
+        "39959841",
+        "33634677"
+      ],
+      [
+        "38890005",
+        "35206420",
+        "40692697",
+        "39077025",
+        "39162881"
+      ],
+      [
+        "32645111",
+        "36612622",
+        "39593465",
+        "33634677",
+        "39557768",
+        "34375990"
+      ],
+      [],
+      [
+        "38010201",
+        "29043659"
+      ],
+      [],
+      [],
+      [],
+      [
+        "32645111",
+        "36612622",
+        "35069251",
+        "39593465",
+        "34375990",
+        "38240811"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "39593465",
+        "39557768",
+        "34375990"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "39557768"
+      ],
+      [
+        "32645111",
+        "36026487",
+        "36612622",
+        "35069251",
+        "39593465",
+        "34375990"
+      ],
+      [
+        "36612622",
+        "39593465",
+        "39557768",
+        "36812922",
+        "31156757"
+      ]
+    ]
+  }
+}

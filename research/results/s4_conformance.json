@@ -1,0 +1,200 @@
+{
+  "claims": [
+    {
+      "claim": "exercises in catalog",
+      "conforms": true,
+      "measured": 1324,
+      "note": "",
+      "published": "1324",
+      "source": "science/page.tsx"
+    },
+    {
+      "claim": "studies in corpus",
+      "conforms": true,
+      "measured": 502,
+      "note": "",
+      "published": 502,
+      "source": "science/page.tsx:253"
+    },
+    {
+      "claim": "PubMed queries",
+      "conforms": true,
+      "measured": 103,
+      "note": "",
+      "published": 103,
+      "source": "science/page.tsx:254"
+    },
+    {
+      "claim": "studies flagged for review",
+      "conforms": true,
+      "measured": 147,
+      "note": "",
+      "published": 147,
+      "source": "science/page.tsx:256"
+    },
+    {
+      "claim": "exercises with direct evidence",
+      "conforms": true,
+      "measured": 346,
+      "note": "",
+      "published": "346",
+      "source": "science/page.tsx"
+    },
+    {
+      "claim": "automated tests",
+      "conforms": true,
+      "measured": 73,
+      "note": "",
+      "published": 73,
+      "source": "science/page.tsx:460"
+    },
+    {
+      "claim": "exercises (README)",
+      "conforms": true,
+      "measured": 1324,
+      "note": "873 here would be the record count of the unused Free Exercise DB dump",
+      "published": "1324",
+      "source": "README.md"
+    },
+    {
+      "claim": "no exercise can look highly-evidenced without actual evidence",
+      "conforms": true,
+      "measured": "max confidence among 978 zero-evidence exercises = 0.6400; labels: {'moderate': 947, 'low': 31}",
+      "note": "Holds with margin. The residual question is calibration of the 'moderate' label, not conformance of this guardrail.",
+      "published": "confidence hard-capped at c <= 0.72, below the 0.75 'high' threshold",
+      "source": "science/page.tsx:326-331"
+    },
+    {
+      "claim": "the model is mathematically unable to cite an exercise (or study) that isn't in its brief",
+      "conforms": null,
+      "measured": "exercise ids are enum-locked only when supports_structured_output(model) is true (gemma fallbacks receive no schema); the plan schema has no study field at all (study field present), so citations are never model-emitted",
+      "note": "The outcome is guaranteed - Python attaches every citation after validation - but not by the mechanism the claim names. For studies the claim is vacuously true rather than enforced. schema_is_conditional=True",
+      "published": "enum-locked response schema",
+      "source": "science/page.tsx:429-433"
+    },
+    {
+      "claim": "every cited PMID is checked to be in the allowed set and in the appendix",
+      "conforms": true,
+      "measured": "call sites: {'protocol_demo.py': 1, 'test_protocol_demo.py': 6}; runtime (non-test) call sites: {'protocol_demo.py': 1}",
+      "note": "The validator is exercised by the test suite only, so the containment property is tested but not enforced on a live generation.",
+      "published": "validate_generated_markdown guardrail",
+      "source": "protocol_demo.py:2824-2919"
+    },
+    {
+      "claim": "the evidence appendix lists the studies behind the protocol",
+      "conforms": true,
+      "measured": "the Markdown renderer and the API mapper agree: both merge corpus findings with each exercise's reference_evidence",
+      "note": "When they disagree the web UI's study count omits PMIDs it displays on its own exercise rows, while the Markdown export includes them.",
+      "published": "one appendix",
+      "source": "protocol_demo.py render_protocol_markdown vs app/mappers.py"
+    }
+  ],
+  "confidence_calibration": {
+    "has_evidence_score": {
+      "max": 1.0,
+      "mean": 0.8686872832369944,
+      "min": 0.5182,
+      "n": 346
+    },
+    "label_precision": {
+      "high": {
+        "n": 282,
+        "n_with_direct_evidence": 282,
+        "p_has_evidence_given_label": 1.0
+      },
+      "low": {
+        "n": 36,
+        "n_with_direct_evidence": 5,
+        "p_has_evidence_given_label": 0.1388888888888889
+      },
+      "moderate": {
+        "n": 1006,
+        "n_with_direct_evidence": 59,
+        "p_has_evidence_given_label": 0.05864811133200795
+      }
+    },
+    "pearson_r_count_vs_score": 0.9126828624476678,
+    "score_floor_note": "The heuristic path starts at 0.42 and is capped at 0.72 (build_exercise_catalog.py:845-862), so the score has a floor: it ranks correctly but never reports the absence of evidence.",
+    "zero_evidence_score": {
+      "max": 0.64,
+      "mean": 0.6229856850715707,
+      "min": 0.36,
+      "n": 978
+    }
+  },
+  "dosage_provenance": {
+    "identical_across_dissimilar_exercises": {
+      "hypertrophy": true,
+      "strength": true
+    },
+    "note": "build_prescription_seed depends only on the goal, so every dosage a user reads originates from the planner model's parametric knowledge or from these two constants, clamped to author-chosen bounds. Citations attached to a recommendation support the exercise choice, never the dosage.",
+    "prescription_bounds": {
+      "hypertrophy": {
+        "reps": [
+          5,
+          30
+        ],
+        "rest_seconds": [
+          45,
+          180
+        ],
+        "sets": [
+          2,
+          5
+        ]
+      },
+      "strength": {
+        "reps": [
+          3,
+          8
+        ],
+        "rest_seconds": [
+          120,
+          300
+        ],
+        "sets": [
+          3,
+          6
+        ]
+      }
+    },
+    "probe_exercises": [
+      "3/4 Sit-Up",
+      "Dumbbell Seated Bent Arm Lateral Raise",
+      "Wrist Rollerer"
+    ],
+    "seeds_by_goal": {
+      "hypertrophy": {
+        "display": "3x10",
+        "reps": "10",
+        "rest": "90 sec",
+        "sets": "3"
+      },
+      "strength": {
+        "display": "3x5",
+        "reps": "5",
+        "rest": "120 sec",
+        "sets": "3"
+      }
+    }
+  },
+  "environment": {
+    "machine": "arm64",
+    "packages": {
+      "chromadb": "1.5.9",
+      "matplotlib": "3.9.4",
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "sentence_transformers": "5.1.2",
+      "sklearn": "1.6.1",
+      "torch": "2.8.0",
+      "transformers": "4.57.6"
+    },
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "seed": 20260818
+  },
+  "n_conforming": 10,
+  "n_diverging": 0,
+  "n_qualified": 1
+}
