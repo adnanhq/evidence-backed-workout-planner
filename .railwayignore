@@ -1,0 +1,16 @@
+# The engine image needs services/engine, packages/data and exercises-dataset
+# (see services/engine/Dockerfile). Everything else only slows the upload.
+apps/
+research/
+data/
+.design/
+.claude/
+.docx_preview/
+*.docx
+
+# Vendored upstream history for the media dataset: 220MB the image never uses.
+# Root .gitignore already excludes it from git; the uploader needs telling too.
+.git-vendored/
+exercises-dataset/.git-vendored/
+exercises-dataset/index.html
+exercises-dataset/setup.html
