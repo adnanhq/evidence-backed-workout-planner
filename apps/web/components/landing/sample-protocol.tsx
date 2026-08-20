@@ -20,7 +20,7 @@ export function SampleProtocol() {
       />
       <div className="relative mx-auto w-full max-w-[var(--container-page)] px-5 sm:px-8">
         <Reveal>
-          <LedgerHeading index="03" label="A real protocol" title="This is what you get.">
+          <LedgerHeading index="03" label="Sample protocol" title="An example protocol, in full.">
             <p>
               A live session from a hypertrophy protocol. Open the evidence on
               any exercise — every citation resolves to PubMed.
