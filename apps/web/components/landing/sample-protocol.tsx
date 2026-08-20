@@ -20,7 +20,7 @@ export function SampleProtocol() {
       />
       <div className="relative mx-auto w-full max-w-[var(--container-page)] px-5 sm:px-8">
         <Reveal>
-          <LedgerHeading index="03" label="A real protocol" title="This is the artifact.">
+          <LedgerHeading index="03" label="A real protocol" title="This is what you get.">
             <p>
               A live session from a hypertrophy protocol. Open the evidence on
               any exercise — every citation resolves to PubMed.
@@ -29,7 +29,7 @@ export function SampleProtocol() {
         </Reveal>
 
         <Reveal delay={0.08}>
-          <div className="mt-12 grid gap-8 lg:grid-cols-[1.45fr_1fr]">
+          <div className="mt-12 grid items-start gap-8 lg:grid-cols-[1.45fr_1fr]">
             <SessionCard session={session} />
             <div>
               <p className="font-mono text-[0.7rem] uppercase tracking-[0.16em] text-subtle">
